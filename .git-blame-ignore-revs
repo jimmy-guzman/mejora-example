@@ -1,0 +1,17 @@
+# Commits rewritten to follow conventional commits format
+# Run: git config blame.ignoreRevsFile .git-blame-ignore-revs
+
+# docs: add initial plan
+bcfd5f6c2b8acd7c326cea04394d8bc8cb2330e5
+
+# feat: set up mejora example repository  
+7f9d5e23b1ba9828c12ce1fe033013ef2b4ff6fd
+
+# chore(ci): specify exact Node.js version
+104c11ac170050c2fe54248faa3e3630518f7ac3
+
+# fix(ci): add explicit permissions to workflow
+9fc8bce15992d3c696ac63fc76bacc1aac18cac3
+
+# fix(ci): remove pnpm version conflict
+ebb6cd44602b2545e83ffbbfcf27384004768ad8
