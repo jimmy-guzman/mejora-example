@@ -4,7 +4,7 @@ This project follows [Conventional Commits](https://www.conventionalcommits.org/
 
 ## Format
 
-```
+```txt
 <type>(<optional scope>): <description>
 ```
 
