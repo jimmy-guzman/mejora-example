@@ -11,5 +11,5 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true
   },
-  "include": ["src/**/*", "mejora.config.ts", "eslint.config.ts"]
+  "include": ["src/**/*", "eslint.config.ts"]
 }
