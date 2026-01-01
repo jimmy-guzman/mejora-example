@@ -13,16 +13,31 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v6
-      
+
       - uses: pnpm/action-setup@v4
-      
+
       - uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
-          cache: 'pnpm'
-      
+          cache: pnpm
+
+      - name: Cache tool caches
+        uses: actions/cache@v4
+        with:
+          path: |
+            .node_modules/.cache
+          key: >
+            ${{ runner.os }}-tool-cache-${{ hashFiles(
+              'pnpm-lock.yaml',
+              'mejora.config.ts',
+              'tsconfig.json',
+              'eslint.config.ts'
+            ) }}
+          restore-keys: |
+            ${{ runner.os }}-tool-cache-
+
       - name: Install dependencies
         run: pnpm install
-      
+
       - name: Run mejora
         run: pnpm mejora
