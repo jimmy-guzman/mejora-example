@@ -21,42 +21,42 @@ export class Table<T> {
 
   // TypeScript error: implicit any
   render(container) {
-    const table = document.createElement('table');
-    table.className = 'table';
-    
+    const table = document.createElement("table");
+    table.className = "table";
+
     // Create header
-    const thead = document.createElement('thead');
-    const headerRow = document.createElement('tr');
-    
-    this.props.columns.forEach(col => {
-      const th = document.createElement('th');
+    const thead = document.createElement("thead");
+    const headerRow = document.createElement("tr");
+
+    this.props.columns.forEach((col) => {
+      const th = document.createElement("th");
       th.textContent = col.header;
       headerRow.appendChild(th);
     });
-    
+
     thead.appendChild(headerRow);
     table.appendChild(thead);
-    
+
     // Create body
-    const tbody = document.createElement('tbody');
-    
-    this.props.data.forEach(row => {
-      const tr = document.createElement('tr');
-      
-      this.props.columns.forEach(col => {
-        const td = document.createElement('td');
+    const tbody = document.createElement("tbody");
+
+    this.props.data.forEach((row) => {
+      const tr = document.createElement("tr");
+
+      this.props.columns.forEach((col) => {
+        const td = document.createElement("td");
         const value = row[col.key];
         td.textContent = col.render ? col.render(value, row) : String(value);
         tr.appendChild(td);
       });
-      
+
       if (this.props.onRowClick) {
         tr.onclick = () => this.props.onRowClick?.(row);
       }
-      
+
       tbody.appendChild(tr);
     });
-    
+
     table.appendChild(tbody);
     container.appendChild(table);
   }
@@ -81,12 +81,12 @@ export class Table<T> {
     let sorted = [...this.props.data].sort((a, b) => {
       const aVal = a[key];
       const bVal = b[key];
-      
+
       if (aVal < bVal) return ascending ? -1 : 1;
       if (aVal > bVal) return ascending ? 1 : -1;
       return 0;
     });
-    
+
     this.props = { ...this.props, data: sorted };
   }
 

@@ -1,19 +1,24 @@
 // Notification feature
-import type { Notification, NotificationType } from '../../models/notification';
-import { notificationService } from '../../services/notification-service';
+import type { Notification, NotificationType } from "../../models/notification";
+import { notificationService } from "../../services/notification-service";
 
 export class NotificationController {
   // TypeScript error: implicit any
-  createNotification(userId: number, title, message: string, type: NotificationType): void {
+  createNotification(
+    userId: number,
+    title,
+    message: string,
+    type: NotificationType,
+  ): void {
     notificationService.createNotification(userId, title, message, type);
   }
 
   // TypeScript error: missing return statement
   getUnreadNotifications(userId: number): Notification[] {
     const notifications = notificationService.getNotifications(userId);
-    
+
     if (notifications) {
-      return notifications.filter(n => !n.read);
+      return notifications.filter((n) => !n.read);
     }
     // Missing return for else case
   }

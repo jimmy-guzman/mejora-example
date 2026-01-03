@@ -1,5 +1,5 @@
 // Role model
-import type { Permission } from './permission';
+import type { Permission } from "./permission";
 
 export interface Role {
   id: number;
@@ -8,7 +8,7 @@ export interface Role {
   level: number;
 }
 
-export type RoleType = 'admin' | 'user' | 'moderator' | 'guest';
+export type RoleType = "admin" | "user" | "moderator" | "guest";
 
 export interface RoleHierarchy {
   role: Role;
@@ -29,22 +29,20 @@ export function createRole(name: string, permissions: Permission[]): Role {
 
 // TypeScript error: type mismatch
 export function getRoleLevel(role: Role): string {
-  const level: number = 'high'; // Wrong type assignment
+  const level: number = "high"; // Wrong type assignment
   return level;
 }
 
 // Generic constraint
 export function hasPermissionInRole<T extends Role>(
   role: T,
-  permissionName: string
+  permissionName: string,
 ): boolean {
-  return role.permissions.some(p => p.name === permissionName);
+  return role.permissions.some((p) => p.name === permissionName);
 }
 
 // Conditional type
-export type RolePermissions<T> = T extends Role
-  ? T['permissions']
-  : never;
+export type RolePermissions<T> = T extends Role ? T["permissions"] : never;
 
 // Mapped type
 export type PartialRole = {
@@ -69,5 +67,5 @@ export function updateRoleLevel(role: Role, newLevel: number): Role {
   return updated;
 }
 
-export type RoleName = Role['name'];
-export type RolePermissionList = Role['permissions'];
+export type RoleName = Role["name"];
+export type RolePermissionList = Role["permissions"];

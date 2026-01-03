@@ -17,47 +17,48 @@ export class Tabs {
 
   constructor(props: TabsProps) {
     this.props = props;
-    this.activeTab = props.activeTab || props.items[0]?.id || '';
+    this.activeTab = props.activeTab || props.items[0]?.id || "";
   }
 
   // TypeScript error: implicit any
   render(container) {
-    const tabsContainer = document.createElement('div');
-    tabsContainer.className = 'tabs';
-    
+    const tabsContainer = document.createElement("div");
+    tabsContainer.className = "tabs";
+
     // Create tab headers
-    const tabHeaders = document.createElement('div');
-    tabHeaders.className = 'tabs__headers';
-    
-    this.props.items.forEach(item => {
-      const tab = document.createElement('button');
+    const tabHeaders = document.createElement("div");
+    tabHeaders.className = "tabs__headers";
+
+    this.props.items.forEach((item) => {
+      const tab = document.createElement("button");
       tab.textContent = item.label;
-      tab.className = item.id === this.activeTab ? 'tabs__tab--active' : 'tabs__tab';
+      tab.className =
+        item.id === this.activeTab ? "tabs__tab--active" : "tabs__tab";
       tab.onclick = () => this.setActiveTab(item.id);
       tabHeaders.appendChild(tab);
     });
-    
+
     tabsContainer.appendChild(tabHeaders);
-    
+
     // Create tab content
-    const activeItem = this.props.items.find(i => i.id === this.activeTab);
+    const activeItem = this.props.items.find((i) => i.id === this.activeTab);
     if (activeItem) {
-      const content = document.createElement('div');
-      content.className = 'tabs__content';
+      const content = document.createElement("div");
+      content.className = "tabs__content";
       content.textContent = activeItem.content;
       tabsContainer.appendChild(content);
     }
-    
+
     container.appendChild(tabsContainer);
   }
 
   // TypeScript error: missing return statement
   setActiveTab(tabId: string): void {
-    const tab = this.props.items.find(t => t.id === tabId);
-    
+    const tab = this.props.items.find((t) => t.id === tabId);
+
     if (tab) {
       this.activeTab = tabId;
-      
+
       if (this.props.onTabChange) {
         this.props.onTabChange(tabId);
       }
@@ -68,7 +69,7 @@ export class Tabs {
   // ESLint error: unused variable
   getActiveTab(): string {
     const timestamp = Date.now();
-    const index = this.props.items.findIndex(i => i.id === this.activeTab);
+    const index = this.props.items.findIndex((i) => i.id === this.activeTab);
     return this.activeTab;
   }
 

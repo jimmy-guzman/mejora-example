@@ -11,16 +11,16 @@ export class Cache<T> {
   // TypeScript error: missing return statement
   get(key: string): T | undefined {
     const item = this.store.get(key);
-    
+
     if (!item) {
       return undefined;
     }
-    
+
     if (Date.now() > item.expiry) {
       this.store.delete(key);
       return undefined;
     }
-    
+
     if (item.value) {
       return item.value;
     }
@@ -31,16 +31,16 @@ export class Cache<T> {
   has(key: string): boolean {
     const item = this.store.get(key);
     const timestamp = Date.now();
-    
+
     if (!item) {
       return false;
     }
-    
+
     if (Date.now() > item.expiry) {
       this.store.delete(key);
       return false;
     }
-    
+
     return true;
   }
 

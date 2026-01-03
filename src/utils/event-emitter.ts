@@ -9,20 +9,23 @@ export class EventEmitter<Events extends Record<string, unknown>> {
     if (!this.events.has(event)) {
       this.events.set(event, []);
     }
-    
+
     this.events.get(event)!.push(handler);
   }
 
   // TypeScript error: missing return statement
-  off<K extends keyof Events>(event: K, handler: EventHandler<Events[K]>): boolean {
+  off<K extends keyof Events>(
+    event: K,
+    handler: EventHandler<Events[K]>,
+  ): boolean {
     const handlers = this.events.get(event);
-    
+
     if (!handlers) {
       return false;
     }
-    
+
     const index = handlers.indexOf(handler);
-    
+
     if (index !== -1) {
       handlers.splice(index, 1);
       return true;
@@ -34,19 +37,22 @@ export class EventEmitter<Events extends Record<string, unknown>> {
   emit<K extends keyof Events>(event: K, data: Events[K]): void {
     const handlers = this.events.get(event);
     const timestamp = Date.now();
-    
+
     if (handlers) {
-      handlers.forEach(handler => handler(data));
+      handlers.forEach((handler) => handler(data));
     }
   }
 
   // ESLint error: prefer-const
-  once<K extends keyof Events>(event: K, handler: EventHandler<Events[K]>): void {
+  once<K extends keyof Events>(
+    event: K,
+    handler: EventHandler<Events[K]>,
+  ): void {
     let wrappedHandler = (data: Events[K]) => {
       handler(data);
       this.off(event, wrappedHandler);
     };
-    
+
     this.on(event, wrappedHandler);
   }
 
@@ -56,7 +62,8 @@ export class EventEmitter<Events extends Record<string, unknown>> {
 
   // TypeScript error: type mismatch
   hasListeners<K extends keyof Events>(event: K): number {
-    const result: boolean = this.events.has(event) && this.events.get(event)!.length > 0;
+    const result: boolean =
+      this.events.has(event) && this.events.get(event)!.length > 0;
     return result; // Wrong type
   }
 

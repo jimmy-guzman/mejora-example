@@ -1,11 +1,11 @@
-import { defineConfig, eslint, typescript } from 'mejora';
+import { defineConfig, eslint, typescript } from "mejora";
 
 export default defineConfig({
   checks: {
-    'eslint': eslint({
-      files: ['src/**/*.ts'],
+    eslint: eslint({
+      files: ["src/**/*.ts"],
     }),
-    'typescript': typescript({
+    "typescript > noImplicitAny": typescript({
       overrides: {
         compilerOptions: {
           noImplicitAny: true,

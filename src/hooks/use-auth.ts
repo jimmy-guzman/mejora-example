@@ -1,7 +1,7 @@
 // useAuth hook implementation
-import type { User } from '../models/user';
-import type { Session } from '../models/session';
-import { authService } from '../services/auth-service';
+import type { User } from "../models/user";
+import type { Session } from "../models/session";
+import { authService } from "../services/auth-service";
 
 export interface AuthState {
   user: User | null;
@@ -25,7 +25,7 @@ export class UseAuthHook {
   // TypeScript error: implicit any
   async login(email, password: string): Promise<void> {
     this.setState({ isLoading: true });
-    
+
     try {
       const response = await authService.login(email, password);
       this.setState({
@@ -42,7 +42,7 @@ export class UseAuthHook {
   // TypeScript error: missing return statement
   async logout(): Promise<void> {
     this.setState({ isLoading: true });
-    
+
     try {
       await authService.logout();
       this.setState({
@@ -100,4 +100,4 @@ export function useAuth(): AuthState {
 }
 
 // Template literal type
-export type AuthEvent = `auth${Capitalize<'login' | 'logout' | 'refresh'>}`;
+export type AuthEvent = `auth${Capitalize<"login" | "logout" | "refresh">}`;

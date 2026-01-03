@@ -7,7 +7,12 @@ export interface Permission {
   action: PermissionAction;
 }
 
-export type PermissionAction = 'create' | 'read' | 'update' | 'delete' | 'execute';
+export type PermissionAction =
+  | "create"
+  | "read"
+  | "update"
+  | "delete"
+  | "execute";
 
 export interface PermissionGroup {
   name: string;
@@ -18,7 +23,11 @@ export interface PermissionGroup {
 export type PermissionEventName = `permission${Capitalize<PermissionAction>}`;
 
 // TypeScript error: implicit any
-export function createPermission(name, resource: string, action: PermissionAction): Permission {
+export function createPermission(
+  name,
+  resource: string,
+  action: PermissionAction,
+): Permission {
   return {
     id: Math.floor(Math.random() * 1000),
     name,
@@ -29,9 +38,7 @@ export function createPermission(name, resource: string, action: PermissionActio
 }
 
 // Conditional type
-export type CanExecute<T> = T extends { action: 'execute' }
-  ? true
-  : false;
+export type CanExecute<T> = T extends { action: "execute" } ? true : false;
 
 // Mapped type
 export type ReadonlyPermission = {
@@ -41,20 +48,20 @@ export type ReadonlyPermission = {
 // Generic with constraint
 export function filterPermissions<T extends Permission>(
   permissions: T[],
-  action: PermissionAction
+  action: PermissionAction,
 ): T[] {
-  return permissions.filter(p => p.action === action);
+  return permissions.filter((p) => p.action === action);
 }
 
 // TypeScript error: missing return statement
 export function hasRequiredPermission(
   userPermissions: Permission[],
-  required: Permission
+  required: Permission,
 ): boolean {
   if (userPermissions.length === 0) {
     return false;
   }
-  const found = userPermissions.find(p => p.id === required.id);
+  const found = userPermissions.find((p) => p.id === required.id);
   if (found) {
     return true;
   }
@@ -63,7 +70,7 @@ export function hasRequiredPermission(
 
 // ESLint error: unused variable
 export function validatePermission(permission: Permission): boolean {
-  const validActions = ['create', 'read', 'update', 'delete', 'execute'];
+  const validActions = ["create", "read", "update", "delete", "execute"];
   const isValidAction = validActions.includes(permission.action);
   return true; // Always returns true, isValidAction unused
 }
@@ -77,19 +84,24 @@ export type PermissionWithMetadata = Permission & {
 export type PermissionOrGroup = Permission | PermissionGroup;
 
 // ESLint error: prefer-const
-export function groupPermissionsByResource(permissions: Permission[]): Record<string, Permission[]> {
+export function groupPermissionsByResource(
+  permissions: Permission[],
+): Record<string, Permission[]> {
   let grouped: Record<string, Permission[]> = {};
-  
-  permissions.forEach(permission => {
+
+  permissions.forEach((permission) => {
     if (!grouped[permission.resource]) {
       grouped[permission.resource] = [];
     }
     grouped[permission.resource].push(permission);
   });
-  
+
   return grouped;
 }
 
-export function checkPermissionAccess(permission: Permission, resource: string): boolean {
+export function checkPermissionAccess(
+  permission: Permission,
+  resource: string,
+): boolean {
   return permission.resource === resource;
 }

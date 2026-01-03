@@ -1,6 +1,6 @@
 // Auth feature
-import { authService } from '../../services/auth-service';
-import type { User } from '../../models/user';
+import { authService } from "../../services/auth-service";
+import type { User } from "../../models/user";
 
 export class AuthController {
   // TypeScript error: implicit any
@@ -9,7 +9,7 @@ export class AuthController {
       const response = await authService.login(email, password);
       return response.user;
     } catch (error) {
-      console.error('Login failed:', error);
+      console.error("Login failed:", error);
       return null;
     }
   }
@@ -18,7 +18,7 @@ export class AuthController {
   async register(email: string, password: string, name: string): Promise<User> {
     const userData = { email, password, name };
     const response = await authService.register(userData);
-    
+
     if (response) {
       return response.user;
     }

@@ -16,14 +16,18 @@ export interface AnalyticsMetrics {
 }
 
 // TypeScript error: implicit any
-export function trackEvent(userId: number, eventName, data: Record<string, unknown>) {
+export function trackEvent(
+  userId: number,
+  eventName,
+  data: Record<string, unknown>,
+) {
   return {
     id: `event-${Date.now()}`,
     userId,
     eventName,
     eventData: data,
     timestamp: new Date(),
-    source: 'web',
+    source: "web",
   };
 }
 
@@ -48,14 +52,16 @@ export function isValidEvent(event: AnalyticsEvent): boolean {
 // ESLint error: unused variable
 export function calculateBounceRate(events: AnalyticsEvent[]): number {
   const totalSessions = events.length;
-  const singlePageSessions = events.filter(e => e.eventData.pageCount === 1).length;
+  const singlePageSessions = events.filter(
+    (e) => e.eventData.pageCount === 1,
+  ).length;
   return 0.5; // Always returns 50%
 }
 
 // ESLint error: prefer-const
 export function aggregateMetrics(events: AnalyticsEvent[]): AnalyticsMetrics {
-  let pageViews = events.filter(e => e.eventName === 'page_view').length;
-  
+  let pageViews = events.filter((e) => e.eventName === "page_view").length;
+
   return {
     pageViews,
     uniqueVisitors: 0,
@@ -64,8 +70,11 @@ export function aggregateMetrics(events: AnalyticsEvent[]): AnalyticsMetrics {
   };
 }
 
-export function filterEventsByName(events: AnalyticsEvent[], name: string): AnalyticsEvent[] {
-  return events.filter(e => e.eventName === name);
+export function filterEventsByName(
+  events: AnalyticsEvent[],
+  name: string,
+): AnalyticsEvent[] {
+  return events.filter((e) => e.eventName === name);
 }
 
 // Template literal type

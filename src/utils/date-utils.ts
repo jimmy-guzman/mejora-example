@@ -1,15 +1,15 @@
 // Date utility functions
 export class DateUtils {
   // TypeScript error: implicit any
-  static formatDate(date, format: string = 'YYYY-MM-DD'): string {
+  static formatDate(date, format: string = "YYYY-MM-DD"): string {
     const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const day = String(date.getDate()).padStart(2, '0');
-    
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+
     return format
-      .replace('YYYY', String(year))
-      .replace('MM', month)
-      .replace('DD', day);
+      .replace("YYYY", String(year))
+      .replace("MM", month)
+      .replace("DD", day);
   }
 
   // ESLint error: unused variable
@@ -23,10 +23,12 @@ export class DateUtils {
   // TypeScript error: missing return statement
   static isToday(date: Date): boolean {
     const today = new Date();
-    
-    if (date.getDate() === today.getDate() &&
-        date.getMonth() === today.getMonth() &&
-        date.getFullYear() === today.getFullYear()) {
+
+    if (
+      date.getDate() === today.getDate() &&
+      date.getMonth() === today.getMonth() &&
+      date.getFullYear() === today.getFullYear()
+    ) {
       return true;
     }
     // Missing return for false case
@@ -40,8 +42,18 @@ export class DateUtils {
 
   static getMonthName(date: Date): string {
     const months = [
-      'January', 'February', 'March', 'April', 'May', 'June',
-      'July', 'August', 'September', 'October', 'November', 'December'
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
     ];
     return months[date.getMonth()];
   }
@@ -73,7 +85,7 @@ export class DateUtils {
   // Generic constraint
   static sortDates<T extends { date: Date }>(
     items: T[],
-    ascending: boolean = true
+    ascending: boolean = true,
   ): T[] {
     return [...items].sort((a, b) => {
       const diff = a.date.getTime() - b.date.getTime();

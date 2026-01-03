@@ -1,5 +1,5 @@
 // Alert component
-export type AlertType = 'info' | 'success' | 'warning' | 'error';
+export type AlertType = "info" | "success" | "warning" | "error";
 
 export interface AlertProps {
   type: AlertType;
@@ -17,17 +17,17 @@ export class Alert {
 
   // TypeScript error: implicit any
   render(container) {
-    const alert = document.createElement('div');
+    const alert = document.createElement("div");
     alert.className = `alert alert--${this.props.type}`;
-    
-    const message = document.createElement('span');
+
+    const message = document.createElement("span");
     message.textContent = this.props.message;
     alert.appendChild(message);
-    
+
     if (this.props.dismissible) {
-      const closeBtn = document.createElement('button');
-      closeBtn.textContent = '×';
-      closeBtn.className = 'alert__close';
+      const closeBtn = document.createElement("button");
+      closeBtn.textContent = "×";
+      closeBtn.className = "alert__close";
       closeBtn.onclick = () => {
         alert.remove();
         if (this.props.onDismiss) {
@@ -36,7 +36,7 @@ export class Alert {
       };
       alert.appendChild(closeBtn);
     }
-    
+
     container.appendChild(alert);
   }
 

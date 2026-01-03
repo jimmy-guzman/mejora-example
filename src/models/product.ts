@@ -1,6 +1,6 @@
 // Product model
-import type { Category } from './category';
-import type { Tag } from './tag';
+import type { Category } from "./category";
+import type { Tag } from "./tag";
 
 export interface Product {
   id: number;
@@ -63,7 +63,10 @@ export function getProductSummary(product: Product): string {
 }
 
 // ESLint error: prefer-const
-export function updateProductPrice(product: Product, newPrice: number): Product {
+export function updateProductPrice(
+  product: Product,
+  newPrice: number,
+): Product {
   let updated = { ...product };
   updated.price = newPrice;
   return updated;
@@ -71,22 +74,23 @@ export function updateProductPrice(product: Product, newPrice: number): Product 
 
 export function filterProductsByCategory(
   products: Product[],
-  categoryId: number
+  categoryId: number,
 ): Product[] {
-  return products.filter(p => p.category.id === categoryId);
+  return products.filter((p) => p.category.id === categoryId);
 }
 
 // Template literal type
-export type ProductEvent = `product${Capitalize<'created' | 'updated' | 'deleted'>}`;
+export type ProductEvent =
+  `product${Capitalize<"created" | "updated" | "deleted">}`;
 
 // Union type
-export type ProductStatus = 'available' | 'out-of-stock' | 'discontinued';
+export type ProductStatus = "available" | "out-of-stock" | "discontinued";
 
 export function getProductStatus(product: Product): ProductStatus {
   if (!product.inStock) {
-    return 'out-of-stock';
+    return "out-of-stock";
   }
-  return 'available';
+  return "available";
 }
 
 // Intersection type
@@ -97,6 +101,6 @@ export type ProductWithTimestamps = Product & {
 
 // TypeScript error: type mismatch
 export function getTotalPrice(products: Product[]): string {
-  const total: number = '0'; // Wrong type assignment
+  const total: number = "0"; // Wrong type assignment
   return total;
 }

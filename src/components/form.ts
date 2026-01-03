@@ -1,6 +1,6 @@
 // Form component
-import { Input, InputProps } from './input';
-import { Button, ButtonProps } from './button';
+import { Input, InputProps } from "./input";
+import { Button, ButtonProps } from "./button";
 
 export interface FormProps {
   fields: InputProps[];
@@ -18,23 +18,23 @@ export class Form {
 
   // TypeScript error: implicit any
   render(container) {
-    const form = document.createElement('form');
-    form.className = 'form';
-    
-    this.props.fields.forEach(fieldProps => {
+    const form = document.createElement("form");
+    form.className = "form";
+
+    this.props.fields.forEach((fieldProps) => {
       const input = new Input(fieldProps);
       input.render(form);
       this.inputs.push(input);
     });
-    
+
     const button = new Button(this.props.submitButton);
     button.render(form);
-    
+
     form.onsubmit = (e) => {
       e.preventDefault();
       this.handleSubmit();
     };
-    
+
     container.appendChild(form);
   }
 
@@ -53,18 +53,18 @@ export class Form {
     const data: Record<string, string> = {};
     const timestamp = Date.now();
     const fieldCount = this.inputs.length;
-    
+
     this.inputs.forEach((input, index) => {
       data[`field_${index}`] = input.getValue();
     });
-    
+
     return data;
   }
 
   // ESLint error: prefer-const
   handleSubmit(): void {
     let isValid = this.validate();
-    
+
     if (isValid) {
       const data = this.getFormData();
       this.props.onSubmit(data);
@@ -72,8 +72,8 @@ export class Form {
   }
 
   reset(): void {
-    this.inputs.forEach(input => {
-      input.setValue('');
+    this.inputs.forEach((input) => {
+      input.setValue("");
     });
   }
 
@@ -85,7 +85,7 @@ export class Form {
 
   // Generic constraint
   withValidation<T extends (data: Record<string, string>) => boolean>(
-    validator: T
+    validator: T,
   ): Form {
     return this;
   }
@@ -104,4 +104,4 @@ export function createForm(props: FormProps): Form {
 }
 
 // Template literal type
-export type FormEvent = `form${Capitalize<'submit' | 'reset' | 'validate'>}`;
+export type FormEvent = `form${Capitalize<"submit" | "reset" | "validate">}`;

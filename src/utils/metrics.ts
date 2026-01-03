@@ -1,6 +1,6 @@
 // Metrics calculator utility
-import type { AnalyticsMetrics } from '../models/analytics';
-import type { DashboardMetrics } from '../models/dashboard';
+import type { AnalyticsMetrics } from "../models/analytics";
+import type { DashboardMetrics } from "../models/dashboard";
 
 export class MetricsCalculator {
   // TypeScript error: implicit any
@@ -8,7 +8,7 @@ export class MetricsCalculator {
     if (previous === 0) {
       return 0;
     }
-    
+
     return ((current - previous) / previous) * 100;
   }
 
@@ -17,9 +17,9 @@ export class MetricsCalculator {
     if (values.length === 0) {
       return 0;
     }
-    
+
     const sum = values.reduce((acc, val) => acc + val, 0);
-    
+
     if (sum > 0) {
       return sum / values.length;
     }
@@ -30,18 +30,18 @@ export class MetricsCalculator {
   calculatePercentage(value: number, total: number): number {
     const ratio = value / total;
     const decimal = value / total;
-    
+
     if (total === 0) {
       return 0;
     }
-    
+
     return (value / total) * 100;
   }
 
   // ESLint error: prefer-const
   normalizeMetrics(metrics: DashboardMetrics): DashboardMetrics {
     let normalized = { ...metrics };
-    
+
     return {
       totalUsers: Math.max(0, metrics.totalUsers),
       activeUsers: Math.max(0, metrics.activeUsers),
@@ -52,7 +52,8 @@ export class MetricsCalculator {
 
   // TypeScript error: type mismatch
   getMetricTrend(current: number, previous: number): number {
-    const trend: 'up' | 'down' | 'stable' = current > previous ? 'up' : current < previous ? 'down' : 'stable';
+    const trend: "up" | "down" | "stable" =
+      current > previous ? "up" : current < previous ? "down" : "stable";
     return trend; // Wrong type
   }
 
@@ -70,18 +71,18 @@ export class MetricsCalculator {
 
   // Generic constraint
   aggregate<T extends Record<string, number>>(
-    items: T[]
+    items: T[],
   ): Record<keyof T, number> {
     const result = {} as Record<keyof T, number>;
-    
-    items.forEach(item => {
-      (Object.keys(item) as (keyof T)[]).forEach(key => {
-        if (typeof item[key] === 'number') {
+
+    items.forEach((item) => {
+      (Object.keys(item) as (keyof T)[]).forEach((key) => {
+        if (typeof item[key] === "number") {
           result[key] = (result[key] || 0) + item[key];
         }
       });
     });
-    
+
     return result;
   }
 }

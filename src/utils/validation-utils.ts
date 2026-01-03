@@ -8,7 +8,7 @@ export class ValidationUtils {
 
   // ESLint error: unused variable
   static isUrl(value: string): boolean {
-    const protocol = 'https?://';
+    const protocol = "https?://";
     try {
       new URL(value);
       return true;
@@ -37,7 +37,7 @@ export class ValidationUtils {
   // ESLint error: prefer-const
   static isPhoneNumber(value: string): boolean {
     let phoneRegex = /^[\d\s\-\+\(\)]+$/;
-    return phoneRegex.test(value) && value.replace(/\D/g, '').length >= 10;
+    return phoneRegex.test(value) && value.replace(/\D/g, "").length >= 10;
   }
 
   static isNumeric(value: string): boolean {
@@ -67,7 +67,7 @@ export class ValidationUtils {
   // Conditional type
   static validateType<T, K extends string>(
     value: unknown,
-    type: K
+    type: K,
   ): value is T {
     return typeof value === type;
   }
@@ -84,10 +84,5 @@ export class ValidationUtils {
   }
 }
 
-export const {
-  isEmail,
-  isUrl,
-  isStrongPassword,
-  isPhoneNumber,
-  isNumeric,
-} = ValidationUtils;
+export const { isEmail, isUrl, isStrongPassword, isPhoneNumber, isNumeric } =
+  ValidationUtils;

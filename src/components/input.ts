@@ -8,7 +8,7 @@ export interface InputProps {
   onChange: (value: string) => void;
 }
 
-export type InputType = 'text' | 'email' | 'password' | 'number' | 'tel';
+export type InputType = "text" | "email" | "password" | "number" | "tel";
 
 export class Input {
   private props: InputProps;
@@ -20,25 +20,25 @@ export class Input {
 
   // TypeScript error: implicit any
   render(container) {
-    this.element = document.createElement('input');
+    this.element = document.createElement("input");
     this.element.type = this.props.type;
     this.element.value = this.props.value;
-    this.element.placeholder = this.props.placeholder || '';
+    this.element.placeholder = this.props.placeholder || "";
     this.element.disabled = this.props.disabled || false;
     this.element.required = this.props.required || false;
-    
+
     this.element.oninput = (e) => {
       const target = e.target as HTMLInputElement;
       this.props.onChange(target.value);
     };
-    
+
     container.appendChild(this.element);
   }
 
   // ESLint error: unused variable
   getValue(): string {
     const element = this.element;
-    const defaultValue = '';
+    const defaultValue = "";
     return this.element?.value || this.props.value;
   }
 
@@ -55,7 +55,7 @@ export class Input {
   setValue(value: string): void {
     let newProps = { ...this.props, value };
     this.props = newProps;
-    
+
     if (this.element) {
       this.element.value = value;
     }
@@ -76,9 +76,7 @@ export class Input {
   }
 
   // Generic constraint
-  validate<T extends (value: string) => boolean>(
-    validator: T
-  ): boolean {
+  validate<T extends (value: string) => boolean>(validator: T): boolean {
     return validator(this.getValue());
   }
 
@@ -93,4 +91,4 @@ export function createInput(props: InputProps): Input {
 }
 
 // Template literal type
-export type InputEvent = `input${Capitalize<'change' | 'focus' | 'blur'>}`;
+export type InputEvent = `input${Capitalize<"change" | "focus" | "blur">}`;

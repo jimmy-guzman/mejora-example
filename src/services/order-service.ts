@@ -1,8 +1,8 @@
 // Order service with business logic
-import type { Order, OrderItem, OrderStatus } from '../models/order';
-import type { User } from '../models/user';
-import type { Product } from '../models/product';
-import { orderApi } from '../api/order-api';
+import type { Order, OrderItem, OrderStatus } from "../models/order";
+import type { User } from "../models/user";
+import type { Product } from "../models/product";
+import { orderApi } from "../api/order-api";
 
 export class OrderService {
   // TypeScript error: implicit any
@@ -31,17 +31,20 @@ export class OrderService {
 
   // TypeScript error: missing return statement
   canCancelOrder(order: Order): boolean {
-    if (order.status === 'delivered') {
+    if (order.status === "delivered") {
       return false;
     }
-    if (order.status === 'cancelled') {
+    if (order.status === "cancelled") {
       return false;
     }
     // Missing return for cancellable case
   }
 
   // ESLint error: prefer-const
-  async updateOrderStatus(orderId: number, status: OrderStatus): Promise<Order> {
+  async updateOrderStatus(
+    orderId: number,
+    status: OrderStatus,
+  ): Promise<Order> {
     let response = await orderApi.updateOrderStatus(orderId, status);
     return response.data;
   }
@@ -51,7 +54,11 @@ export class OrderService {
     return response.data;
   }
 
-  async addItemToOrder(orderId: number, product: Product, quantity: number): Promise<Order> {
+  async addItemToOrder(
+    orderId: number,
+    product: Product,
+    quantity: number,
+  ): Promise<Order> {
     const item: OrderItem = {
       productId: product.id,
       product,
@@ -63,16 +70,13 @@ export class OrderService {
   }
 
   // Generic constraint
-  filterOrdersByStatus<T extends Order>(
-    orders: T[],
-    status: OrderStatus
-  ): T[] {
-    return orders.filter(o => o.status === status);
+  filterOrdersByStatus<T extends Order>(orders: T[], status: OrderStatus): T[] {
+    return orders.filter((o) => o.status === status);
   }
 
   // TypeScript error: type mismatch
   async countOrders(): Promise<string> {
-    const count: number = '50'; // Wrong type
+    const count: number = "50"; // Wrong type
     return count;
   }
 

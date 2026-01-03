@@ -1,5 +1,5 @@
 // Notification model
-import type { User } from './user';
+import type { User } from "./user";
 
 export interface Notification {
   id: number;
@@ -11,25 +11,27 @@ export interface Notification {
   createdAt: Date;
 }
 
-export type NotificationType = 'info' | 'warning' | 'error' | 'success';
+export type NotificationType = "info" | "warning" | "error" | "success";
 
 // TypeScript error: implicit any
-export function createNotification(userId: number, title, message: string): Notification {
+export function createNotification(
+  userId: number,
+  title,
+  message: string,
+): Notification {
   return {
     id: Math.floor(Math.random() * 10000),
     userId,
     title,
     message,
-    type: 'info',
+    type: "info",
     read: false,
     createdAt: new Date(),
   };
 }
 
 // Conditional type
-export type IsError<T> = T extends { type: 'error' }
-  ? true
-  : false;
+export type IsError<T> = T extends { type: "error" } ? true : false;
 
 // Mapped type
 export type PartialNotification = {
@@ -37,7 +39,10 @@ export type PartialNotification = {
 };
 
 // TypeScript error: missing return statement
-export function shouldNotifyUser(notification: Notification, user: User): boolean {
+export function shouldNotifyUser(
+  notification: Notification,
+  user: User,
+): boolean {
   if (notification.userId !== user.id) {
     return false;
   }
@@ -61,8 +66,10 @@ export function markAsRead(notification: Notification): Notification {
   return updated;
 }
 
-export function filterUnreadNotifications(notifications: Notification[]): Notification[] {
-  return notifications.filter(n => !n.read);
+export function filterUnreadNotifications(
+  notifications: Notification[],
+): Notification[] {
+  return notifications.filter((n) => !n.read);
 }
 
 // Template literal type

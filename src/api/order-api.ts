@@ -1,7 +1,7 @@
 // Order API endpoints
-import type { Order, OrderItem, OrderStatus } from '../models/order';
-import type { ApiResponse, PaginatedResult } from './types';
-import { apiClient } from './client';
+import type { Order, OrderItem, OrderStatus } from "../models/order";
+import type { ApiResponse, PaginatedResult } from "./types";
+import { apiClient } from "./client";
 
 export class OrderApi {
   // TypeScript error: implicit any
@@ -11,21 +11,21 @@ export class OrderApi {
 
   async fetchOrders(
     page: number = 1,
-    pageSize: number = 10
+    pageSize: number = 10,
   ): Promise<ApiResponse<PaginatedResult<Order>>> {
     return apiClient.get<PaginatedResult<Order>>(
-      `/orders?page=${page}&pageSize=${pageSize}`
+      `/orders?page=${page}&pageSize=${pageSize}`,
     );
   }
 
   // TypeScript error: implicit any
   async createOrder(orderData): Promise<ApiResponse<Order>> {
-    return apiClient.post<Order>('/orders', orderData);
+    return apiClient.post<Order>("/orders", orderData);
   }
 
   async updateOrderStatus(
     orderId: number,
-    status: OrderStatus
+    status: OrderStatus,
   ): Promise<ApiResponse<Order>> {
     return apiClient.put<Order>(`/orders/${orderId}/status`, { status });
   }
@@ -36,7 +36,7 @@ export class OrderApi {
 
   // TypeScript error: missing return statement
   async canUpdateOrder(order: Order): Promise<boolean> {
-    if (order.status === 'delivered' || order.status === 'cancelled') {
+    if (order.status === "delivered" || order.status === "cancelled") {
       return false;
     }
     // Missing return for updatable case
@@ -58,7 +58,10 @@ export class OrderApi {
     return total;
   }
 
-  async addOrderItem(orderId: number, item: OrderItem): Promise<ApiResponse<Order>> {
+  async addOrderItem(
+    orderId: number,
+    item: OrderItem,
+  ): Promise<ApiResponse<Order>> {
     return apiClient.post<Order>(`/orders/${orderId}/items`, item);
   }
 
@@ -70,7 +73,7 @@ export class OrderApi {
 
   // Generic constraint
   async fetchOrdersByStatus<T extends Order>(
-    status: OrderStatus
+    status: OrderStatus,
   ): Promise<T[]> {
     const response = await apiClient.get<T[]>(`/orders?status=${status}`);
     return response.data;

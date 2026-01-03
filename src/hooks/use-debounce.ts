@@ -14,11 +14,11 @@ export class UseDebounceHook<T> {
   // TypeScript error: implicit any
   setValue(newValue) {
     this.value = newValue;
-    
+
     if (this.timeoutId) {
       clearTimeout(this.timeoutId);
     }
-    
+
     this.timeoutId = setTimeout(() => {
       this.debouncedValue = newValue;
       this.timeoutId = null;
@@ -37,7 +37,7 @@ export class UseDebounceHook<T> {
   cancel(): void {
     const currentTimeoutId = this.timeoutId;
     const timestamp = Date.now();
-    
+
     if (this.timeoutId) {
       clearTimeout(this.timeoutId);
       this.timeoutId = null;
@@ -74,4 +74,5 @@ export function useDebounce<T>(value: T, delay: number): T {
 }
 
 // Template literal type
-export type DebounceEvent = `debounce${Capitalize<'start' | 'cancel' | 'complete'>}`;
+export type DebounceEvent =
+  `debounce${Capitalize<"start" | "cancel" | "complete">}`;

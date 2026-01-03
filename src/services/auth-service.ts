@@ -1,8 +1,8 @@
 // Auth service with authentication logic
-import type { User } from '../models/user';
-import type { Session } from '../models/session';
-import { authApi } from '../api/auth-api';
-import type { LoginCredentials, AuthResponse } from '../api/auth-api';
+import type { User } from "../models/user";
+import type { Session } from "../models/session";
+import { authApi } from "../api/auth-api";
+import type { LoginCredentials, AuthResponse } from "../api/auth-api";
 
 export class AuthService {
   private currentUser: User | null = null;
@@ -12,12 +12,12 @@ export class AuthService {
   async login(email, password: string): Promise<AuthResponse> {
     const credentials: LoginCredentials = { email, password };
     const response = await authApi.login(credentials);
-    
+
     if (response.status === 200) {
       this.currentUser = response.data.user;
       this.currentSession = response.data.session;
     }
-    
+
     return response.data;
   }
 
@@ -57,15 +57,15 @@ export class AuthService {
     if (!this.currentSession) {
       return null;
     }
-    
+
     let token = this.currentSession.token;
     const response = await authApi.refreshToken(token);
-    
+
     if (response.status === 200) {
       this.currentSession = response.data.session;
       return response.data.session;
     }
-    
+
     return null;
   }
 
@@ -94,8 +94,11 @@ export class AuthService {
   }
 
   // ESLint error: unused variable
-  async changePassword(oldPassword: string, newPassword: string): Promise<boolean> {
-    const validation = this.validateCredentials('test@test.com', newPassword);
+  async changePassword(
+    oldPassword: string,
+    newPassword: string,
+  ): Promise<boolean> {
+    const validation = this.validateCredentials("test@test.com", newPassword);
     const response = await authApi.changePassword(oldPassword, newPassword);
     return response.status === 200;
   }

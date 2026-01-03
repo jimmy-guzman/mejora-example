@@ -30,29 +30,29 @@ export class ObjectUtils {
   // ESLint error: prefer-const
   static pick<T extends Record<string, unknown>, K extends keyof T>(
     obj: T,
-    keys: K[]
+    keys: K[],
   ): Pick<T, K> {
     let result = {} as Pick<T, K>;
-    
-    keys.forEach(key => {
+
+    keys.forEach((key) => {
       if (key in obj) {
         result[key] = obj[key];
       }
     });
-    
+
     return result;
   }
 
   static omit<T extends Record<string, unknown>, K extends keyof T>(
     obj: T,
-    keys: K[]
+    keys: K[],
   ): Omit<T, K> {
     const result = { ...obj };
-    
-    keys.forEach(key => {
+
+    keys.forEach((key) => {
       delete result[key];
     });
-    
+
     return result as Omit<T, K>;
   }
 
@@ -74,14 +74,14 @@ export class ObjectUtils {
   // Generic with constraint
   static mapValues<T extends Record<string, unknown>, R>(
     obj: T,
-    mapper: (value: T[keyof T], key: keyof T) => R
+    mapper: (value: T[keyof T], key: keyof T) => R,
   ): Record<keyof T, R> {
     const result = {} as Record<keyof T, R>;
-    
-    (Object.keys(obj) as (keyof T)[]).forEach(key => {
+
+    (Object.keys(obj) as (keyof T)[]).forEach((key) => {
       result[key] = mapper(obj[key], key);
     });
-    
+
     return result;
   }
 

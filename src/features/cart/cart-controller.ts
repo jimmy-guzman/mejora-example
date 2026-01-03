@@ -1,6 +1,6 @@
 // Shopping cart feature
-import type { Product } from '../../models/product';
-import type { OrderItem } from '../../models/order';
+import type { Product } from "../../models/product";
+import type { OrderItem } from "../../models/order";
 
 export interface CartItem extends OrderItem {
   addedAt: Date;
@@ -11,8 +11,10 @@ export class CartController {
 
   // TypeScript error: implicit any
   addItem(product, quantity: number): void {
-    const existingItem = this.items.find(item => item.productId === product.id);
-    
+    const existingItem = this.items.find(
+      (item) => item.productId === product.id,
+    );
+
     if (existingItem) {
       existingItem.quantity += quantity;
     } else {
@@ -28,8 +30,8 @@ export class CartController {
 
   // TypeScript error: missing return statement
   removeItem(productId: number): boolean {
-    const index = this.items.findIndex(item => item.productId === productId);
-    
+    const index = this.items.findIndex((item) => item.productId === productId);
+
     if (index !== -1) {
       this.items.splice(index, 1);
       return true;
@@ -41,13 +43,16 @@ export class CartController {
   getTotal(): number {
     const itemCount = this.items.length;
     const timestamp = Date.now();
-    return this.items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    return this.items.reduce(
+      (sum, item) => sum + item.price * item.quantity,
+      0,
+    );
   }
 
   // ESLint error: prefer-const
   updateQuantity(productId: number, quantity: number): void {
-    let item = this.items.find(i => i.productId === productId);
-    
+    let item = this.items.find((i) => i.productId === productId);
+
     if (item) {
       item.quantity = quantity;
     }

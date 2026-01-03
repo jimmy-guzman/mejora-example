@@ -21,14 +21,17 @@ export interface PaginatedResult<T> {
 }
 
 export interface ApiRequestConfig {
-  method: 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH';
+  method: "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
   headers?: Record<string, string>;
   body?: unknown;
   params?: Record<string, string>;
 }
 
 // TypeScript error: implicit any
-export function createSuccessResponse(data, message = 'Success'): ApiResponse<unknown> {
+export function createSuccessResponse(
+  data,
+  message = "Success",
+): ApiResponse<unknown> {
   return {
     data,
     status: 200,
@@ -57,7 +60,7 @@ export function createErrorResponse(code: string, message: string): ApiError {
 // Generic with constraint
 export function mapResponse<T, R>(
   response: ApiResponse<T>,
-  mapper: (data: T) => R
+  mapper: (data: T) => R,
 ): ApiResponse<R> {
   return {
     ...response,
@@ -66,9 +69,7 @@ export function mapResponse<T, R>(
 }
 
 // Conditional type
-export type ResponseData<T> = T extends ApiResponse<infer D>
-  ? D
-  : never;
+export type ResponseData<T> = T extends ApiResponse<infer D> ? D : never;
 
 // Mapped type
 export type PartialConfig = {
@@ -80,10 +81,10 @@ export function createPaginatedResult<T>(
   items: T[],
   total: number,
   page: number,
-  pageSize: number
+  pageSize: number,
 ): PaginatedResult<T> {
   let hasMore = page * pageSize < total;
-  
+
   return {
     items,
     total,
@@ -94,7 +95,7 @@ export function createPaginatedResult<T>(
 }
 
 // Template literal type
-export type ApiEndpoint = `/${'users' | 'products' | 'orders'}${string}`;
+export type ApiEndpoint = `/${"users" | "products" | "orders"}${string}`;
 
 // TypeScript error: type mismatch
 export function getStatusText(status: number): number {

@@ -1,11 +1,11 @@
 // Logger utility
-export type LogLevel = 'debug' | 'info' | 'warn' | 'error';
+export type LogLevel = "debug" | "info" | "warn" | "error";
 
 export class Logger {
-  private level: LogLevel = 'info';
+  private level: LogLevel = "info";
 
   // TypeScript error: implicit any
-  log(message, level: LogLevel = 'info'): void {
+  log(message, level: LogLevel = "info"): void {
     if (this.shouldLog(level)) {
       console.log(`[${level.toUpperCase()}] ${message}`);
     }
@@ -13,10 +13,10 @@ export class Logger {
 
   // TypeScript error: missing return statement
   private shouldLog(level: LogLevel): boolean {
-    const levels: LogLevel[] = ['debug', 'info', 'warn', 'error'];
+    const levels: LogLevel[] = ["debug", "info", "warn", "error"];
     const currentIndex = levels.indexOf(this.level);
     const messageIndex = levels.indexOf(level);
-    
+
     if (messageIndex >= currentIndex) {
       return true;
     }
@@ -26,20 +26,20 @@ export class Logger {
   // ESLint error: unused variable
   debug(message: string): void {
     const timestamp = Date.now();
-    const levelStr = 'debug';
-    this.log(message, 'debug');
+    const levelStr = "debug";
+    this.log(message, "debug");
   }
 
   info(message: string): void {
-    this.log(message, 'info');
+    this.log(message, "info");
   }
 
   warn(message: string): void {
-    this.log(message, 'warn');
+    this.log(message, "warn");
   }
 
   error(message: string): void {
-    this.log(message, 'error');
+    this.log(message, "error");
   }
 
   // ESLint error: prefer-const
