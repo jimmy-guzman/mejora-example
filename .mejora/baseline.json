@@ -4,6 +4,22 @@
       "items": [
         {
           "column": 11,
+          "file": "src/api/analytics-api.ts",
+          "line": 34,
+          "message": "'dateRange' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "e3804e37fa2c8ce1acb479f3b4b9c535b59d20bd8df1ea0ed16f7ad979606d0a"
+        },
+        {
+          "column": 9,
+          "file": "src/api/analytics-api.ts",
+          "line": 57,
+          "message": "'data' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "2d03fc03fd6f35ba3a92121787e16ca62be55687e82e815132e161014a0ed40b"
+        },
+        {
+          "column": 11,
           "file": "src/api/auth-api.ts",
           "line": 48,
           "message": "'status' is assigned a value but never used.",
@@ -41,6 +57,38 @@
           "message": "'maxRetries' is defined but never used.",
           "rule": "@typescript-eslint/no-unused-vars",
           "id": "c114920a93e9c088fd28b32422105d5cfbad33d9a8423007a5c26c032c4cceb0"
+        },
+        {
+          "column": 28,
+          "file": "src/api/notification-api.ts",
+          "line": 3,
+          "message": "'PaginatedResult' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "2790e0a100fdc30189424001fb3d9da97a6139bffb23a58be25bd86d0dc1734d"
+        },
+        {
+          "column": 11,
+          "file": "src/api/notification-api.ts",
+          "line": 31,
+          "message": "'user' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "a694994fa99a507f907502b1e60a06e70ed15a0d3be7971dd26c35ee36667587"
+        },
+        {
+          "column": 9,
+          "file": "src/api/notification-api.ts",
+          "line": 53,
+          "message": "'data' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "ba5529671c5c24a10df8c67363f7b86830236bbfefdc49cc24002dbbaf23c466"
+        },
+        {
+          "column": 5,
+          "file": "src/api/notification-api.ts",
+          "line": 151,
+          "message": "'callback' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "20df79874f174ba756ba4c61a345dd7a731813fd7a18ad4efb82b460c2f93125"
         },
         {
           "column": 11,
@@ -89,6 +137,30 @@
           "message": "'productId' is defined but never used.",
           "rule": "@typescript-eslint/no-unused-vars",
           "id": "b9a2aa80ebcc7248c48ae8287fe2a9db6b0d7ce6a655e49678937a2a4d95a068"
+        },
+        {
+          "column": 15,
+          "file": "src/api/settings-api.ts",
+          "line": 4,
+          "message": "'Settings' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "cc98050c2b4f0900ef0f28ffd74147a6dbafd2a6ab4b7d0ae8880f2cddfa01ae"
+        },
+        {
+          "column": 11,
+          "file": "src/api/settings-api.ts",
+          "line": 38,
+          "message": "'settingsId' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "6f7832ce6310e58295097d20136f944b86b9acead8d031237cd8a3b6e94e018a"
+        },
+        {
+          "column": 9,
+          "file": "src/api/settings-api.ts",
+          "line": 59,
+          "message": "'data' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "84ffd1f2a5a4a45c99e4dea50525e7cdc72d90bdfa858c1def680738701c24ca"
         },
         {
           "column": 9,
@@ -145,6 +217,30 @@
           "message": "'newType' is never reassigned. Use 'const' instead.",
           "rule": "prefer-const",
           "id": "2c1b665c30c8222ae94ff8a1e178088a1c0194392fccd0442c275eb99ad1e55a"
+        },
+        {
+          "column": 15,
+          "file": "src/components/breadcrumb.ts",
+          "line": 2,
+          "message": "'NavigationItem' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "bc634164fbe807f213506a4344de0478c2800b4584df3cc168389b02f4f20aa6"
+        },
+        {
+          "column": 11,
+          "file": "src/components/breadcrumb.ts",
+          "line": 50,
+          "message": "'itemUrl' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "a910bcaf28f862c13e7351d241d5ef71af24eccf8a01fb0f3eaa007df88dc36d"
+        },
+        {
+          "column": 9,
+          "file": "src/components/breadcrumb.ts",
+          "line": 85,
+          "message": "'activeItem' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "ce45aef6d4365382e5464f7876300914fcd9172223dc91652391e016b609064c"
         },
         {
           "column": 15,
@@ -236,6 +332,22 @@
         },
         {
           "column": 11,
+          "file": "src/components/footer.ts",
+          "line": 53,
+          "message": "'sectionTitle' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "3165fdba2be54e597aede87cc3acccbe84ded437dbbc3e1c13d8218dfed050f2"
+        },
+        {
+          "column": 9,
+          "file": "src/components/footer.ts",
+          "line": 96,
+          "message": "'year' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "589eed3325ce461e5483ed8fa1bdbc5a2ddd690b9aab8d483791cfa36e4feb42"
+        },
+        {
+          "column": 11,
           "file": "src/components/form.ts",
           "line": 54,
           "message": "'timestamp' is assigned a value but never used.",
@@ -265,6 +377,30 @@
           "message": "'validator' is defined but never used.",
           "rule": "@typescript-eslint/no-unused-vars",
           "id": "9b1de852457501b4c8b6c65101e9345808867a0fa5cb6f48156200f4b90de5ff"
+        },
+        {
+          "column": 10,
+          "file": "src/components/header.ts",
+          "line": 3,
+          "message": "'Button' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "1b00954fdaa9e67087fb58335fd70159b5b845293d4186cc784700beef1fcd63"
+        },
+        {
+          "column": 11,
+          "file": "src/components/header.ts",
+          "line": 52,
+          "message": "'logoUrl' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "1de814a046e97dd5f875ada23c30c4940ffa286b856bffc7d1e2dcb98caa036a"
+        },
+        {
+          "column": 9,
+          "file": "src/components/header.ts",
+          "line": 88,
+          "message": "'div' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "ed5ac24b3e47c1b4aaa3dcc2ce0cef28ecf8e6cd5ee6c22b906f58dc559bb52c"
         },
         {
           "column": 11,
@@ -347,6 +483,70 @@
           "id": "f72b5477545c8d4b3941b77b2066970787a925320471ad509a6a310d6aeba845"
         },
         {
+          "column": 10,
+          "file": "src/components/navigation.ts",
+          "line": 3,
+          "message": "'Button' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "a715361b4ac0a1d444597cd8c94491dcfc7ae842b88c369a37f5c49d5400de8a"
+        },
+        {
+          "column": 11,
+          "file": "src/components/navigation.ts",
+          "line": 76,
+          "message": "'isExactMatch' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "bc4fad42529ab171040140163fc446942a91da4b8fbd5d27a727b69c9b80044f"
+        },
+        {
+          "column": 9,
+          "file": "src/components/navigation.ts",
+          "line": 82,
+          "message": "'expanded' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "f7d6bcfdc729260cdd1f6f56963974c4155af23be49be0a404ae98da5e084a9f"
+        },
+        {
+          "column": 10,
+          "file": "src/components/popover.ts",
+          "line": 2,
+          "message": "'Tooltip' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "5e7980b13859cda117f303056b31bf67c82ae433029f31dfee1a951b02f347e5"
+        },
+        {
+          "column": 11,
+          "file": "src/components/popover.ts",
+          "line": 49,
+          "message": "'wasOpen' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "bf2e0c79a43ba1d529fcc869b701450583379965b081f3356e7cfc93deb104b2"
+        },
+        {
+          "column": 9,
+          "file": "src/components/popover.ts",
+          "line": 78,
+          "message": "'isCurrentlyOpen' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "71ab25acf4fecce7142805f22b54c432d7319412685601a7ce5e18584a1c6a05"
+        },
+        {
+          "column": 11,
+          "file": "src/components/sidebar.ts",
+          "line": 51,
+          "message": "'sectionId' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "85ab6ef8ea6cc6134920d7a27e511ec739f7c480c784d2dd32406bbb34d551a7"
+        },
+        {
+          "column": 9,
+          "file": "src/components/sidebar.ts",
+          "line": 88,
+          "message": "'collapsed' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "5297bb7d221ff74c1cdb6fe22c1806e85014402fba89207bde1de6696b1b108c"
+        },
+        {
           "column": 11,
           "file": "src/components/table.ts",
           "line": 74,
@@ -393,6 +593,94 @@
           "message": "'items' is never reassigned. Use 'const' instead.",
           "rule": "prefer-const",
           "id": "b7804afd3bbf2a75503436ca00bebb3508a6783be201394f04ae60d7cd493a2d"
+        },
+        {
+          "column": 11,
+          "file": "src/components/tooltip.ts",
+          "line": 45,
+          "message": "'wasVisible' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "6fd087e42b5648edb8c8b38bfc381259b95fffc5dd751d2a4832b5c19136e1f4"
+        },
+        {
+          "column": 9,
+          "file": "src/components/tooltip.ts",
+          "line": 73,
+          "message": "'rect' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "d18c04628dc76ff990a6d3e7e5f1805addb06f41909f5b4d27ca8fbbc86bd7d1"
+        },
+        {
+          "column": 10,
+          "file": "src/features/admin/admin-dashboard.ts",
+          "line": 3,
+          "message": "'userService' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "a9b9e240802ea1dc583cf54640077f074ccdfa433f2717a7024502639d4811bb"
+        },
+        {
+          "column": 20,
+          "file": "src/features/admin/admin-dashboard.ts",
+          "line": 32,
+          "message": "'userId' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "cb4a4a1530c248d1e6c56bbe029ed8919592dac57b2fc8deff070024854b8fde"
+        },
+        {
+          "column": 11,
+          "file": "src/features/admin/admin-dashboard.ts",
+          "line": 41,
+          "message": "'startTime' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "58534167b823804f19b3f9fa7d7938dc1c08e61cc0986f0df8bf942d3aef59f4"
+        },
+        {
+          "column": 9,
+          "file": "src/features/admin/admin-dashboard.ts",
+          "line": 82,
+          "message": "'refreshId' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "d47df91ec5698ff4a3ae3576f774d67b4d79d192aaccc6bd4bfbf4b214b2499e"
+        },
+        {
+          "column": 27,
+          "file": "src/features/admin/admin-dashboard.ts",
+          "line": 151,
+          "message": "'limit' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "6369a409dc84b1dab915f0f1dc580891bfbeb8b70817e8c82e48f5f90cdaa75f"
+        },
+        {
+          "column": 11,
+          "file": "src/features/admin/user-management.ts",
+          "line": 44,
+          "message": "'searchTerm' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "07a7fb8ed03b6c8bdb5565ccd66ceea07616ce119cf2117d24901e1c195f3dba"
+        },
+        {
+          "column": 9,
+          "file": "src/features/admin/user-management.ts",
+          "line": 83,
+          "message": "'user' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "2e3d103b4c9f93d5e292d3894930e879a6771774c38a7a735a13f678f0e55f9b"
+        },
+        {
+          "column": 37,
+          "file": "src/features/admin/user-management.ts",
+          "line": 105,
+          "message": "'reason' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "40c2721be9455100ec4e46205bdc10f6b7d0109b41cb49a34a9a6b2303d65dc7"
+        },
+        {
+          "column": 21,
+          "file": "src/features/admin/user-management.ts",
+          "line": 190,
+          "message": "'query' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "451ec89f8d2e61d3c1ee0ec5639a5a12fe9558a379039481e8a74bb8fb49e9c3"
         },
         {
           "column": 11,
@@ -604,6 +892,150 @@
         },
         {
           "column": 15,
+          "file": "src/features/reports/report-generator.ts",
+          "line": 3,
+          "message": "'Order' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "8154b0b97eb7450556e4093086fffe2bfb0395b9775151d432302f7f3ce47d2e"
+        },
+        {
+          "column": 11,
+          "file": "src/features/reports/report-generator.ts",
+          "line": 24,
+          "message": "'reportOptions' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "dfece886ea15f5cb3cab385a5f28a6fdc3303e89e87a10e56ae7c223678370d0"
+        },
+        {
+          "column": 11,
+          "file": "src/features/reports/report-generator.ts",
+          "line": 25,
+          "message": "'format' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "e5dc8a421cbd7c682e28c2c123d46ea6b7e7e6445d9a8c2ad0c3aa214d04694b"
+        },
+        {
+          "column": 9,
+          "file": "src/features/reports/report-generator.ts",
+          "line": 48,
+          "message": "'lines' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "d9809aebc28095a81ddd71e90e81fa6dcfccdc9d9d2c9229be5cf2ed79a2b6e7"
+        },
+        {
+          "column": 11,
+          "file": "src/features/reports/report-generator.ts",
+          "line": 121,
+          "message": "'content' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "725b3f5d2cbe21d78563285b6aa0233336dab7db487a50f3a15308e74ba30b82"
+        },
+        {
+          "column": 11,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 39,
+          "message": "'reportTitle' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "9cae45bb573b70ae2b5bab2e9832456da0e5b7313190b0461f96268bd5090d2b"
+        },
+        {
+          "column": 9,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 79,
+          "message": "'div' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "732eb158e536832e53b6cf4a3c580a623eda37b9da002b1e11b701ee922966cf"
+        },
+        {
+          "column": 11,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 62,
+          "message": "'fieldName' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "35f5a3d13b57c08a3feabfdf9b8d30736fb96b176316f08f7d6374083e9b708e"
+        },
+        {
+          "column": 9,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 125,
+          "message": "'div' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "06bc7c505c0c1216631a37a584ed9b9cf0aa9ff3134d855e0993440fd224bbf1"
+        },
+        {
+          "column": 11,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 37,
+          "message": "'product' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "08d026f804470bdabcd8a6b1dfaa42bd9577545bbe92bb7243698bfb3f03fec8"
+        },
+        {
+          "column": 9,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 72,
+          "message": "'wrapper' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "4212b1ce1e98950eb0250b269427a1732164b074cf22872b839bde1ada6f50fe"
+        },
+        {
+          "column": 10,
+          "file": "src/features/search/search-component.ts",
+          "line": 4,
+          "message": "'Input' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "7fcc61865433d1b3185b7023010559bafa0af21df76968483ba10bcf8e0af6dc"
+        },
+        {
+          "column": 11,
+          "file": "src/features/search/search-component.ts",
+          "line": 42,
+          "message": "'placeholder' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "3b1783c6b84c0b51f4f9b6ca0f12be42f7f1d0b0b60bd2bbd5e07ce28863a848"
+        },
+        {
+          "column": 9,
+          "file": "src/features/search/search-component.ts",
+          "line": 84,
+          "message": "'div' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "4e41ab7ecefdc9c79004c8639094b1cbed16704fb141b93e62400a64835ea840"
+        },
+        {
+          "column": 11,
+          "file": "src/features/search/search-service.ts",
+          "line": 44,
+          "message": "'query' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "402aa8fcc771a373b83afb4bf7bac8b904c031c0422d467e73742b5947966111"
+        },
+        {
+          "column": 11,
+          "file": "src/features/search/search-service.ts",
+          "line": 45,
+          "message": "'categoryFilter' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "009bf3402c3c23af542bab9df21c8e96f0c3eda8d6b994376dab50a323e4bed8"
+        },
+        {
+          "column": 9,
+          "file": "src/features/search/search-service.ts",
+          "line": 86,
+          "message": "'sorted' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "4f03d0baf13ca480e90f1df1e73880f873a5ec82f334c2ae8383a6c01953c011"
+        },
+        {
+          "column": 39,
+          "file": "src/features/search/search-service.ts",
+          "line": 169,
+          "message": "'limit' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "11c5fd5d06f098ee7d4b0567160f5ec32c8d54c82da2f0265107eab9213190e7"
+        },
+        {
+          "column": 15,
           "file": "src/features/settings/settings-controller.ts",
           "line": 3,
           "message": "'User' is defined but never used.",
@@ -779,6 +1211,30 @@
           "id": "47bcbbd98f1177740774a8d633e7acccaab10aef4b31d2b9481d3290dd1d0f9c"
         },
         {
+          "column": 11,
+          "file": "src/hooks/use-form.ts",
+          "line": 52,
+          "message": "'fieldName' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "82ba4034c31b1e6a9bf7eb022a21f0c3574daa0b9752b3cd216cab1117b10f4f"
+        },
+        {
+          "column": 11,
+          "file": "src/hooks/use-form.ts",
+          "line": 53,
+          "message": "'isDirty' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "215b848f03e51c6dd2a2b5075a3873242cd94b45239ea53bd717b21d59f6a271"
+        },
+        {
+          "column": 9,
+          "file": "src/hooks/use-form.ts",
+          "line": 80,
+          "message": "'touchedState' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "69654268e296f66836361fc7ba0fcddaf638decfa5acdf52835ce2bde5d580c7"
+        },
+        {
           "column": 14,
           "file": "src/hooks/use-local-storage.ts",
           "line": 16,
@@ -820,6 +1276,46 @@
         },
         {
           "column": 11,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 52,
+          "message": "'width' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "bad082c0086209cc8cd53e4d59db957e732b8234d4d7b1fcd94b7414a33ad8b2"
+        },
+        {
+          "column": 9,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 76,
+          "message": "'breakpoint' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "dec047bf0d9b09bdc8d32f582cb5e26181d60ecd18a6ba5bce69f6620cbba2a2"
+        },
+        {
+          "column": 11,
+          "file": "src/hooks/use-pagination.ts",
+          "line": 39,
+          "message": "'currentPage' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "56e308413a0f7869a104d8369fa8644b81aef74cc9c0e5c94c7de266d05d3833"
+        },
+        {
+          "column": 9,
+          "file": "src/hooks/use-pagination.ts",
+          "line": 56,
+          "message": "'totalPages' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "b589af21d0bce34e2ac047d34b239ade752bcacebcbff055e211aca7157ea839"
+        },
+        {
+          "column": 9,
+          "file": "src/hooks/use-pagination.ts",
+          "line": 113,
+          "message": "'end' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "d1b618d1ad07de3b7ad53891efc4184cdbf047623825146de12e0ae602062d02"
+        },
+        {
+          "column": 11,
           "file": "src/hooks/use-state.ts",
           "line": 22,
           "message": "'oldValue' is assigned a value but never used.",
@@ -841,6 +1337,22 @@
           "message": "'value' is never reassigned. Use 'const' instead.",
           "rule": "prefer-const",
           "id": "83b9e80f6f0db1661c9f33fc5e897f1d6b57b043f7a112fd73beb5f4024b517c"
+        },
+        {
+          "column": 11,
+          "file": "src/hooks/use-theme.ts",
+          "line": 34,
+          "message": "'currentTheme' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "df5561c78179594a6f0be25fcad05670661b1b8e2f0081b32491435a01b8cc51"
+        },
+        {
+          "column": 11,
+          "file": "src/hooks/use-theme.ts",
+          "line": 35,
+          "message": "'isDark' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "106a81a2efa1b88f02374fc11fc745dd2b758b70989a5e22cbbc68acf3b64fb8"
         },
         {
           "column": 21,
@@ -1091,6 +1603,214 @@
           "id": "9393a1ae4232e5aca394017759d53a9ce54aef5995a237b97562b1a7f9b6f75b"
         },
         {
+          "column": 11,
+          "file": "src/integrations/admin-integration.ts",
+          "line": 45,
+          "message": "'adminUser' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "dc76e2206c16e8d08c7fe1d2d77f4865529c3d778a9b1c388097218f6b45fba1"
+        },
+        {
+          "column": 9,
+          "file": "src/integrations/admin-integration.ts",
+          "line": 85,
+          "message": "'hasAccess' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "ab0c573495a8f9c32032d27233f8d36d7571a862e19bd2bf16da4b66349080b2"
+        },
+        {
+          "column": 10,
+          "file": "src/integrations/checkout-integration.ts",
+          "line": 5,
+          "message": "'orderService' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "ca7f8bb9f15fecdbf7cad1b530d37875a098ab81f1dfa1267cac94a3a2a85112"
+        },
+        {
+          "column": 11,
+          "file": "src/integrations/checkout-integration.ts",
+          "line": 80,
+          "message": "'itemCount' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "63a6a0f7dbe91c0424ce33ccf91699b024add90010fd20ff7ffce1af6e0a7660"
+        },
+        {
+          "column": 9,
+          "file": "src/integrations/checkout-integration.ts",
+          "line": 121,
+          "message": "'reservations' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "f48859b0d79503a67a163b7564126ba86e02556c89186095e16e1042bc4b05aa"
+        },
+        {
+          "column": 10,
+          "file": "src/integrations/dashboard-integration.ts",
+          "line": 6,
+          "message": "'Card' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "b7761beb688ab16600f023b10ac1aaaa3a88f1614e4f560ed8fc873eed85f042"
+        },
+        {
+          "column": 10,
+          "file": "src/integrations/dashboard-integration.ts",
+          "line": 7,
+          "message": "'Table' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "52eda0745fe236acf32049ef488024d4a5144571c22892684eda98b01f3be603"
+        },
+        {
+          "column": 13,
+          "file": "src/integrations/dashboard-integration.ts",
+          "line": 39,
+          "message": "'metrics' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "a6dcd162a41115be628382976b48d72c781255b652807196c3d7c1b8581f403a"
+        },
+        {
+          "column": 25,
+          "file": "src/integrations/dashboard-integration.ts",
+          "line": 56,
+          "message": "'userId' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "b1b6cccde0de4b58dc769aabe5322ebc82b3e5e622c863b06734a95b33b840dd"
+        },
+        {
+          "column": 11,
+          "file": "src/integrations/dashboard-integration.ts",
+          "line": 60,
+          "message": "'dateRange' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "f4e486b3add67d843e0ac5a3972e298d3f5090cc462f56f1c6ddd6b8f6c4bd12"
+        },
+        {
+          "column": 9,
+          "file": "src/integrations/dashboard-integration.ts",
+          "line": 87,
+          "message": "'data' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "fae13dd281e791d0c9847c6f2df275a4f27ed50f42a12317e5ca94cce5ce60ac"
+        },
+        {
+          "column": 11,
+          "file": "src/integrations/dashboard-integration.ts",
+          "line": 96,
+          "message": "'report' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "1db156aa7b2f7c91e18423b5ba60adf32186b728af64b74b440237ded8180c59"
+        },
+        {
+          "column": 5,
+          "file": "src/integrations/dashboard-integration.ts",
+          "line": 128,
+          "message": "'widgetName' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "ec0e8e45489239976605dac6088e023feec0b9972f74cbb83f66744a1e6c937e"
+        },
+        {
+          "column": 10,
+          "file": "src/integrations/reporting-integration.ts",
+          "line": 4,
+          "message": "'reportViewer' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "54d519ab894fc207b5963431e1a61428c0e388a9a08d907de24c6660099c9928"
+        },
+        {
+          "column": 15,
+          "file": "src/integrations/reporting-integration.ts",
+          "line": 6,
+          "message": "'Order' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "532a04da4426c9a9b5a522571f4c49c8b15c5a5562efc4ce7eaee2cc780fb6df"
+        },
+        {
+          "column": 5,
+          "file": "src/integrations/reporting-integration.ts",
+          "line": 79,
+          "message": "'filename' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "0634112b337ac3398b6f80091733e7e7ba9c5aeb5619e7e98cc1cdfcd6e25d33"
+        },
+        {
+          "column": 11,
+          "file": "src/integrations/reporting-integration.ts",
+          "line": 81,
+          "message": "'reportData' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "51a71c94ef73f83ea07268df4c206845e94ee939830a440a85e21a0141a12462"
+        },
+        {
+          "column": 11,
+          "file": "src/integrations/reporting-integration.ts",
+          "line": 82,
+          "message": "'exportFormat' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "6d040920a68cc633694d5ba4aaa542ba06c008c8825f1e072d0b6c56ead5cc92"
+        },
+        {
+          "column": 9,
+          "file": "src/integrations/reporting-integration.ts",
+          "line": 125,
+          "message": "'nextRun' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "58f240a181a3cfdc120f21ecb021314fe83bd921207574304951b3651b078256"
+        },
+        {
+          "column": 26,
+          "file": "src/integrations/reporting-integration.ts",
+          "line": 143,
+          "message": "'limit' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "d574ca3d6defe62b1f83ea3f60bd3a4f1d4887e76039a4deab7afaae82b53da3"
+        },
+        {
+          "column": 28,
+          "file": "src/models/address.ts",
+          "line": 136,
+          "message": "Unnecessary escape character: \\(.",
+          "rule": "no-useless-escape",
+          "id": "9fd348b35a1143ffc079a4af5248deab0dd4334924807175a814eef9b79b8a6d"
+        },
+        {
+          "column": 30,
+          "file": "src/models/address.ts",
+          "line": 136,
+          "message": "Unnecessary escape character: \\).",
+          "rule": "no-useless-escape",
+          "id": "869b71424f7c0751e59060b2611352a4631b31ea830fe2006a7e20b8b0e9528d"
+        },
+        {
+          "column": 32,
+          "file": "src/models/address.ts",
+          "line": 136,
+          "message": "Unnecessary escape character: \\+.",
+          "rule": "no-useless-escape",
+          "id": "04a06f583b5b66e237bf4ad2c0f89d12e4e4d6fdef27c6a0d49b7316c215603e"
+        },
+        {
+          "column": 32,
+          "file": "src/models/address.ts",
+          "line": 177,
+          "message": "'address' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "e0188e6b6100c2245ad320a217ae11f5f262b0bf83aef603c060dfadc02a53dc"
+        },
+        {
+          "column": 3,
+          "file": "src/models/address.ts",
+          "line": 183,
+          "message": "'addr1' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "59177ae3565a8152c59e76fd3338f8272bb6da514eab8aa2a46b552ca4815ef6"
+        },
+        {
+          "column": 3,
+          "file": "src/models/address.ts",
+          "line": 184,
+          "message": "'addr2' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "f0a7a9efc3aa8eb4dab35dbc32a5831ee927ee029d685aab6b65dd9ad3034a29"
+        },
+        {
           "column": 9,
           "file": "src/models/analytics.ts",
           "line": 54,
@@ -1139,6 +1859,30 @@
           "id": "0d4914136e54dc63947f7936aacf4ca67ada220449ed7dfac0782a85fb83ee77"
         },
         {
+          "column": 15,
+          "file": "src/models/comment.ts",
+          "line": 2,
+          "message": "'User' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "be4b0168498875b1d8b79de03f7d65acc57beae73dd4d413e87a143c2a76fffe"
+        },
+        {
+          "column": 9,
+          "file": "src/models/comment.ts",
+          "line": 59,
+          "message": "'parentComment' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "ae43854ff5a1bf4a34605b0511e51b52731a2d76903fd59c7002861c927a87eb"
+        },
+        {
+          "column": 7,
+          "file": "src/models/comment.ts",
+          "line": 75,
+          "message": "'rootComments' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "4ec00fe213982fb248f9a97c35f0020322b52b3170f1df418994e318113dd235"
+        },
+        {
           "column": 9,
           "file": "src/models/dashboard.ts",
           "line": 57,
@@ -1161,6 +1905,30 @@
           "message": "'updated' is never reassigned. Use 'const' instead.",
           "rule": "prefer-const",
           "id": "6c90da12cd8232eaad16d6cafe56d7d5dd30630bd9b82ee138a75336287713a3"
+        },
+        {
+          "column": 9,
+          "file": "src/models/invoice.ts",
+          "line": 66,
+          "message": "'isPastDue' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "17cd00b030ab8dd05c2e3546d3fb370e4ee16f2b03bb25008fdf1a22d382573d"
+        },
+        {
+          "column": 7,
+          "file": "src/models/invoice.ts",
+          "line": 72,
+          "message": "'timestamp' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "f1909528950ae20a513ac49c83390705ce2775b31680abb4b4728e1d0cfd4628"
+        },
+        {
+          "column": 7,
+          "file": "src/models/invoice.ts",
+          "line": 72,
+          "message": "'timestamp' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "44c60dfb0d79b8ade4e84f22c86d2ea61ec1208a51f4c0258e5c380e9907c327"
         },
         {
           "column": 9,
@@ -1201,6 +1969,22 @@
           "message": "'updated' is never reassigned. Use 'const' instead.",
           "rule": "prefer-const",
           "id": "e1c8338c53a4f99a988b942e40d6588278215f16c206a7c851a49e623715ade3"
+        },
+        {
+          "column": 9,
+          "file": "src/models/payment.ts",
+          "line": 73,
+          "message": "'paymentStatus' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "7cbd7e2d6e3756a0fc86e524da4998b9623207d756eebdde91f586e2a008c576"
+        },
+        {
+          "column": 7,
+          "file": "src/models/payment.ts",
+          "line": 80,
+          "message": "'updatedPayment' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "968db1cc8048bf5fb1363adaec8704e3802d8cad98b4e7f57567508128fd05e6"
         },
         {
           "column": 9,
@@ -1249,6 +2033,30 @@
           "message": "'products' is defined but never used.",
           "rule": "@typescript-eslint/no-unused-vars",
           "id": "c98019807bb4b4ecdee9697ce88cc208bca4f3c3c7cfb61f45cc026d274cd2a5"
+        },
+        {
+          "column": 15,
+          "file": "src/models/review.ts",
+          "line": 2,
+          "message": "'User' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "90f387a32cf9230000cb8e648534e40fe2c5802e2fb005f1dac9267dd94c14b9"
+        },
+        {
+          "column": 9,
+          "file": "src/models/review.ts",
+          "line": 58,
+          "message": "'count' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "c77393420afb31c21b3c16f46a2b4ca845391a9f8fa2f26ca69e25eef96fbd8c"
+        },
+        {
+          "column": 7,
+          "file": "src/models/review.ts",
+          "line": 71,
+          "message": "'distribution' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "5536b91c0645b74c0545cda340c87135196423b7ae35c2724a2575c61a37132d"
         },
         {
           "column": 9,
@@ -1329,6 +2137,22 @@
           "message": "'updated' is never reassigned. Use 'const' instead.",
           "rule": "prefer-const",
           "id": "587af6a2eb25864f6ce99b83ccdfd447d160311075e07b63d238dbf07fc4df41"
+        },
+        {
+          "column": 9,
+          "file": "src/models/shipment.ts",
+          "line": 86,
+          "message": "'totalSteps' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "c093114e94dd16369619b3b8e50166b17b20fe66608926e88a841e0a8a06f9c5"
+        },
+        {
+          "column": 7,
+          "file": "src/models/shipment.ts",
+          "line": 96,
+          "message": "'updatedShipment' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "f3a2af4a91a8afccd8a6110c88cb52a14261df7a494a33018962204713645ba8"
         },
         {
           "column": 9,
@@ -1443,6 +2267,22 @@
           "id": "cfe73fd0bcb26d8fa08ffc300037c97da1158023099841aebcae2bdbebac899d"
         },
         {
+          "column": 11,
+          "file": "src/services/inventory-service.ts",
+          "line": 40,
+          "message": "'productSku' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "14492ce5e8861fae1bdd5d6581fb522df141e88fbc8a87572a3b18127d245c7a"
+        },
+        {
+          "column": 9,
+          "file": "src/services/inventory-service.ts",
+          "line": 74,
+          "message": "'item' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "32939a61a5fb5756920bc92613c9d72152dab060c32f4ae3b754a55a4f778c56"
+        },
+        {
           "column": 15,
           "file": "src/services/notification-service.ts",
           "line": 3,
@@ -1532,6 +2372,78 @@
         },
         {
           "column": 15,
+          "file": "src/services/payment-service.ts",
+          "line": 2,
+          "message": "'User' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "ddd30f11471387546d9e2af89ccf06a5fbce9ecd088b9c212861d3c1ee24c527"
+        },
+        {
+          "column": 15,
+          "file": "src/services/payment-service.ts",
+          "line": 3,
+          "message": "'Order' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "7b180ad1f4932e3ca8ec48d6288dbbd56caddfeadaab1c322731283daeb5a66c"
+        },
+        {
+          "column": 11,
+          "file": "src/services/payment-service.ts",
+          "line": 64,
+          "message": "'paymentId' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "69f4bb9c6b1013732b145d355fa6d326259de1e350bc6e5c72b72119973b9191"
+        },
+        {
+          "column": 11,
+          "file": "src/services/payment-service.ts",
+          "line": 65,
+          "message": "'startTime' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "6bffa94ef9d8f5b5a3544c07739684682c7d17c74025760b5ee07c68f8d5c93b"
+        },
+        {
+          "column": 24,
+          "file": "src/services/payment-service.ts",
+          "line": 79,
+          "message": "'transactionId' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "059c391b8f2f4e1cf5b8d7740333ad0679a3881f8d48e18c31f8bc03e1a04d76"
+        },
+        {
+          "column": 9,
+          "file": "src/services/payment-service.ts",
+          "line": 80,
+          "message": "'captured' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "84acd9ef0f964a4804ee550edd4d1e0afb95a1989bb9d37558d47cebf169b10e"
+        },
+        {
+          "column": 23,
+          "file": "src/services/payment-service.ts",
+          "line": 94,
+          "message": "'transactionId' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "c2a4bf2d4dbb61c4985c0aab5b3542371614a80ef6599361ec33e9283832fdbc"
+        },
+        {
+          "column": 46,
+          "file": "src/services/payment-service.ts",
+          "line": 94,
+          "message": "'amount' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "531220125320950b8ee72c52c3bb71e64e91f8a0756d3da8e6be07840006cc13"
+        },
+        {
+          "column": 27,
+          "file": "src/services/payment-service.ts",
+          "line": 155,
+          "message": "'userId' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "fce50e881daf0460c7789336fcb7c4ad1065fd13cdcd7c34ccc20f1d9375f312"
+        },
+        {
+          "column": 15,
           "file": "src/services/product-service.ts",
           "line": 3,
           "message": "'Category' is defined but never used.",
@@ -1569,6 +2481,110 @@
           "message": "'searchTimestamp' is assigned a value but never used.",
           "rule": "@typescript-eslint/no-unused-vars",
           "id": "29797a68af3ed61e412fda79619a764891e701f9e20bb5f9cda5dc7b3a13f2ca"
+        },
+        {
+          "column": 15,
+          "file": "src/services/reporting-service.ts",
+          "line": 3,
+          "message": "'User' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "b22dcf83848ca6ad473c26964842fbd8586c9767e0240c8e7911f698fd8e8738"
+        },
+        {
+          "column": 11,
+          "file": "src/services/reporting-service.ts",
+          "line": 48,
+          "message": "'orderCount' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "b463f71abf27ca2f0cea7970661a107fc06958f7f3140230e09c72821ef3e9d6"
+        },
+        {
+          "column": 9,
+          "file": "src/services/reporting-service.ts",
+          "line": 77,
+          "message": "'dataMap' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "c2a6599b08cfd9211523a87d4dfe4803a73e2e7d9f750402d09415974a2f5e2f"
+        },
+        {
+          "column": 26,
+          "file": "src/services/reporting-service.ts",
+          "line": 109,
+          "message": "'startDate' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "4a63fce8e689e237e88fedf53839f1d417eb0aaf800fcceccb2ce230ac9e18ed"
+        },
+        {
+          "column": 43,
+          "file": "src/services/reporting-service.ts",
+          "line": 109,
+          "message": "'endDate' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "47bf7e35ff1b0b393115350d80cfd73ca4d8d45ebdbda20e9df1250ed63fa223"
+        },
+        {
+          "column": 23,
+          "file": "src/services/reporting-service.ts",
+          "line": 114,
+          "message": "'userId' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "e3b87afc22db74a879e12d454694aaa833d8017450495f51f501a7427982fee6"
+        },
+        {
+          "column": 11,
+          "file": "src/services/shipping-service.ts",
+          "line": 45,
+          "message": "'itemCount' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "4f7dd374515626a2cd38c6c54997f9777aea8a586bd2aaff89bc8796b1839cec"
+        },
+        {
+          "column": 5,
+          "file": "src/services/shipping-service.ts",
+          "line": 66,
+          "message": "'weight' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "cdd3d4744903f0a8552b04acafe7db5e9399a79e915a70c1d0c5b00d823ef560"
+        },
+        {
+          "column": 5,
+          "file": "src/services/shipping-service.ts",
+          "line": 67,
+          "message": "'dimensions' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "dd18862d33bec02ebcb36878beccf7170e32f1b7e3e8e005ed2f1c761e338659"
+        },
+        {
+          "column": 5,
+          "file": "src/services/shipping-service.ts",
+          "line": 68,
+          "message": "'destination' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "ca9f4312b9deb7feab6804c5fafb62141b793222789540a78e9cff5d215e0781"
+        },
+        {
+          "column": 9,
+          "file": "src/services/shipping-service.ts",
+          "line": 70,
+          "message": "'rates' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "3e0d5ea8e8866ec4f34a982750eb5b859887c2f558faab4004f4032332180947"
+        },
+        {
+          "column": 5,
+          "file": "src/services/shipping-service.ts",
+          "line": 147,
+          "message": "'shipmentId' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "6e516a052c0de6b3e8332ea1b21d54981f33d59d48fd38549a5bab5fba8af430"
+        },
+        {
+          "column": 5,
+          "file": "src/services/shipping-service.ts",
+          "line": 148,
+          "message": "'status' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "9d5b5ec86cb3fb00eecdd13267e8788507b83da4c5982dae4ea459b1a3a850bd"
         },
         {
           "column": 3,
@@ -1708,6 +2724,30 @@
         },
         {
           "column": 11,
+          "file": "src/utils/color-utils.ts",
+          "line": 35,
+          "message": "'red' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "e29ebed1c01da848f503759174188858b85eb5d9fc521510a266491b02f320df"
+        },
+        {
+          "column": 9,
+          "file": "src/utils/color-utils.ts",
+          "line": 82,
+          "message": "'h' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "9815615a37cc4d1854af2c9bcf9fccfcd2210370980820a26d5aeb1469af364a"
+        },
+        {
+          "column": 9,
+          "file": "src/utils/crypto-utils.ts",
+          "line": 50,
+          "message": "'passwordHash' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "9a29ff6c6e780e949ada08167d448a094a3e1c99f42d8910fc39a50229befa2f"
+        },
+        {
+          "column": 11,
           "file": "src/utils/date-utils.ts",
           "line": 18,
           "message": "'millisecondsPerDay' is assigned a value but never used.",
@@ -1737,6 +2777,22 @@
           "message": "'wrappedHandler' is never reassigned. Use 'const' instead.",
           "rule": "prefer-const",
           "id": "3cb1fd76a7efc0eddf2bf906cfc8a70c81d4a3067a94963a4b40e5c1bfa480a0"
+        },
+        {
+          "column": 11,
+          "file": "src/utils/file-utils.ts",
+          "line": 31,
+          "message": "'baseName' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "4fd8840d30d7af41868643b5c17c110ea097fdecd51356b015f9cd54654951ec"
+        },
+        {
+          "column": 9,
+          "file": "src/utils/file-utils.ts",
+          "line": 67,
+          "message": "'units' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "9e6d12e07ecd1aa89fa44da25c6ce1923194914a3c6d6e94841a71f337f0a999"
         },
         {
           "column": 11,
@@ -1899,6 +2955,30 @@
           "id": "bf65df5d7bf268efb20133b61fac019c11fa1e7676c5dc4bdb61f886d7b51c9d"
         },
         {
+          "column": 14,
+          "file": "src/utils/url-utils.ts",
+          "line": 7,
+          "message": "'error' is defined but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "8752d5cb30fec17478edc2c4ad2b138b5b8c00e295066d53e60f0f793382fdb2"
+        },
+        {
+          "column": 11,
+          "file": "src/utils/url-utils.ts",
+          "line": 15,
+          "message": "'paramValue' is assigned a value but never used.",
+          "rule": "@typescript-eslint/no-unused-vars",
+          "id": "a078a48ab6b59408e9699ed5ef987f8aa9973c5d52f78a7855719ca67548fea1"
+        },
+        {
+          "column": 9,
+          "file": "src/utils/url-utils.ts",
+          "line": 45,
+          "message": "'urlObj' is never reassigned. Use 'const' instead.",
+          "rule": "prefer-const",
+          "id": "a6ea2e234bc32a7eee6ce7a467e05d8d15ca788541057ef3bc408c574aa15267"
+        },
+        {
           "column": 11,
           "file": "src/utils/validation-utils.ts",
           "line": 11,
@@ -1951,6 +3031,102 @@
     },
     "typescript > noImplicitAny": {
       "items": [
+        {
+          "column": 20,
+          "file": "src/api/analytics-api.ts",
+          "line": 22,
+          "message": "Parameter 'eventName' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "f1454e5fa8b87851c573021eba9abed61edc6446be75e321f77a2d931dc2f2c8"
+        },
+        {
+          "column": 48,
+          "file": "src/api/analytics-api.ts",
+          "line": 40,
+          "message": "Expected 1 arguments, but got 2.",
+          "rule": "TS2554",
+          "id": "801a9faf15dfa754e8677d34f513f0d18ff426427e08562c6c4330e4240719f2"
+        },
+        {
+          "column": 56,
+          "file": "src/api/analytics-api.ts",
+          "line": 44,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "d8d0be8d4788b876f5813b307aeb638394b3af73b6012750f63f4cd4d7fe2bf4"
+        },
+        {
+          "column": 74,
+          "file": "src/api/analytics-api.ts",
+          "line": 45,
+          "message": "Expected 1 arguments, but got 2.",
+          "rule": "TS2554",
+          "id": "3f9287be1435787bbefab6c8eb356c49a51a541ee708f007717dc645f19683f6"
+        },
+        {
+          "column": 7,
+          "file": "src/api/analytics-api.ts",
+          "line": 50,
+          "message": "Type 'ApiResponse<unknown>' is not assignable to type 'ApiResponse<number[]>'.\n  Type 'unknown' is not assignable to type 'number[]'.",
+          "rule": "TS2322",
+          "id": "3b2c6f5c78895cb91727c8dc729aa8f6838fb3e1b90cc54f942fb63de892acca"
+        },
+        {
+          "column": 7,
+          "file": "src/api/analytics-api.ts",
+          "line": 70,
+          "message": "Expected 1 arguments, but got 2.",
+          "rule": "TS2554",
+          "id": "8e796baf800907a3aeb491ee382d5fe5455d9d8a7299868eb8ba5cab3c4059e7"
+        },
+        {
+          "column": 5,
+          "file": "src/api/analytics-api.ts",
+          "line": 73,
+          "message": "Type 'ApiResponse<number>' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "ad2824455285fe256d3e3c6e5454af3b42eb3feb0f2de170ecdab426e14eb18c"
+        },
+        {
+          "column": 50,
+          "file": "src/api/analytics-api.ts",
+          "line": 77,
+          "message": "Expected 1 arguments, but got 2.",
+          "rule": "TS2554",
+          "id": "14b76730085a57add5ec9d29fe593e37b58c034592e4ddde6b967f0be536cb2e"
+        },
+        {
+          "column": 64,
+          "file": "src/api/analytics-api.ts",
+          "line": 84,
+          "message": "Expected 1 arguments, but got 2.",
+          "rule": "TS2554",
+          "id": "092e998f6962f8b18fbef37923ca98055269327e0e666e08a9a08145028582b5"
+        },
+        {
+          "column": 5,
+          "file": "src/api/analytics-api.ts",
+          "line": 98,
+          "message": "Type 'ApiResponse<unknown>' is not assignable to type 'ApiResponse<void>'.\n  Type 'unknown' is not assignable to type 'void'.",
+          "rule": "TS2322",
+          "id": "520c94dd808426fdb772a187e761baa1710a71dce7761700c8b73243bac446f3"
+        },
+        {
+          "column": 47,
+          "file": "src/api/analytics-api.ts",
+          "line": 106,
+          "message": "Expected 1 arguments, but got 2.",
+          "rule": "TS2554",
+          "id": "af906719603a26775ac0dfdf27b7911c89efa2a75d39c8cbea51dba7e88118c5"
+        },
+        {
+          "column": 52,
+          "file": "src/api/analytics-api.ts",
+          "line": 116,
+          "message": "Expected 1 arguments, but got 2.",
+          "rule": "TS2554",
+          "id": "8c029bb103b9fd5e1caac418630e77f8cbd677eb239a26e1943085a846cfc01b"
+        },
         {
           "column": 15,
           "file": "src/api/auth-api.ts",
@@ -2022,6 +3198,62 @@
           "message": "Type 'ApiClient' is not assignable to type 'number'.",
           "rule": "TS2322",
           "id": "4fd9f00cdd9a4d2e3820b05d7aa1fc6d6e9546c72990ffaf675bfebf883a2275"
+        },
+        {
+          "column": 26,
+          "file": "src/api/notification-api.ts",
+          "line": 23,
+          "message": "Parameter 'userId' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "eadeb88aa422269923c2c919e2fa88927192ed4e507b0433295f9cbf6b89b46f"
+        },
+        {
+          "column": 59,
+          "file": "src/api/notification-api.ts",
+          "line": 24,
+          "message": "Expected 1 arguments, but got 2.",
+          "rule": "TS2554",
+          "id": "d116e309a99aab6b3abf042c33ea2cf599434c8934e28ff454b4d0e39a49ee4d"
+        },
+        {
+          "column": 5,
+          "file": "src/api/notification-api.ts",
+          "line": 36,
+          "message": "Type 'ApiResponse<unknown>' is not assignable to type 'ApiResponse<number>'.\n  Type 'unknown' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "640e4bfae65cfd2561eb3f0fa0c786b8bc7da4548611161bdbc2292b71ecbcf1"
+        },
+        {
+          "column": 45,
+          "file": "src/api/notification-api.ts",
+          "line": 40,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "3a0c34eb291321d67cd39aba5d4a1c49c6a96a39e5e8aac7dc8fde3b8063b3b1"
+        },
+        {
+          "column": 38,
+          "file": "src/api/notification-api.ts",
+          "line": 41,
+          "message": "Expected 2 arguments, but got 1.",
+          "rule": "TS2554",
+          "id": "21fb854b02bcfcfc3d72547a85fee79aed4c838a2c229c65e316a015579c924b"
+        },
+        {
+          "column": 7,
+          "file": "src/api/notification-api.ts",
+          "line": 46,
+          "message": "Type 'ApiResponse<unknown>' is not assignable to type 'ApiResponse<void>'.\n  Type 'unknown' is not assignable to type 'void'.",
+          "rule": "TS2322",
+          "id": "b7d5cbdbbafb3a8f08cf0f905a570a59ae4baee9a257ff72b052034450bbd715"
+        },
+        {
+          "column": 5,
+          "file": "src/api/notification-api.ts",
+          "line": 64,
+          "message": "Type 'ApiResponse<void>' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "e4020c015e5f8ad2a71e2f1e4c003d9552a93d8dabbdc2fa262683c6fc1877cf"
         },
         {
           "column": 20,
@@ -2102,6 +3334,54 @@
           "message": "Type 'number' is not assignable to type 'string'.",
           "rule": "TS2322",
           "id": "960d4cccbec6ed23be79382b2b90fd1f486b922c398de4cf3e50f399ae8b584a"
+        },
+        {
+          "column": 21,
+          "file": "src/api/settings-api.ts",
+          "line": 29,
+          "message": "Parameter 'userId' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "7ab57e66727432f82f20a65f79688c9ba518e93aacc4847946f8fa655cc4df13"
+        },
+        {
+          "column": 5,
+          "file": "src/api/settings-api.ts",
+          "line": 41,
+          "message": "Type 'ApiResponse<unknown>' is not assignable to type 'ApiResponse<UserSettings>'.\n  Type 'unknown' is not assignable to type 'UserSettings'.",
+          "rule": "TS2322",
+          "id": "d084184869d0ea214d6096e9a4b6836933b523b25e95cb33074b60e172954d52"
+        },
+        {
+          "column": 35,
+          "file": "src/api/settings-api.ts",
+          "line": 45,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "a7193e6a8c5aae92a2824b3151dc875915dd27ae0ac51525b3b6f80bbc194c7c"
+        },
+        {
+          "column": 7,
+          "file": "src/api/settings-api.ts",
+          "line": 49,
+          "message": "Type 'ApiResponse<unknown>' is not assignable to type 'ApiResponse<string>'.\n  Type 'unknown' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "776a74f1069f68cbf0c82abba17683903dc9f3614610cb85acea8ef4413fa86e"
+        },
+        {
+          "column": 5,
+          "file": "src/api/settings-api.ts",
+          "line": 70,
+          "message": "Type 'ApiResponse<NotificationSettings>' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "d8c72a62db9f97a762535791d064b0475257fbacc714783bfa92924cebdfc4ec"
+        },
+        {
+          "column": 22,
+          "file": "src/api/settings-api.ts",
+          "line": 94,
+          "message": "Expected 2 arguments, but got 1.",
+          "rule": "TS2554",
+          "id": "a17437175c289bb2791b113ab07fac3b43630524a7692970eb679c504c27520f"
         },
         {
           "column": 3,
@@ -2222,6 +3502,102 @@
           "message": "Type 'boolean' is not assignable to type 'string'.",
           "rule": "TS2322",
           "id": "f044de851899f21fa87d0f5c00b12d76e845d6ffb5a8df5dc6d7b2395afdaa8e"
+        },
+        {
+          "column": 10,
+          "file": "src/components/breadcrumb.ts",
+          "line": 24,
+          "message": "Parameter 'container' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "025e9e7f942ef22846c0c62e3242a2d466b1db6c8532bbc5bcc25c6293664635"
+        },
+        {
+          "column": 17,
+          "file": "src/components/breadcrumb.ts",
+          "line": 25,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "2c2ea80e0573d4f49e9e947dd9d480371a4a92a9fe2579a3a9be052d3991acbf"
+        },
+        {
+          "column": 16,
+          "file": "src/components/breadcrumb.ts",
+          "line": 29,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "bd5def8288210d68df6c4f7938dfa5b841554a8243fabc1073b865f105be4069"
+        },
+        {
+          "column": 54,
+          "file": "src/components/breadcrumb.ts",
+          "line": 47,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "edc87aa3bae3801f67e330b49a65c7f81b0e7f00ff4a56bfe5c2533cb1db0c69"
+        },
+        {
+          "column": 16,
+          "file": "src/components/breadcrumb.ts",
+          "line": 48,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "111866283d995ed7df1ea27fd2ccd3b600f7e2cfdf5efe6883151237b288bff2"
+        },
+        {
+          "column": 20,
+          "file": "src/components/breadcrumb.ts",
+          "line": 53,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "54e35585bf4ce25c99e6a922912e2b673163a183326e4739f515f3eff5b76711"
+        },
+        {
+          "column": 17,
+          "file": "src/components/breadcrumb.ts",
+          "line": 58,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "a3f9ec0e8bf6444b54c59219fc448aeb5f3ed46e5f2dc740e469f76f0e109ba8"
+        },
+        {
+          "column": 20,
+          "file": "src/components/breadcrumb.ts",
+          "line": 61,
+          "message": "Parameter 'e' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "f4a010c9bf05b9ef920abc097b9a80705ddf01b431b65985908d9ff8557bcb50"
+        },
+        {
+          "column": 22,
+          "file": "src/components/breadcrumb.ts",
+          "line": 72,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "8b073813e1ae1c8962a459e3304a7bb4d4705c830ec4dac9af934a7bf66b46be"
+        },
+        {
+          "column": 16,
+          "file": "src/components/breadcrumb.ts",
+          "line": 73,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "5fc399defbc603a030f80b86725230c3fe5a195f3f7f9612f276ae356eb66290"
+        },
+        {
+          "column": 5,
+          "file": "src/components/breadcrumb.ts",
+          "line": 92,
+          "message": "Type 'number' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "4c5ccfb2e3b35deec20adadf9cdb1a5dc68dda292cf5a2ad0affd8b47098af14"
+        },
+        {
+          "column": 34,
+          "file": "src/components/breadcrumb.ts",
+          "line": 107,
+          "message": "No overload matches this call.\n  Overload 1 of 2, '(predicate: (value: BreadcrumbItem, index: number, obj: BreadcrumbItem[]) => value is T, thisArg?: any): T | undefined', gave the following error.\n    Argument of type '(item: T) => boolean' is not assignable to parameter of type '(value: BreadcrumbItem, index: number, obj: BreadcrumbItem[]) => value is T'.\n      Types of parameters 'item' and 'value' are incompatible.\n        Type 'BreadcrumbItem' is not assignable to type 'T'.\n          'BreadcrumbItem' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'BreadcrumbItem'.\n  Overload 2 of 2, '(predicate: (value: BreadcrumbItem, index: number, obj: BreadcrumbItem[]) => unknown, thisArg?: any): BreadcrumbItem | undefined', gave the following error.\n    Argument of type '(item: T) => boolean' is not assignable to parameter of type '(value: BreadcrumbItem, index: number, obj: BreadcrumbItem[]) => unknown'.\n      Types of parameters 'item' and 'value' are incompatible.\n        Type 'BreadcrumbItem' is not assignable to type 'T'.\n          'BreadcrumbItem' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'BreadcrumbItem'.",
+          "rule": "TS2769",
+          "id": "058cc38eafcc66c80892ca98ed1a06face59c9c4d5cdc719534b600c88b7ea3f"
         },
         {
           "column": 10,
@@ -2377,6 +3753,110 @@
         },
         {
           "column": 10,
+          "file": "src/components/footer.ts",
+          "line": 29,
+          "message": "Parameter 'container' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "bf2f8a90f6cfc45b708fdd29af2b337e72414484e62b6c04214c102338cda912"
+        },
+        {
+          "column": 20,
+          "file": "src/components/footer.ts",
+          "line": 30,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "eb2bf067b2097f8f1eeb495d753de458c46032f6a6076e0fb9f18531d8b744b4"
+        },
+        {
+          "column": 31,
+          "file": "src/components/footer.ts",
+          "line": 33,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "ecf5946d60192b76a13751e1551bbfe302528ba3dd37f25222833362fd16b611"
+        },
+        {
+          "column": 42,
+          "file": "src/components/footer.ts",
+          "line": 50,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "a05edc6e432af3fa0b90af77676fd522fe6011aa232fbf4562e40bd0d029b28c"
+        },
+        {
+          "column": 17,
+          "file": "src/components/footer.ts",
+          "line": 51,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "936a10947e8b1ce137b818a35c6442c6732f6684020078ab1404911304610379"
+        },
+        {
+          "column": 19,
+          "file": "src/components/footer.ts",
+          "line": 55,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "9193a33192fff89e8704f047f9a8beae5679e8c4b9807483de7c2c2d46b32c83"
+        },
+        {
+          "column": 18,
+          "file": "src/components/footer.ts",
+          "line": 59,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "e89b469519b09ef40950b65e0478b1c8b69fd14c8ae1a27fe8d91f98b89485ed"
+        },
+        {
+          "column": 18,
+          "file": "src/components/footer.ts",
+          "line": 61,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "267d575df2c3674d2ba03c11d08ef976de6f54f1062cc2997ef1948e3b9f32bc"
+        },
+        {
+          "column": 17,
+          "file": "src/components/footer.ts",
+          "line": 62,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "c8bc520d0eb7d0c1e33a1f5589fb2105360b71868e122e853e51578c747cac8d"
+        },
+        {
+          "column": 22,
+          "file": "src/components/footer.ts",
+          "line": 80,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "63db3c5f48d91df4976316bf569e7bf5dc4e3f11a6f0b8d2b7505e1219ea5542"
+        },
+        {
+          "column": 17,
+          "file": "src/components/footer.ts",
+          "line": 81,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "0ea7606c1024fd6366f38ce5f92917f85819f9e593b2c0bab3faf2437d2b71e4"
+        },
+        {
+          "column": 5,
+          "file": "src/components/footer.ts",
+          "line": 106,
+          "message": "Type 'number' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "3e377b7e63b03569d7e387d8871f434c77b32d16aa473536e41eb287fa82de61"
+        },
+        {
+          "column": 38,
+          "file": "src/components/footer.ts",
+          "line": 125,
+          "message": "No overload matches this call.\n  Overload 1 of 2, '(predicate: (value: FooterLink, index: number, array: FooterLink[]) => value is T, thisArg?: any): T[]', gave the following error.\n    Argument of type '(link: T) => boolean' is not assignable to parameter of type '(value: FooterLink, index: number, array: FooterLink[]) => value is T'.\n      Types of parameters 'link' and 'value' are incompatible.\n        Type 'FooterLink' is not assignable to type 'T'.\n          'FooterLink' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'FooterLink'.\n  Overload 2 of 2, '(predicate: (value: FooterLink, index: number, array: FooterLink[]) => unknown, thisArg?: any): FooterLink[]', gave the following error.\n    Argument of type '(link: T) => boolean' is not assignable to parameter of type '(value: FooterLink, index: number, array: FooterLink[]) => unknown'.\n      Types of parameters 'link' and 'value' are incompatible.\n        Type 'FooterLink' is not assignable to type 'T'.\n          'FooterLink' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'FooterLink'.",
+          "rule": "TS2769",
+          "id": "8fe34339d96d779e6db832f24098fef6ea9ee02c5e63097172fb7863d8221c45"
+        },
+        {
+          "column": 10,
           "file": "src/components/form.ts",
           "line": 20,
           "message": "Parameter 'container' implicitly has an 'any' type.",
@@ -2430,6 +3910,142 @@
           "message": "Parameter 'field' implicitly has an 'any' type.",
           "rule": "TS7006",
           "id": "b172440d88932df33a9e4ce9e15ad9b2f9b6c29bf3f5b25367caf48b2fc58d0d"
+        },
+        {
+          "column": 10,
+          "file": "src/components/header.ts",
+          "line": 30,
+          "message": "Parameter 'container' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "5d68d37c1efff2c08ae4e3dd082c54474e55b08c4c8187bc4fe8d8748998dbe2"
+        },
+        {
+          "column": 20,
+          "file": "src/components/header.ts",
+          "line": 31,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "42dca1a3ca33d424b3472c3b26561adee21f3cd02bb1f3ebccbe15da3e2a4802"
+        },
+        {
+          "column": 17,
+          "file": "src/components/header.ts",
+          "line": 49,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "2f4a17a79d69fa49c5c4d12bf0650775ac72cb0183d216ef68be63c6161699a2"
+        },
+        {
+          "column": 17,
+          "file": "src/components/header.ts",
+          "line": 50,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "d06bd3dc815a63e0c78b7c72c3a5f0219c6fd17c2f5a37e29fec80d435d6d2ff"
+        },
+        {
+          "column": 17,
+          "file": "src/components/header.ts",
+          "line": 54,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "51a101afb3414cafa95fdfca148dd5fbccd4e406acdf07dedf6dcbc51999831e"
+        },
+        {
+          "column": 18,
+          "file": "src/components/header.ts",
+          "line": 58,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "e0e3f87ba0e8f245eb77274f5473ea392b289b9771b30452620b7474143a2917"
+        },
+        {
+          "column": 23,
+          "file": "src/components/header.ts",
+          "line": 68,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "aa9103646846176c9e4a89eb3f4bbd7eb616d779efb0ba3d1a59524f02c5674a"
+        },
+        {
+          "column": 17,
+          "file": "src/components/header.ts",
+          "line": 69,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "cc2a63db0562f641344ab5976de3cd5c37cb4fd61b63fd126b25437bb0964204"
+        },
+        {
+          "column": 22,
+          "file": "src/components/header.ts",
+          "line": 73,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "8225992839e4ebc0bac5dcd3cf8227beb85005dbad19b428fc9cbab20709d0f2"
+        },
+        {
+          "column": 21,
+          "file": "src/components/header.ts",
+          "line": 87,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "030f77ab5d991d7a9b1532de4f51117ce72abe77cafc78a56f2f8cce33a21b77"
+        },
+        {
+          "column": 15,
+          "file": "src/components/header.ts",
+          "line": 88,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "c745d769087c5cfe56def5cbc6d3160f4eb791dd8d6319706f60183f0e93bd29"
+        },
+        {
+          "column": 24,
+          "file": "src/components/header.ts",
+          "line": 91,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "8c2a149c06c149202b9a7c331beca22d7d8f39c1c639bc6ff4ad71fedf720ad8"
+        },
+        {
+          "column": 5,
+          "file": "src/components/header.ts",
+          "line": 108,
+          "message": "Type 'string' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "30334ec8624fc318fc60bd54b539b2b3855ad8a544ac4bc53d5382b4aa00031b"
+        },
+        {
+          "column": 25,
+          "file": "src/components/header.ts",
+          "line": 123,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "222ffa96e600fe834b7314cd527a7c78db7402b3ca80648eb04d19ec5fa8e93b"
+        },
+        {
+          "column": 22,
+          "file": "src/components/header.ts",
+          "line": 124,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "8b5ac749b651b11e76807fee3516a200079e62214443f7dd3fb0dacf8571129d"
+        },
+        {
+          "column": 22,
+          "file": "src/components/header.ts",
+          "line": 134,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "58e67bd6f327745f281a362006d9e696d73ca424f6d52b6dd11b2ff496b53851"
+        },
+        {
+          "column": 38,
+          "file": "src/components/header.ts",
+          "line": 147,
+          "message": "No overload matches this call.\n  Overload 1 of 2, '(predicate: (value: HeaderMenuItem, index: number, obj: HeaderMenuItem[]) => value is T, thisArg?: any): T | undefined', gave the following error.\n    Argument of type '(item: T) => boolean' is not assignable to parameter of type '(value: HeaderMenuItem, index: number, obj: HeaderMenuItem[]) => value is T'.\n      Types of parameters 'item' and 'value' are incompatible.\n        Type 'HeaderMenuItem' is not assignable to type 'T'.\n          'HeaderMenuItem' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'HeaderMenuItem'.\n  Overload 2 of 2, '(predicate: (value: HeaderMenuItem, index: number, obj: HeaderMenuItem[]) => unknown, thisArg?: any): HeaderMenuItem | undefined', gave the following error.\n    Argument of type '(item: T) => boolean' is not assignable to parameter of type '(value: HeaderMenuItem, index: number, obj: HeaderMenuItem[]) => unknown'.\n      Types of parameters 'item' and 'value' are incompatible.\n        Type 'HeaderMenuItem' is not assignable to type 'T'.\n          'HeaderMenuItem' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'HeaderMenuItem'.",
+          "rule": "TS2769",
+          "id": "92264c57fc3b9c6b72417853713645ffa4cdca46b18704c51d2a8c518d88eba4"
         },
         {
           "column": 20,
@@ -2617,6 +4233,278 @@
         },
         {
           "column": 10,
+          "file": "src/components/navigation.ts",
+          "line": 31,
+          "message": "Parameter 'container' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "a9dcbf684fe52517c3d1c0eef5aa03146960390227cc367907d18f1c957e0886"
+        },
+        {
+          "column": 17,
+          "file": "src/components/navigation.ts",
+          "line": 32,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "a2a8347affa0c47bdca81feb193c45c4b5d7586df5b5b64e3dfbbd964448d9dd"
+        },
+        {
+          "column": 37,
+          "file": "src/components/navigation.ts",
+          "line": 44,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "8abd37b6ed229dd9d458e63b5ac51df8076f8e405553fa70e2bd9c70dcd6e826"
+        },
+        {
+          "column": 17,
+          "file": "src/components/navigation.ts",
+          "line": 45,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "a68ef5c69cc3973224b5eb79b8da235f5fbb424773f128145fe301cc786e4618"
+        },
+        {
+          "column": 18,
+          "file": "src/components/navigation.ts",
+          "line": 52,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "6730cca5f4c1720b70fbb8d72b3e8142082ca74e8a42807dfff281e4cfcf7051"
+        },
+        {
+          "column": 21,
+          "file": "src/components/navigation.ts",
+          "line": 55,
+          "message": "Parameter 'e' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "84f3a3be5796e43b492ba010cf13c7ef5af40095e7995b59601295ecfd185c54"
+        },
+        {
+          "column": 25,
+          "file": "src/components/navigation.ts",
+          "line": 63,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "97b7d83e2f226e5d38e3dac65f925e2c74fe7692d1f3a8bd87c3ce101fe1b967"
+        },
+        {
+          "column": 5,
+          "file": "src/components/navigation.ts",
+          "line": 95,
+          "message": "Type 'NavigationItem | undefined' is not assignable to type 'string'.\n  Type 'undefined' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "e2d85d2bcd899477de4e2eddabbceb0021cd171c74b3351449fbad44697d70fe"
+        },
+        {
+          "column": 34,
+          "file": "src/components/navigation.ts",
+          "line": 111,
+          "message": "No overload matches this call.\n  Overload 1 of 2, '(predicate: (value: NavigationItem, index: number, obj: NavigationItem[]) => value is T, thisArg?: any): T | undefined', gave the following error.\n    Argument of type '(item: T) => boolean' is not assignable to parameter of type '(value: NavigationItem, index: number, obj: NavigationItem[]) => value is T'.\n      Types of parameters 'item' and 'value' are incompatible.\n        Type 'NavigationItem' is not assignable to type 'T'.\n          'NavigationItem' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'NavigationItem'.\n  Overload 2 of 2, '(predicate: (value: NavigationItem, index: number, obj: NavigationItem[]) => unknown, thisArg?: any): NavigationItem | undefined', gave the following error.\n    Argument of type '(item: T) => boolean' is not assignable to parameter of type '(value: NavigationItem, index: number, obj: NavigationItem[]) => unknown'.\n      Types of parameters 'item' and 'value' are incompatible.\n        Type 'NavigationItem' is not assignable to type 'T'.\n          'NavigationItem' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'NavigationItem'.",
+          "rule": "TS2769",
+          "id": "33e4251480fe7803e9b61edd67d047dbdeed32b38cc17919eb35a41fd76ddfda"
+        },
+        {
+          "column": 21,
+          "file": "src/components/popover.ts",
+          "line": 7,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "e5df093e3dddefb4f2421bf3b93f0b6c515ebaf004b2fb1295dd4c802e347002"
+        },
+        {
+          "column": 27,
+          "file": "src/components/popover.ts",
+          "line": 17,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "e2c2db546919c27d286e5bd74cbc502edce6e6fa08bd4b669c2364f1d324b753"
+        },
+        {
+          "column": 26,
+          "file": "src/components/popover.ts",
+          "line": 18,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "61aba4a6f5bcf25a05f9902911fbfff595e81746520e3496d4af3527b5f57648"
+        },
+        {
+          "column": 10,
+          "file": "src/components/popover.ts",
+          "line": 25,
+          "message": "Parameter 'targetElement' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "db190f5f39f2a31c67fd40d287820c01479786b8fea390fb7430c77b09e0d714"
+        },
+        {
+          "column": 7,
+          "file": "src/components/popover.ts",
+          "line": 43,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "592db1c0ab52d1f21b24aa6b557e6c46ccc9203cffaa68554657d3bf7c194ed4"
+        },
+        {
+          "column": 43,
+          "file": "src/components/popover.ts",
+          "line": 43,
+          "message": "Parameter 'e' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "ab6af23d760cfcfccad01a44490a8a9ccc75ee351608a5b79bb2e86ad00682c9"
+        },
+        {
+          "column": 5,
+          "file": "src/components/popover.ts",
+          "line": 56,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "3cb1976cd12e8dda9d809db2718036303bdef99426d574a2d95998f8acc5a9ec"
+        },
+        {
+          "column": 7,
+          "file": "src/components/popover.ts",
+          "line": 68,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "8c2bb82f73c94f2f78c0249ab719a3954f3026f0c3438d0e0547d0064c93744e"
+        },
+        {
+          "column": 27,
+          "file": "src/components/popover.ts",
+          "line": 86,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "c18d2827caf60b72fdf7cd522d0d7a491de6da8e16d31ae15c97f0a2f1676faf"
+        },
+        {
+          "column": 17,
+          "file": "src/components/popover.ts",
+          "line": 87,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "0389ff387341620d9568ca60e43899f948ffd9d2fb26c3ffd5d68798434c104e"
+        },
+        {
+          "column": 22,
+          "file": "src/components/popover.ts",
+          "line": 91,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "a889b467a9481f706514db2de3e026b13db1db1c4b7973d5f06236c83f035b83"
+        },
+        {
+          "column": 18,
+          "file": "src/components/popover.ts",
+          "line": 97,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "7ea74aa1a273ba0be70d102be9e4eacd1baa0a1e0c23d1862ad1d3a46b0033bb"
+        },
+        {
+          "column": 53,
+          "file": "src/components/popover.ts",
+          "line": 149,
+          "message": "Cannot find name 'Node'.",
+          "rule": "TS2304",
+          "id": "0bf651bd461145a3d6ce98fd0d6626d4ed57d3b9d0cf73804f72c0e025249bbe"
+        },
+        {
+          "column": 53,
+          "file": "src/components/popover.ts",
+          "line": 150,
+          "message": "Cannot find name 'Node'.",
+          "rule": "TS2304",
+          "id": "16a05e92914effadb9a5ed29b343fe00a3253e839fb044f257460a8d7751c70c"
+        },
+        {
+          "column": 5,
+          "file": "src/components/popover.ts",
+          "line": 159,
+          "message": "Type 'string' is not assignable to type 'number'.\n  Type 'string' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "24a014e75ebeddb9d70ac4c55ba9a16793e8c5362395b50a611d6a6f56586e15"
+        },
+        {
+          "column": 32,
+          "file": "src/components/popover.ts",
+          "line": 162,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "2500ccf7b3d533c6fa1a41f882c81421c95b462b0e62768a0758f3f856bc05cb"
+        },
+        {
+          "column": 10,
+          "file": "src/components/sidebar.ts",
+          "line": 34,
+          "message": "Parameter 'container' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "f0f64efc3a36d101c61d9060be2e9824734302ff08cd0fa6e4d944bcc4fbf558"
+        },
+        {
+          "column": 21,
+          "file": "src/components/sidebar.ts",
+          "line": 35,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "428f97ce84a0b99870d5701341712039341333e9d9c921f7024b8a63f123677d"
+        },
+        {
+          "column": 43,
+          "file": "src/components/sidebar.ts",
+          "line": 48,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "c05c12f5ed52385b3741c84900bb7905989196dac60d34ba48bde2c2861c1956"
+        },
+        {
+          "column": 23,
+          "file": "src/components/sidebar.ts",
+          "line": 49,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "bcbda961dce79295919a91fbeb47c1bea58b57b9b581af905958dc488aea6528"
+        },
+        {
+          "column": 20,
+          "file": "src/components/sidebar.ts",
+          "line": 53,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "2429112ae12f3b278b1170fcf6871bbef54fe279ff9d097451eb602d2590b7ac"
+        },
+        {
+          "column": 25,
+          "file": "src/components/sidebar.ts",
+          "line": 63,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "aae2ecf41fc8c27390644788cf24d3a21eca5386c11976acc55f02ce29ea4706"
+        },
+        {
+          "column": 20,
+          "file": "src/components/sidebar.ts",
+          "line": 65,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "93588bd1a4078cb650bd97984324d525c3f20aa44ebf4b75637ecdb050311e5f"
+        },
+        {
+          "column": 5,
+          "file": "src/components/sidebar.ts",
+          "line": 95,
+          "message": "Type 'number' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "e923d31b01bea201300ea5c8ff75a2a5d091d51ff77d7c3607c21cdd8460a486"
+        },
+        {
+          "column": 37,
+          "file": "src/components/sidebar.ts",
+          "line": 114,
+          "message": "No overload matches this call.\n  Overload 1 of 2, '(predicate: (value: SidebarSection, index: number, obj: SidebarSection[]) => value is T, thisArg?: any): T | undefined', gave the following error.\n    Argument of type '(section: T) => boolean' is not assignable to parameter of type '(value: SidebarSection, index: number, obj: SidebarSection[]) => value is T'.\n      Types of parameters 'section' and 'value' are incompatible.\n        Type 'SidebarSection' is not assignable to type 'T'.\n          'SidebarSection' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'SidebarSection'.\n  Overload 2 of 2, '(predicate: (value: SidebarSection, index: number, obj: SidebarSection[]) => unknown, thisArg?: any): SidebarSection | undefined', gave the following error.\n    Argument of type '(section: T) => boolean' is not assignable to parameter of type '(value: SidebarSection, index: number, obj: SidebarSection[]) => unknown'.\n      Types of parameters 'section' and 'value' are incompatible.\n        Type 'SidebarSection' is not assignable to type 'T'.\n          'SidebarSection' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'SidebarSection'.",
+          "rule": "TS2769",
+          "id": "86386d232b646e46db92c9923c2b1ec905175bc2062f18aafc2c9d834be1b2bd"
+        },
+        {
+          "column": 10,
           "file": "src/components/table.ts",
           "line": 23,
           "message": "Parameter 'container' implicitly has an 'any' type.",
@@ -2750,6 +4638,158 @@
           "message": "Type 'number' is not assignable to type 'string'.",
           "rule": "TS2322",
           "id": "8bb00b3aa757f06ec114dec7d6f0458d39ceaa509157fb0b0dd44e9395427379"
+        },
+        {
+          "column": 27,
+          "file": "src/components/tooltip.ts",
+          "line": 19,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "fb88b57692325f84bb85e6ce8015bb32a5a435a34520862f278444e948be4e20"
+        },
+        {
+          "column": 8,
+          "file": "src/components/tooltip.ts",
+          "line": 27,
+          "message": "Parameter 'targetElement' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "82f528be4279d596900c122e1dee04a11dca159de1bcc578b00fa0c1b1012287"
+        },
+        {
+          "column": 22,
+          "file": "src/components/tooltip.ts",
+          "line": 32,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "6171a7fcc6a6227c702787c3364a117875f54a09f49f59fc8187371987b269e8"
+        },
+        {
+          "column": 7,
+          "file": "src/components/tooltip.ts",
+          "line": 35,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "bc583bb284c867d693eda6f1b04f4085b4301d270b46d2d1901d9d47b0bc5c98"
+        },
+        {
+          "column": 7,
+          "file": "src/components/tooltip.ts",
+          "line": 52,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "0051c0cd7be5c1dde0f390298372b3278a83e049a464bc84e00666df4d10b2a9"
+        },
+        {
+          "column": 27,
+          "file": "src/components/tooltip.ts",
+          "line": 60,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "69ef71c661602798f0a05ddf66ac896b0efde85bd7478c9325233868264f602a"
+        },
+        {
+          "column": 17,
+          "file": "src/components/tooltip.ts",
+          "line": 61,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "589eadb63726c73e552fc09c91611670d67e56acd32fab6dbeeb8ca7d074fa3d"
+        },
+        {
+          "column": 36,
+          "file": "src/components/tooltip.ts",
+          "line": 72,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "d2065ce264e9c4e64a360e5c687ca29802ffddf5f79b82df2447636630fe8a74"
+        },
+        {
+          "column": 5,
+          "file": "src/components/tooltip.ts",
+          "line": 103,
+          "message": "Type 'number' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "0fa89c11ae693fe25d9d95a6a481de35a2b992b3890d04f91a1fe9dc17dc2ef3"
+        },
+        {
+          "column": 57,
+          "file": "src/components/tooltip.ts",
+          "line": 121,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "8794480b4b9694f40d0a2b5698ffe4b080023a2cd3b297b6d098873746e3207c"
+        },
+        {
+          "column": 25,
+          "file": "src/components/tooltip.ts",
+          "line": 125,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "02148f2ff305ae1e55de19225119d67bce5217245fa7a38575fd864ad1937898"
+        },
+        {
+          "column": 20,
+          "file": "src/features/admin/admin-dashboard.ts",
+          "line": 32,
+          "message": "Parameter 'userId' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "2fe03877dd645022014f94154038e2c52c94a09bb58bcdc04ff81cd3903fb5f0"
+        },
+        {
+          "column": 21,
+          "file": "src/features/admin/admin-dashboard.ts",
+          "line": 82,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "d3d238a921f9aa3f023d40eebf75b8ba231ecaf496338f6ab7d0a1a432b774f3"
+        },
+        {
+          "column": 5,
+          "file": "src/features/admin/admin-dashboard.ts",
+          "line": 93,
+          "message": "Type 'number' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "20defe145168a2f5e03361a9e46ed20a52969dea38098dfab1fadd0078b49af6"
+        },
+        {
+          "column": 19,
+          "file": "src/features/admin/user-management.ts",
+          "line": 27,
+          "message": "Parameter 'filters' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "53917235fd6e101d0091bc126feea083d4bfaa1ce895e40dffccc5a19e6f2cd2"
+        },
+        {
+          "column": 37,
+          "file": "src/features/admin/user-management.ts",
+          "line": 31,
+          "message": "Property 'getAllUsers' does not exist on type 'UserService'.",
+          "rule": "TS2339",
+          "id": "e745eadca2491734e22b328a70ec18546eb4e51bfe750846d744a880d446215d"
+        },
+        {
+          "column": 6,
+          "file": "src/features/admin/user-management.ts",
+          "line": 70,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "640a33aa9b29a1bb43c57b27071040338398cb71725394acda32d7c1f3f0bff4"
+        },
+        {
+          "column": 34,
+          "file": "src/features/admin/user-management.ts",
+          "line": 83,
+          "message": "Property 'updateUser' does not exist on type 'UserService'.",
+          "rule": "TS2339",
+          "id": "561ad9e1a880a80252045dca5cbf511c29eb1087a0feaa2e79861fbd7efde98b"
+        },
+        {
+          "column": 5,
+          "file": "src/features/admin/user-management.ts",
+          "line": 102,
+          "message": "Type 'boolean' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "add6401ed7148e06cbb234ce0a73bf3867474c423d0f5913e340e015bed6bdea"
         },
         {
           "column": 15,
@@ -2992,6 +5032,870 @@
           "id": "b776db2fd2ff62cedcce01b46c346f938317f5f1e36431d70432e0fa5af05974"
         },
         {
+          "column": 29,
+          "file": "src/features/reports/report-generator.ts",
+          "line": 13,
+          "message": "Parameter 'options' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "84098171117268f0752a43bbe934bde8d02cfc2c1132828d013b635abb36ba6e"
+        },
+        {
+          "column": 9,
+          "file": "src/features/reports/report-generator.ts",
+          "line": 37,
+          "message": "Type 'number' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "1545dd548402f7fe9ecab5d2b959655f2ad0a19c3517ec568f2db832d9c4e88f"
+        },
+        {
+          "column": 5,
+          "file": "src/features/reports/report-generator.ts",
+          "line": 66,
+          "message": "Type 'string' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "10c88862106b667ec45f298181f57269332081cb155704a3c6dcabdd54dc0fb9"
+        },
+        {
+          "column": 10,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 20,
+          "message": "Parameter 'container' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "78d10b4637bbf429a09c3925fbae551605784c1b2d34ac2622f7615731076de7"
+        },
+        {
+          "column": 21,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 21,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "c10a2d485ce400562d099d77a5ea68ee7962047161cce97252d7f5df39ec8029"
+        },
+        {
+          "column": 19,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 36,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "0088025d6a8379707341230857551fe247e581c6de3fcda378c33ad58571029d"
+        },
+        {
+          "column": 20,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 37,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "a8476db5571abbe60b39a8f3d1679ede7f8fed51ee7d79001702ead905803358"
+        },
+        {
+          "column": 19,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 41,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "00ea7dda9319576d8cbf163664b4cf5928de613d781b1170bfab6ebfc6227a42"
+        },
+        {
+          "column": 23,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 44,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "aff04139a2e9aa0c996a0aa0f04628e94fac5d461946a11b10c18a563e28187e"
+        },
+        {
+          "column": 23,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 54,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "bc5ab6d8bb17821ef6984126705aa9fc9d19bdc4f5e99d5008ccdc69cefa0a07"
+        },
+        {
+          "column": 17,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 55,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "36258b396d8e30b895ce21adb0be23ea2d73d49b96f1e26c577721657368d156"
+        },
+        {
+          "column": 22,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 65,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "88637844772721e9585341b7612fece3f11451f3a0f988b939c836e2afb955db"
+        },
+        {
+          "column": 20,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 78,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "eecf5314853c169851e35fbffda12259a170a00c85669195721ea1b34f74ec36"
+        },
+        {
+          "column": 15,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 79,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "72bd95ee5ea5f013c4bafd045df7d6af5b02569c98388bce171e4279af7ea544"
+        },
+        {
+          "column": 16,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 99,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "0a22db8d6568311f2dd99a9a62d4c37e6e102ace71a941820a571bed4c551856"
+        },
+        {
+          "column": 30,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 99,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "5be37454fcb95982920fb412e0e0889727206b52f7c0a0d2296fdb878574704e"
+        },
+        {
+          "column": 24,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 102,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "71e03e6496bec32360a3440f18773aba583187d8e7ced7a432cf4ba1740b242f"
+        },
+        {
+          "column": 22,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 106,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "c1875f3378ada5e9cfbf450f10444f067a427d71e7f0827680db9a1ed272c70d"
+        },
+        {
+          "column": 21,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 109,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "feef78bd512c30c2605d754979e11469ea40335dd8c7505c52113bcfc0b8fb8b"
+        },
+        {
+          "column": 23,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 112,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "f6b1b4bbc7b5d02a2d80979b23466b9e5662d7270d61596eec1cdd518f3bc4d5"
+        },
+        {
+          "column": 18,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 125,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "16c1af36d8e05724f663f05f93e8b76fc9165945c0fc55e7a748dc79dff1f0ca"
+        },
+        {
+          "column": 17,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 126,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "763dfb0723d112559b4e77ac755fa90fa0431f8dfb88b2834ff2aa4614d06cc6"
+        },
+        {
+          "column": 19,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 132,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "08b7b5644d25b0e61b6bbb450e6b8febf6e543419d411469a8fd1bdccca338f5"
+        },
+        {
+          "column": 17,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 133,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "0f26347ce1cac96ba83c5a1d13fb85a3fdfb4f0bd98fcf46bd713f230ee8063d"
+        },
+        {
+          "column": 24,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 142,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "41d9670a340d3552257cda2525e9ac6369247a8d3233c5c7dd94bb8258798cdf"
+        },
+        {
+          "column": 21,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 145,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "8c2ec4c281b85a5c6c0d3f4c3465c7690d932449bce6495b2cedcd28caf40257"
+        },
+        {
+          "column": 16,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 188,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "d1260bb16e820d112133df190af95944930f11afe055b0ad2fce62bb5cbc7ede"
+        },
+        {
+          "column": 7,
+          "file": "src/features/reports/report-viewer.ts",
+          "line": 189,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "cacf9df3baa55302933e09e29a53371fdd9ea0ddc562e989fbf9ba306f517000"
+        },
+        {
+          "column": 10,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 36,
+          "message": "Parameter 'container' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "b62a7b54f63ba9c76411a10619fb41919458679782905f9c8afa04dc0d91f361"
+        },
+        {
+          "column": 18,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 37,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "d64025195d291b75ab67eb098b07311e1ad99a836e291986d2488a1febac9b93"
+        },
+        {
+          "column": 22,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 50,
+          "message": "Parameter 'e' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "a7862565dc2d7c5620d642de4b3bda350a2aac9b7defa9d3f94769b897ef8b38"
+        },
+        {
+          "column": 24,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 59,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "81660175bfdfcf54693ee47bfd316d44e12f220f0672b2850e5a625857c22052"
+        },
+        {
+          "column": 17,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 60,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "a822c48f96141e622f5321f3d9c09b96b3aa219562a09ab19fe60a91eb6b8685"
+        },
+        {
+          "column": 19,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 64,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "7c4a372950077a314e5f510946bb9650f90da6ba501a95219745fc66413c9847"
+        },
+        {
+          "column": 29,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 67,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "327844c00d6bad71b9a36afee1b9f1fce40d48ce45c7fe9c8e059ddfea4b4028"
+        },
+        {
+          "column": 20,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 71,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "57c39f1f8a2d6e3da5da1304161eaa274d067c25ec5e8049b319d24f31024edc"
+        },
+        {
+          "column": 21,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 84,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "d4432464aae159b0a95e7a4c69bf56ffb63bf9196e050a11b2e11552dd93de25"
+        },
+        {
+          "column": 23,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 94,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "dea158e4a7a1f2a7de95e3e207e527b3228529ee12666dbb09c21914f256d338"
+        },
+        {
+          "column": 17,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 95,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "9ad01be802145d597637a6458bd99cc7f4202b225e4a1dc11f3adf18e2feb67d"
+        },
+        {
+          "column": 19,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 98,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "6561cafd5da9b74df41d29d72f8d4dd59573c205c2afc191ac3a0415bc2a0ba8"
+        },
+        {
+          "column": 19,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 101,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "4d9663fae29ad2351112890e7c8d0bac4bf21d2d7b79625f4e2ef18cbb3f3c8b"
+        },
+        {
+          "column": 22,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 104,
+          "message": "Parameter 'e' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "e001643de8b71f22b54d1843064d14e431773071c459331b48d91ece4ae3f3c9"
+        },
+        {
+          "column": 34,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 105,
+          "message": "Cannot find name 'HTMLInputElement'.",
+          "rule": "TS2304",
+          "id": "585d67721f3e5de7a13ddf0fcb5c490a753f118a43e86d45732b2967e4993d4e"
+        },
+        {
+          "column": 21,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 114,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "5a58babc3f15170842618f128ae262d23fff1c5afc7ff5d1ea573e3706c60df4"
+        },
+        {
+          "column": 25,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 124,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "887a3136984005807f3e79911291a0cf4cbd8aa3024481bfd59cd4bff072742c"
+        },
+        {
+          "column": 15,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 125,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "d166744a69f9d533ae18379b050ecac5eb82801beae7b0efda081f2454043136"
+        },
+        {
+          "column": 19,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 128,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "4016717c1b17f942719f849257a300363dbd6a6cd63c0c12d25f778294a1b21e"
+        },
+        {
+          "column": 22,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 131,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "46b37afd180221db6aadcde992549a3696df60d79d266c8dda50b2f89fed1a3c"
+        },
+        {
+          "column": 25,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 134,
+          "message": "Parameter 'e' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "46c7a1448189a8de093def3bfc7cc2a6d034903ff6713eefcc8cbf188ff9c92c"
+        },
+        {
+          "column": 34,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 135,
+          "message": "Cannot find name 'HTMLTextAreaElement'.",
+          "rule": "TS2304",
+          "id": "1f7d49ecd45325cdb3da4168721e8041208125a515f1eef4fa7767747dfa1d11"
+        },
+        {
+          "column": 21,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 144,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "47dd026dca0c61602410dceddbf2303d77891c62228b64141160f3c0eb8001eb"
+        },
+        {
+          "column": 16,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 155,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "bdae57fca16c84d30f0cf1b9a660689f4685614bcbbf9964ebc8e0f9c5e677e1"
+        },
+        {
+          "column": 30,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 155,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "a1ed7d89d1b86e6574dc63524ce18f16145336f266450ca0e9c9fe35e887d0aa"
+        },
+        {
+          "column": 26,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 158,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "5b5d0f0d357d9eda1a62995ec1397e1e76e79fd63fe44baedb7f13d76d5d045e"
+        },
+        {
+          "column": 26,
+          "file": "src/features/reviews/review-form.ts",
+          "line": 163,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "3256646bf7844d020bd9abd9ea5a9d2b6d4bd3a0c39f2bb5271de22323a4b07c"
+        },
+        {
+          "column": 21,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 23,
+          "message": "Parameter 'productId' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "e892ce2347708fd347d285153d541aeace89061b01615c53fc84427949fbd8fe"
+        },
+        {
+          "column": 44,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 43,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "3eeda84a9f676f521c466e1c7aa1f9e712d6e8f4ed96fe5b2447e5e6734e84a4"
+        },
+        {
+          "column": 21,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 71,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "20463afdb2eb197c6c87a84dec8abbd28cc2adc297dd16e50e3f23f4fdc9eb57"
+        },
+        {
+          "column": 19,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 72,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "40133fac99dc90f0608e04d1ddc2d6dd1fc061ed2a955489191278c5be3e1bfd"
+        },
+        {
+          "column": 19,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 88,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "3175d9ea3056efc1c4181550c25368f9a95b2b6a9e7009f5837c448945b69b32"
+        },
+        {
+          "column": 33,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 88,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "a36dd5c693e19ff9e97c471cf92da0ed970e48509e70d1918434687d756f0340"
+        },
+        {
+          "column": 19,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 91,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "b82796a7f3eda4fd4bde588a328c152b8e5055a25e872dc2050db17417436b4f"
+        },
+        {
+          "column": 21,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 99,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "b78ac8c1395160a3782e830fe0c76b687986dafe99780846b134abc69ab00353"
+        },
+        {
+          "column": 22,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 100,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "3b44a8458ac12622ffb66c17f755c3dd81c869e103fafebc65ff0e8f016ef0f3"
+        },
+        {
+          "column": 24,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 103,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "0209b4fb313ac2429fcf3f6d8785ce1d1ec12873da2016b56576f6b388bab55d"
+        },
+        {
+          "column": 28,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 104,
+          "message": "Parameter 'e' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "560ac509d0409997cc67bf58d38adb4597e2001497505115373cdbe00a824ba2"
+        },
+        {
+          "column": 34,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 105,
+          "message": "Cannot find name 'HTMLSelectElement'.",
+          "rule": "TS2304",
+          "id": "cc97fbee684c27508a9f9172aa7ccb248c8476d41189d7fff0be5fd26624f61b"
+        },
+        {
+          "column": 19,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 111,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "a68d6f3baf0a307846a72eb67258b4c7fb7a2ee6e8811cd700e94c102b2578c6"
+        },
+        {
+          "column": 20,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 122,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "96aa66981c97f64c2ab04370525bdd6c57ecbb7c68d8c5e9a3177332ec899f8c"
+        },
+        {
+          "column": 18,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 123,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "f67df38235301cd20403900dd3e6bce9172a2a183375e040cb206ae796338e30"
+        },
+        {
+          "column": 33,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 148,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "d13c6bc9c3fb308bacbd3cd61515eeace0737fa4a25d2e0a5dca99695a131792"
+        },
+        {
+          "column": 17,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 149,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "e4ac293dc099661ab05b085ee152ae5f64ac98af3dff74ff772ec1fccc73050a"
+        },
+        {
+          "column": 20,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 152,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "71960854724dc4dea0e06daaef4f41bf92a38bd336a6ae160cc28cbe1d578871"
+        },
+        {
+          "column": 19,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 156,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "44d8996eb3d86a3b8dd0499ff843bd0cf681a0151f554ddb9b200f2f2dedabd6"
+        },
+        {
+          "column": 21,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 159,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "d8025fdc27ab458b36aa4ba4596bdefb12e738d80372d69e57c42c3c33aaf3d4"
+        },
+        {
+          "column": 21,
+          "file": "src/features/reviews/review-list.ts",
+          "line": 162,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "c987c7131235558be669a75d36c9904a602228ddf4716c91e3594b0e96e85029"
+        },
+        {
+          "column": 10,
+          "file": "src/features/search/search-component.ts",
+          "line": 23,
+          "message": "Parameter 'container' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "a249e6fdcdf1d1d47f1d314922609079882d7babc63753171c6f9530df4322ef"
+        },
+        {
+          "column": 21,
+          "file": "src/features/search/search-component.ts",
+          "line": 24,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "3b1a9bc0cd4c3c171164a6e5731e6e4b5e4981cf6f2ec3f7ec26baa467b36078"
+        },
+        {
+          "column": 24,
+          "file": "src/features/search/search-component.ts",
+          "line": 39,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "f685602efdacff2113b07f58c86e3e490721f086d03cba57140c782149aa895e"
+        },
+        {
+          "column": 17,
+          "file": "src/features/search/search-component.ts",
+          "line": 40,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "3f2252b54370d0674718b0406a729d8bc7b4eff056c8f12bef331920a0e17e1a"
+        },
+        {
+          "column": 19,
+          "file": "src/features/search/search-component.ts",
+          "line": 44,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "4db24d109ba3240ca275fa7175c8ed4174eba1851a0bce7f6ff61f50679d5989"
+        },
+        {
+          "column": 22,
+          "file": "src/features/search/search-component.ts",
+          "line": 49,
+          "message": "Parameter 'e' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "49ed2ec0f7ab11f89c7e4aeed47f3ede249fd21b37229368d03dc3cd6968f2b6"
+        },
+        {
+          "column": 34,
+          "file": "src/features/search/search-component.ts",
+          "line": 50,
+          "message": "Cannot find name 'HTMLInputElement'.",
+          "rule": "TS2304",
+          "id": "cd7eb285731fb03d2680195250c34d9b036809570f2f1ab5c8835617de10a847"
+        },
+        {
+          "column": 20,
+          "file": "src/features/search/search-component.ts",
+          "line": 55,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "e42663fb5753acc4c8c1f94f349c98deb06feae016469ddad493ae5940803f78"
+        },
+        {
+          "column": 20,
+          "file": "src/features/search/search-component.ts",
+          "line": 66,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "b70d3fe2d91ca7f14900248130f077163a9a60a8e263e98f589a2df96d005be9"
+        },
+        {
+          "column": 17,
+          "file": "src/features/search/search-component.ts",
+          "line": 67,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "5efdb0767567fe8f754fb105dfcdb93f7680ec6b3a50a2819ea3659088310e96"
+        },
+        {
+          "column": 27,
+          "file": "src/features/search/search-component.ts",
+          "line": 83,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "d9c717f8843c8d982d496041d88282a9c3c49c98c796238220edbdf2734d1f64"
+        },
+        {
+          "column": 15,
+          "file": "src/features/search/search-component.ts",
+          "line": 84,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "a17d91ade5df3daed3313ee0bc9384be159c614130b38856402adac668cbf3d0"
+        },
+        {
+          "column": 19,
+          "file": "src/features/search/search-component.ts",
+          "line": 87,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "214a16d1dd30b8cb83d0ea97c14745dddf76fd2afc34234b6517a2243d997bc6"
+        },
+        {
+          "column": 20,
+          "file": "src/features/search/search-component.ts",
+          "line": 90,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "e9ede8c1197ffe5f7f931d9a740bb75a7b5bae4256cc1f4f43d1ce893ec17140"
+        },
+        {
+          "column": 16,
+          "file": "src/features/search/search-component.ts",
+          "line": 101,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "702f0738d291bbd2fdc2ea00fa2018a38c484ee0586aede534823d045c9aa93f"
+        },
+        {
+          "column": 30,
+          "file": "src/features/search/search-component.ts",
+          "line": 101,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "be8ff93fc6f53d227033f138260b4e530ba3325fd65b61ca4c22063e44e37717"
+        },
+        {
+          "column": 19,
+          "file": "src/features/search/search-component.ts",
+          "line": 104,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "58fcc62dbfbec8cfb84dc1c8396967fe112f1c01490ea3dd4834f0641b6f3231"
+        },
+        {
+          "column": 22,
+          "file": "src/features/search/search-component.ts",
+          "line": 107,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "5ca040c43e610a17eb965389e02d557e3ee94e5e53f2d9dc3baa33c92e06b93c"
+        },
+        {
+          "column": 22,
+          "file": "src/features/search/search-component.ts",
+          "line": 111,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "0b625fde0bf555d2b5e6537d02291bdbb1409cec8a85d5213ab51466872f5327"
+        },
+        {
+          "column": 20,
+          "file": "src/features/search/search-component.ts",
+          "line": 122,
+          "message": "Cannot find name 'HTMLElement'.",
+          "rule": "TS2304",
+          "id": "0ed14cc724049d16dfff421bd2746d33f3ce93886fa9d3b8e544597f96ecc07c"
+        },
+        {
+          "column": 17,
+          "file": "src/features/search/search-component.ts",
+          "line": 123,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "934d872846247cd2fcba6657c1faf974b1b660aa6538bbec4f07eb5a8285ea81"
+        },
+        {
+          "column": 18,
+          "file": "src/features/search/search-component.ts",
+          "line": 141,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "dfb2c40a8f6b0b080d49a888d366d9b60beddee15482766666a8cc3364364467"
+        },
+        {
+          "column": 18,
+          "file": "src/features/search/search-component.ts",
+          "line": 143,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "326e0c381ddcd0c22880c5f098f473980266037731bd27ef557715bae8ab2382"
+        },
+        {
+          "column": 16,
+          "file": "src/features/search/search-service.ts",
+          "line": 24,
+          "message": "Parameter 'filters' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "fd2b87452d7fc9e9849fb13516de7791c3e2249f048a5f548e56a4ed541ade3f"
+        },
+        {
+          "column": 21,
+          "file": "src/features/search/search-service.ts",
+          "line": 49,
+          "message": "Property 'data' does not exist on type 'Product[]'.",
+          "rule": "TS2339",
+          "id": "67ff227a6cd81cab443a84dc324023d65ae8aeece96dfae6efb5062fe2f4f2cc"
+        },
+        {
+          "column": 59,
+          "file": "src/features/search/search-service.ts",
+          "line": 53,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "ca7a7ac7510b0572f9e2ae3c40b9680116a76137fc70ebe6eec3c33c6616da68"
+        },
+        {
+          "column": 49,
+          "file": "src/features/search/search-service.ts",
+          "line": 57,
+          "message": "Property 'categoryId' does not exist on type 'Product'. Did you mean 'category'?",
+          "rule": "TS2551",
+          "id": "68bbc479d34832a8a30c886c45f4ea1d56c1de4792e20a93955c1a290f9cfe2a"
+        },
+        {
+          "column": 57,
+          "file": "src/features/search/search-service.ts",
+          "line": 74,
+          "message": "Argument of type 'string' is not assignable to parameter of type 'Tag'.",
+          "rule": "TS2345",
+          "id": "a77449fc05157784eed91604de0b584b48d2b380466c70346c2982df44ec62b5"
+        },
+        {
+          "column": 14,
+          "file": "src/features/search/search-service.ts",
+          "line": 92,
+          "message": "The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.",
+          "rule": "TS2362",
+          "id": "357d038bbb0f50b3f96b2f66b1a78fb1abc34dc0b8fb336c8174f0e6f3585de6"
+        },
+        {
+          "column": 23,
+          "file": "src/features/search/search-service.ts",
+          "line": 92,
+          "message": "The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.",
+          "rule": "TS2363",
+          "id": "c0bad6ce1196155f7449c85ac776254cfb82239cb2931215a15b2bda76c438c4"
+        },
+        {
+          "column": 5,
+          "file": "src/features/search/search-service.ts",
+          "line": 113,
+          "message": "Type 'number' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "b3df7a9f54bc2d366521b616bd1224437053974c7ceb9d5a6a8c76aa06928e73"
+        },
+        {
+          "column": 32,
+          "file": "src/features/search/search-service.ts",
+          "line": 141,
+          "message": "No overload matches this call.\n  Overload 1 of 2, '(predicate: (value: Product, index: number, array: Product[]) => value is T, thisArg?: any): T[]', gave the following error.\n    Argument of type '(item: T) => boolean' is not assignable to parameter of type '(value: Product, index: number, array: Product[]) => value is T'.\n      Types of parameters 'item' and 'value' are incompatible.\n        Type 'Product' is not assignable to type 'T'.\n          'Product' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'Product'.\n  Overload 2 of 2, '(predicate: (value: Product, index: number, array: Product[]) => unknown, thisArg?: any): Product[]', gave the following error.\n    Argument of type '(item: T) => boolean' is not assignable to parameter of type '(value: Product, index: number, array: Product[]) => unknown'.\n      Types of parameters 'item' and 'value' are incompatible.\n        Type 'Product' is not assignable to type 'T'.\n          'Product' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'Product'.",
+          "rule": "TS2769",
+          "id": "4c1ed0e8de296c976b746ae385d2504caa5cf8b2b745e046ecd164b0add5537b"
+        },
+        {
           "column": 16,
           "file": "src/features/settings/settings-controller.ts",
           "line": 9,
@@ -3136,6 +6040,22 @@
           "id": "bc38eae82be4ef1e60545b54aa7a224b6910767d35bd3c05abe46c627ecbcb14"
         },
         {
+          "column": 17,
+          "file": "src/hooks/use-form.ts",
+          "line": 37,
+          "message": "Parameter 'field' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "a9e661db453c609a9c8cf4ab367e15853bcaa663efac912d7da706e9a229c06a"
+        },
+        {
+          "column": 5,
+          "file": "src/hooks/use-form.ts",
+          "line": 94,
+          "message": "Type 'string | undefined' is not assignable to type 'number'.\n  Type 'undefined' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "ac930eae7b7760ae03dedb8d13470d183d5fbf824f3d6ccf4b3c2983c549d921"
+        },
+        {
           "column": 20,
           "file": "src/hooks/use-local-storage.ts",
           "line": 14,
@@ -3184,6 +6104,158 @@
           "id": "ad6197044feeef666e2a481233e4ab6ea1b886b31c405d797922ab943b078135"
         },
         {
+          "column": 16,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 30,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "14d6f57a72df779cb12c14468ae38a87c4b3903d1d893ec08018682a0a65679c"
+        },
+        {
+          "column": 26,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 31,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "de62baac94c6071eaee0a5f2bc77034e4d97543078d7d4306d32bd3c63d3284b"
+        },
+        {
+          "column": 27,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 32,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "9bbee44b391598d45f248f1a5f5721425fac934b376853f34071ce26004a30c9"
+        },
+        {
+          "column": 30,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 36,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "9e5ca6f0e532796a800a4422f72b77fab0199f5f3d520cd10f416581ee68f332"
+        },
+        {
+          "column": 11,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 42,
+          "message": "Parameter 'query' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "2093a3cffe77a79835846c5bb0a7867946221f1529e90828c47d83979c502cb7"
+        },
+        {
+          "column": 16,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 43,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "d42913c51e8dfd390d3e5b766d095b850a5001917a18d4865e496b26da5d3dfc"
+        },
+        {
+          "column": 12,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 47,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "3c0c304484c3803a05889f4b156a6a37f621593a35fb6e3a58c9288fda095c66"
+        },
+        {
+          "column": 41,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 67,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "b054a6cb6cea5eb68d30a97a7cd2ebe70607f146319be8ed648c14e3746a5562"
+        },
+        {
+          "column": 5,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 83,
+          "message": "Type 'number' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "caa4375dec1e03186fdaa1e2982c879a97839ef31cb0e4ddffa06b444404c0ae"
+        },
+        {
+          "column": 16,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 128,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "b4571351bee54571bedb091e54218b3f0056564350c605f3b0c5e3ed5d6e45ed"
+        },
+        {
+          "column": 16,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 135,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "e97829c5a543505bdb4f67f2f674fbe780f589724aad61c32d57175346448262"
+        },
+        {
+          "column": 17,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 136,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "f6ee1a8ed2a3ea365042671d65e5ff2997e270858f35eed9f242f3cdd13c2eb8"
+        },
+        {
+          "column": 5,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 143,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "18e3aa53710f1004dde65678b2a0a903d90c229a72c2d71fe672dbd1d9ad0992"
+        },
+        {
+          "column": 7,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 146,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "c9e9b4ffb1396c502b41aca4121b89dbb63d9519d004ed85cc8276d1f7b24a77"
+        },
+        {
+          "column": 16,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 154,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "1f8ce9fc93d9e98394bab0a1d3293c68b52710c36f10cb60cfc8c0ad81b30302"
+        },
+        {
+          "column": 24,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 158,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "1308275c88cce47d398411e09c2344c0a25ba593844ee78f4bd33a089ab0e6a6"
+        },
+        {
+          "column": 25,
+          "file": "src/hooks/use-media-query.ts",
+          "line": 160,
+          "message": "Cannot find name 'MediaQueryListEvent'.",
+          "rule": "TS2304",
+          "id": "39b5abe40e17a75fa9eb89a7b944a436800e622e32b070de22599395f2c85e66"
+        },
+        {
+          "column": 11,
+          "file": "src/hooks/use-pagination.ts",
+          "line": 26,
+          "message": "Parameter 'page' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "3465af81e1261f0b559d29130e785bb6dc85843a6a746be98a9ba0d86ed9a1eb"
+        },
+        {
+          "column": 5,
+          "file": "src/hooks/use-pagination.ts",
+          "line": 71,
+          "message": "Type 'number' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "7fce0b309d62a0cf76fe7b3ebb01fb5c9c02df63b63fa7e23305867f16c9ee28"
+        },
+        {
           "column": 44,
           "file": "src/hooks/use-state.ts",
           "line": 29,
@@ -3206,6 +6278,110 @@
           "message": "Type 'number' is not assignable to type 'string'.",
           "rule": "TS2322",
           "id": "a7046a9f980dc947ea03e39673f8335ef3f58aef908a8fc1691deaebf56214f4"
+        },
+        {
+          "column": 12,
+          "file": "src/hooks/use-theme.ts",
+          "line": 22,
+          "message": "Parameter 'theme' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "78be648cfe6c5ded10bdcd914801b4eda6d29ddd3a14e895b934dffd94ff9bbf"
+        },
+        {
+          "column": 34,
+          "file": "src/hooks/use-theme.ts",
+          "line": 40,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "bd7500a0b7318fec0681232dba18f5ad875613392af970bd75b96905f0130985"
+        },
+        {
+          "column": 16,
+          "file": "src/hooks/use-theme.ts",
+          "line": 59,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "fed565d49e57c1be8fca157f3b8062c19e548657b6ca42023a065a21c13dc815"
+        },
+        {
+          "column": 42,
+          "file": "src/hooks/use-theme.ts",
+          "line": 59,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "fcd0cc7cc9afba15192dad1d3219664fce97746ae53d2daeb295c3f7c5a51b51"
+        },
+        {
+          "column": 21,
+          "file": "src/hooks/use-theme.ts",
+          "line": 60,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "3978ff86f080939d4af64385012eb05b234072b02675cc35e23e84e846e34b21"
+        },
+        {
+          "column": 5,
+          "file": "src/hooks/use-theme.ts",
+          "line": 69,
+          "message": "Type 'boolean' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "f2aee4e5570603b5a6aab14607a9978bbdc1212993db75e091d3c525957cbcd9"
+        },
+        {
+          "column": 16,
+          "file": "src/hooks/use-theme.ts",
+          "line": 73,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "bc8c3d25cb96289714085e509349374f42ab3659448e430d993546c87b2da069"
+        },
+        {
+          "column": 7,
+          "file": "src/hooks/use-theme.ts",
+          "line": 75,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "689b6b1860a85b993f55a7a4248cf66e8febaec674fe55929e59ae34cb671731"
+        },
+        {
+          "column": 7,
+          "file": "src/hooks/use-theme.ts",
+          "line": 76,
+          "message": "Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.",
+          "rule": "TS2584",
+          "id": "13d588080c8b92e76404c762eb360dc855b28bb6f0340c57c72927a5a4e17e3a"
+        },
+        {
+          "column": 16,
+          "file": "src/hooks/use-theme.ts",
+          "line": 104,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "efd617656cb751066f0d9f5703aecd52a99c72cb58ec3ebf32df8dbda1a1a945"
+        },
+        {
+          "column": 43,
+          "file": "src/hooks/use-theme.ts",
+          "line": 104,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "cf7abe1b8695ac48b61598692b52d1e04b62cc07154fce385c83e63a6fad2330"
+        },
+        {
+          "column": 24,
+          "file": "src/hooks/use-theme.ts",
+          "line": 108,
+          "message": "Cannot find name 'window'.",
+          "rule": "TS2304",
+          "id": "b2381b4ccacd4e9e992dca92a45118ddde2ff3932c24dbb97317ded56159ca5d"
+        },
+        {
+          "column": 25,
+          "file": "src/hooks/use-theme.ts",
+          "line": 110,
+          "message": "Cannot find name 'MediaQueryListEvent'.",
+          "rule": "TS2304",
+          "id": "c3426f0956aa9799db8e90be999b5c3fe100efa5982e3cda7167f8cc775749b5"
         },
         {
           "column": 38,
@@ -3240,6 +6416,166 @@
           "id": "4834812d3845ae046dcc4cb6e03f7090adbfe31e6e02b535b98892e7b0e7133c"
         },
         {
+          "column": 20,
+          "file": "src/integrations/admin-integration.ts",
+          "line": 27,
+          "message": "Parameter 'adminUser' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "ee98383415a3e74822c127217bed727229304678aa70ef0ce354c9aa3e3c699b"
+        },
+        {
+          "column": 6,
+          "file": "src/integrations/admin-integration.ts",
+          "line": 58,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "aa12a0d90c8fdd9d4c6fa6c1c75bf050a4ee2efbf9637bd92288065a5ae95785"
+        },
+        {
+          "column": 5,
+          "file": "src/integrations/admin-integration.ts",
+          "line": 96,
+          "message": "Type 'ApiResponse<AnalyticsMetrics>' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "71e90f9e4fc4a952384d4651d362cd6f959d103b04e9c3438950d2902be4bc0c"
+        },
+        {
+          "column": 25,
+          "file": "src/integrations/checkout-integration.ts",
+          "line": 29,
+          "message": "Parameter 'checkoutData' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "6cd8bb382eb275481b05f5afa429085b8c3b5f06add0e0dd56b25616dcb778b6"
+        },
+        {
+          "column": 66,
+          "file": "src/integrations/checkout-integration.ts",
+          "line": 59,
+          "message": "Property 'carrier' does not exist on type 'number'.",
+          "rule": "TS2339",
+          "id": "f4213503e81d8306c3b97fdedbb18648f456a0bce2b4d1b634dec2270fd3394c"
+        },
+        {
+          "column": 50,
+          "file": "src/integrations/checkout-integration.ts",
+          "line": 95,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "805a6b319ef0539c3c6e68626d0474d699068fcd4229f56a733044316d8dfbaf"
+        },
+        {
+          "column": 7,
+          "file": "src/integrations/checkout-integration.ts",
+          "line": 100,
+          "message": "Type '{ productId: number; quantity: number; price: number; }[]' is not assignable to type 'OrderItem[]'.\n  Property 'product' is missing in type '{ productId: number; quantity: number; price: number; }' but required in type 'OrderItem'.",
+          "rule": "TS2322",
+          "id": "1da76e810905a3f083705daceb748c21b7a6c605fff7bb0d4758b8fddddce5a5"
+        },
+        {
+          "column": 5,
+          "file": "src/integrations/checkout-integration.ts",
+          "line": 133,
+          "message": "Type 'ShippingRate | undefined' is not assignable to type 'number'.\n  Type 'undefined' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "72632405afb40c325e61a995c9c681ba243e5b581cea059ffe33922e3322d114"
+        },
+        {
+          "column": 7,
+          "file": "src/integrations/checkout-integration.ts",
+          "line": 151,
+          "message": "Argument of type '{ id: string; type: PaymentMethod; last4: string; expiryMonth: number; expiryYear: number; }' is not assignable to parameter of type 'PaymentMethod'.\n  Types of property 'type' are incompatible.\n    Type 'PaymentMethod' is not assignable to type '\"credit_card\" | \"paypal\" | \"debit_card\" | \"stripe\"'.\n      Type '\"apple_pay\"' is not assignable to type '\"credit_card\" | \"paypal\" | \"debit_card\" | \"stripe\"'.",
+          "rule": "TS2345",
+          "id": "4165604899b379f7de561f7fc70a439b07a502e6bb9a3045beb5833fddceb983"
+        },
+        {
+          "column": 5,
+          "file": "src/integrations/checkout-integration.ts",
+          "line": 171,
+          "message": "Type 'number' is not assignable to type 'Shipment'.",
+          "rule": "TS2322",
+          "id": "1197101a2e91ce00c0f1ee6494039aee87067c6256b77d34b1dcd4a6b2d674bd"
+        },
+        {
+          "column": 5,
+          "file": "src/integrations/checkout-integration.ts",
+          "line": 207,
+          "message": "Type 'ShippingRate[]' is not assignable to type '{ carrier: string; cost: number; days: number; }[]'.\n  Property 'days' is missing in type 'ShippingRate' but required in type '{ carrier: string; cost: number; days: number; }'.",
+          "rule": "TS2322",
+          "id": "53def313a9345691d4f5c663db260a071ceee92a299c51192002c3b39ddc59f6"
+        },
+        {
+          "column": 20,
+          "file": "src/integrations/dashboard-integration.ts",
+          "line": 28,
+          "message": "Parameter 'userId' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "96c128f7c2cd9d4a8835ca368f36779eb23c4d5196fd70ae5cb892ae7d7e913d"
+        },
+        {
+          "column": 5,
+          "file": "src/integrations/dashboard-integration.ts",
+          "line": 107,
+          "message": "Type 'DashboardData | null' is not assignable to type 'string'.\n  Type 'null' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "2756990690db6642e86e9913d4f3ff81cc1b9340f361b41b9ca2e6d5879aa5df"
+        },
+        {
+          "column": 10,
+          "file": "src/integrations/reporting-integration.ts",
+          "line": 4,
+          "message": "'\"../features/reports/report-viewer\"' has no exported member named 'reportViewer'. Did you mean 'ReportViewer'?",
+          "rule": "TS2724",
+          "id": "f0a93aea7f9a950683068eb30a37ee40079f04bd25e289490d33ae9d493024a1"
+        },
+        {
+          "column": 24,
+          "file": "src/integrations/reporting-integration.ts",
+          "line": 35,
+          "message": "Parameter 'reportType' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "623c62805a4293a3147a312295a8cce0edbc289974b7865aea502689f7dfe4b9"
+        },
+        {
+          "column": 6,
+          "file": "src/integrations/reporting-integration.ts",
+          "line": 103,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "43e2baeba28f1de0e15da85a212ccdcf757fd214dda89841b357cf7e44520052"
+        },
+        {
+          "column": 5,
+          "file": "src/integrations/reporting-integration.ts",
+          "line": 145,
+          "message": "Type 'ReportData[]' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "1e71f7fd25201039d869d803f0bf925885578720ce0150f5d372fcd2e1630a61"
+        },
+        {
+          "column": 3,
+          "file": "src/models/address.ts",
+          "line": 23,
+          "message": "Parameter 'name' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "3401df073cc4fdec52c5236f4aa3087a35ec37382bd19278544108c7862cbe71"
+        },
+        {
+          "column": 52,
+          "file": "src/models/address.ts",
+          "line": 43,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "d85171f5ea01ab3cb7b67a808a4bf3c43bf08397e3165a5957d7a5bc07fbac29"
+        },
+        {
+          "column": 3,
+          "file": "src/models/address.ts",
+          "line": 112,
+          "message": "Type 'string' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "93675b9f8b86bba62c34540f27d7f38858cf62205feb005dddfa84bb5ca85cf0"
+        },
+        {
           "column": 3,
           "file": "src/models/analytics.ts",
           "line": 21,
@@ -3272,6 +6608,30 @@
           "id": "211a34eb19226f2c245ba63d85c416f7c71deae117e749591180729efa338a3d"
         },
         {
+          "column": 3,
+          "file": "src/models/comment.ts",
+          "line": 28,
+          "message": "Parameter 'content' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "47cbd88600e047cb3d8fa5c28dee55b59f61894067ea4e7f029c3ce59524ac92"
+        },
+        {
+          "column": 50,
+          "file": "src/models/comment.ts",
+          "line": 50,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "345ab8180f090c1ce355d71dc3fedc0ee013fc1b740221cb9a1d5f18b3e9e369"
+        },
+        {
+          "column": 3,
+          "file": "src/models/comment.ts",
+          "line": 86,
+          "message": "Type 'number' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "5e29ace4432a47f92d3520d8f35988ab58d3a88bfaa2b6b213f20170b780d971"
+        },
+        {
           "column": 45,
           "file": "src/models/dashboard.ts",
           "line": 25,
@@ -3286,6 +6646,30 @@
           "message": "Function lacks ending return statement and return type does not include 'undefined'.",
           "rule": "TS2366",
           "id": "aee3d16808b22883fa5c9559a2de5d6c66030fe419a706dc917f26d0cbd59c4c"
+        },
+        {
+          "column": 40,
+          "file": "src/models/invoice.ts",
+          "line": 36,
+          "message": "Parameter 'item' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "fed82b56d841b4fff84648951afc00763f5bd06192d2df506ebc2d2bce9f8bb5"
+        },
+        {
+          "column": 4,
+          "file": "src/models/invoice.ts",
+          "line": 46,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "6dca25f3faf1b204d947fd1092925d3618c32795ef91a9470057ec7a55783c45"
+        },
+        {
+          "column": 3,
+          "file": "src/models/invoice.ts",
+          "line": 82,
+          "message": "Type 'string' is not assignable to type 'number'.\n  Type 'string' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "b7aba80d0f7b18030f12d4b386bc5607c2c567b3c1f1212eb8e7e99a7cf5a433"
         },
         {
           "column": 3,
@@ -3353,6 +6737,30 @@
         },
         {
           "column": 3,
+          "file": "src/models/payment.ts",
+          "line": 47,
+          "message": "Parameter 'orderId' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "2ef67999499bc2c733079190d57ea76a710251eb82832f0418a3f419d2c02fac"
+        },
+        {
+          "column": 56,
+          "file": "src/models/payment.ts",
+          "line": 64,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "2d808e2c2c3404dc640fe0fafb2bac6a761506d13f0cc8032d0445dab7778f0c"
+        },
+        {
+          "column": 3,
+          "file": "src/models/payment.ts",
+          "line": 93,
+          "message": "Type 'number' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "5bdb62971bdefef927c0311d14cb45c976f6964ed06a19b8394a05d6eb804569"
+        },
+        {
+          "column": 3,
           "file": "src/models/permission.ts",
           "line": 27,
           "message": "Parameter 'name' implicitly has an 'any' type.",
@@ -3398,6 +6806,30 @@
           "message": "Type 'number' is not assignable to type 'string'.",
           "rule": "TS2322",
           "id": "74743554d46a39d5ac9fe1ecd8eadb6e7270c5b4c4ee2c9a926a4d50c4df0508"
+        },
+        {
+          "column": 3,
+          "file": "src/models/review.ts",
+          "line": 28,
+          "message": "Parameter 'userId' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "691a85163e311996cfbb64dadf52e22378d6be7ad5360e803cf8639a591c1270"
+        },
+        {
+          "column": 48,
+          "file": "src/models/review.ts",
+          "line": 49,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "ecdb714133baf090f39ec9cb61779a1da0893aee06348399a9527993018b85a5"
+        },
+        {
+          "column": 3,
+          "file": "src/models/review.ts",
+          "line": 91,
+          "message": "Type 'number' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "5c8ceec1951e1f80e29af4b8d3c0aaf3678fef9d1d3da4d5e834224b35e2aacd"
         },
         {
           "column": 9,
@@ -3470,6 +6902,30 @@
           "message": "Function lacks ending return statement and return type does not include 'undefined'.",
           "rule": "TS2366",
           "id": "a8a1949b5bdaea59aa6e5f33931b11257e321a88193c37ae87716138211a4d26"
+        },
+        {
+          "column": 32,
+          "file": "src/models/shipment.ts",
+          "line": 50,
+          "message": "Parameter 'orderId' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "339bf445cd150f674b8ceb68146fdd8ba114099932214eced7d368cca1234603"
+        },
+        {
+          "column": 58,
+          "file": "src/models/shipment.ts",
+          "line": 68,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "a42766fd2041124e806d90641c362cde401e68e09727b911ae6cfb0d7faf077b"
+        },
+        {
+          "column": 3,
+          "file": "src/models/shipment.ts",
+          "line": 112,
+          "message": "Type 'string' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "16e8165ce6e3ca81b01e3c08801eeb9d071ff1287fe422e28bf4e74e549a5d60"
         },
         {
           "column": 27,
@@ -3584,6 +7040,38 @@
           "id": "33e098523b89cbbb998ba615f267445251143262a84923e761ca0c1d3341a60c"
         },
         {
+          "column": 27,
+          "file": "src/services/inventory-service.ts",
+          "line": 26,
+          "message": "Parameter 'productId' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "e0fd18b99d6903c8e98021832c0b462f542c52b688c950e368b60be840ce93b4"
+        },
+        {
+          "column": 5,
+          "file": "src/services/inventory-service.ts",
+          "line": 97,
+          "message": "Type 'number' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "4878f67df69e55f08db439d2b2105dbb763788a57bf2fe48b248add61fc3284d"
+        },
+        {
+          "column": 20,
+          "file": "src/services/inventory-service.ts",
+          "line": 103,
+          "message": "Property 'sku' does not exist on type 'Product'.",
+          "rule": "TS2339",
+          "id": "9c983e10b165218c1a97c39315bd2995af7a7bbda5fa9568d43eb54a3bc9080c"
+        },
+        {
+          "column": 42,
+          "file": "src/services/inventory-service.ts",
+          "line": 153,
+          "message": "No overload matches this call.\n  Overload 1 of 2, '(predicate: (value: InventoryItem, index: number, array: InventoryItem[]) => value is T, thisArg?: any): T[]', gave the following error.\n    Argument of type '(item: T) => boolean' is not assignable to parameter of type '(value: InventoryItem, index: number, array: InventoryItem[]) => value is T'.\n      Types of parameters 'item' and 'value' are incompatible.\n        Type 'InventoryItem' is not assignable to type 'T'.\n          'InventoryItem' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'InventoryItem'.\n  Overload 2 of 2, '(predicate: (value: InventoryItem, index: number, array: InventoryItem[]) => unknown, thisArg?: any): InventoryItem[]', gave the following error.\n    Argument of type '(item: T) => boolean' is not assignable to parameter of type '(value: InventoryItem, index: number, array: InventoryItem[]) => unknown'.\n      Types of parameters 'item' and 'value' are incompatible.\n        Type 'InventoryItem' is not assignable to type 'T'.\n          'InventoryItem' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'InventoryItem'.",
+          "rule": "TS2769",
+          "id": "05f63eaa410beb5252f330a3c6a433dcec832d829237cfa65d43247abdba2258"
+        },
+        {
           "column": 5,
           "file": "src/services/notification-service.ts",
           "line": 11,
@@ -3665,6 +7153,30 @@
         },
         {
           "column": 24,
+          "file": "src/services/payment-service.ts",
+          "line": 24,
+          "message": "Parameter 'orderId' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "fb7a0450e15eae8d7d4cf25faf698a6714661c6f88f5ba69b5df745589ea3e70"
+        },
+        {
+          "column": 6,
+          "file": "src/services/payment-service.ts",
+          "line": 44,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "911cc8e9858ee9824a07c99153883368ae636c460b037cf2af1ef7e73fdb3f40"
+        },
+        {
+          "column": 5,
+          "file": "src/services/payment-service.ts",
+          "line": 91,
+          "message": "Type 'boolean' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "e38668399bf9800623c0365a6e9ae156cb4238081a9d2933f7dd4fb24b8d56d4"
+        },
+        {
+          "column": 24,
           "file": "src/services/product-service.ts",
           "line": 8,
           "message": "Parameter 'productId' implicitly has an 'any' type.",
@@ -3702,6 +7214,62 @@
           "message": "Type 'string' is not assignable to type 'number'.",
           "rule": "TS2322",
           "id": "680623c1ad879c883039e4be5daaf5f23227a0199bd9f8ec892b403324e8522e"
+        },
+        {
+          "column": 29,
+          "file": "src/services/reporting-service.ts",
+          "line": 32,
+          "message": "Parameter 'startDate' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "3c53f9757e3811a89711cec8cc95efef2ad8f9275df02375612520c6ff4fa1a7"
+        },
+        {
+          "column": 39,
+          "file": "src/services/reporting-service.ts",
+          "line": 60,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "d3df8a7b80c3f370b9c82e015a603c404b953a0c8ed66a64be8e4015e2156c27"
+        },
+        {
+          "column": 5,
+          "file": "src/services/reporting-service.ts",
+          "line": 106,
+          "message": "Type 'ReportData' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "13a7075a77ded31c22901c24d8ddb87385bc1fc81e367716d9ac8e6873b17ff4"
+        },
+        {
+          "column": 27,
+          "file": "src/services/shipping-service.ts",
+          "line": 30,
+          "message": "Parameter 'order' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "4c1d3612776b9f70ae4f35c24f535b7e8255bc0b2b89aa4dbe13f085f14d6a2c"
+        },
+        {
+          "column": 38,
+          "file": "src/services/shipping-service.ts",
+          "line": 51,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "5c8b8f124fd3043d35b8843094cb7df25e2e4ac54ef5d1d6372bb3db805bd5e4"
+        },
+        {
+          "column": 11,
+          "file": "src/services/shipping-service.ts",
+          "line": 96,
+          "message": "Property 'items' is missing in type '{ id: string; orderId: number; carrier: string; trackingNumber: string; status: \"pending\"; createdAt: Date; updatedAt: Date; estimatedDelivery: Date; }' but required in type 'Shipment'.",
+          "rule": "TS2741",
+          "id": "da4c69e5aac458b79cb53746c78444a7bd87953309499fc3d3d56020a5a4598e"
+        },
+        {
+          "column": 5,
+          "file": "src/services/shipping-service.ts",
+          "line": 107,
+          "message": "Type 'Shipment' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "62b078c95055363b86aae2ee06aea00087295834e85c418edbfa1eda40294826"
         },
         {
           "column": 3,
@@ -3880,6 +7448,78 @@
           "id": "90bdae3c96c77353962ae391e4e695abd9beb616814be50dc6395bbe73c2e767"
         },
         {
+          "column": 19,
+          "file": "src/utils/color-utils.ts",
+          "line": 16,
+          "message": "Parameter 'hex' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "8ca638ec978f51763ea1c9d4ebb84f3da69d7418518df1ef62af5e4be0788448"
+        },
+        {
+          "column": 30,
+          "file": "src/utils/color-utils.ts",
+          "line": 45,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "bfd772a696b76503f923bdff46088225c39b9b7aaf644140b4a2c5f938f0c9a7"
+        },
+        {
+          "column": 5,
+          "file": "src/utils/color-utils.ts",
+          "line": 119,
+          "message": "Type 'number' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "4e1ee506fb4c3419645819afefeb684d4fde4505bcc24050770dd66fa3b6899b"
+        },
+        {
+          "column": 12,
+          "file": "src/utils/color-utils.ts",
+          "line": 125,
+          "message": "Operator '<' cannot be applied to types 'string' and 'number'.",
+          "rule": "TS2365",
+          "id": "ab362c386a737119a6d2f38ac3f562ec889dad3a2dff8505a65ceddb14ba4526"
+        },
+        {
+          "column": 30,
+          "file": "src/utils/color-utils.ts",
+          "line": 196,
+          "message": "Argument of type 'string' is not assignable to parameter of type 'number'.",
+          "rule": "TS2345",
+          "id": "6f336f9477d7df16a0986a6bf289ab59a046879d6b2da5d2cfdbc05769493b14"
+        },
+        {
+          "column": 29,
+          "file": "src/utils/color-utils.ts",
+          "line": 197,
+          "message": "Argument of type 'string' is not assignable to parameter of type 'number'.",
+          "rule": "TS2345",
+          "id": "c25e1f1423b2be57169b135b7044f7148131b7d8d84fa28e0146507957e2768d"
+        },
+        {
+          "column": 29,
+          "file": "src/utils/crypto-utils.ts",
+          "line": 4,
+          "message": "Parameter 'password' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "e6c57a70b0393a00e8b9fe3e7403a15e96cc74a03dde70cabb9e7ec1d0572566"
+        },
+        {
+          "column": 37,
+          "file": "src/utils/crypto-utils.ts",
+          "line": 30,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "60d3139e95c7a0073c374ccb2a71965d9e14f7b062913b157ce1d217cc156fa1"
+        },
+        {
+          "column": 5,
+          "file": "src/utils/crypto-utils.ts",
+          "line": 57,
+          "message": "Type 'string' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "21b3a566465937e12516677d2193e53dfc38c34eaff9dde3112b5e2e08b4984d"
+        },
+        {
           "column": 21,
           "file": "src/utils/date-utils.ts",
           "line": 4,
@@ -3950,6 +7590,54 @@
           "message": "Type 'boolean' is not assignable to type 'number'.",
           "rule": "TS2322",
           "id": "aff9e9d4fa4746b09d8f7d7f35bb24b67f86150bca983915ef95b0fbe2bf260f"
+        },
+        {
+          "column": 22,
+          "file": "src/utils/file-utils.ts",
+          "line": 17,
+          "message": "Parameter 'file' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "b85f7f744fcb19f147f84300c381c314494bc921d50346d01a6641c0b839a7e0"
+        },
+        {
+          "column": 6,
+          "file": "src/utils/file-utils.ts",
+          "line": 46,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "e4ee79c1c0f35acef783a2c99a85a0b12da17b6aace50015105b1ff2ef1bc158"
+        },
+        {
+          "column": 5,
+          "file": "src/utils/file-utils.ts",
+          "line": 82,
+          "message": "Type 'number' is not assignable to type 'string'.",
+          "rule": "TS2322",
+          "id": "8c479275811a76faf77471c5953c1f6853a14396306229c73c96b5e8c204571d"
+        },
+        {
+          "column": 26,
+          "file": "src/utils/file-utils.ts",
+          "line": 111,
+          "message": "Cannot find name 'FileReader'.",
+          "rule": "TS2304",
+          "id": "e8938a3c57b0d2ae60e2d91186484ac05e0d85caabe1504ce34963e0ee318a5a"
+        },
+        {
+          "column": 26,
+          "file": "src/utils/file-utils.ts",
+          "line": 127,
+          "message": "Cannot find name 'FileReader'.",
+          "rule": "TS2304",
+          "id": "78951a0b0bd33e34011ed0a29e2a40e9ea8b30bbba2b7b30d27ea03be4f2e114"
+        },
+        {
+          "column": 26,
+          "file": "src/utils/file-utils.ts",
+          "line": 143,
+          "message": "Cannot find name 'FileReader'.",
+          "rule": "TS2304",
+          "id": "c098f6040c2538678e8ac33fff7570827b4cb7d2756bdfc8e1875836f18ab7c9"
         },
         {
           "column": 23,
@@ -4174,6 +7862,30 @@
           "message": "Type 'number' is not assignable to type 'string'.",
           "rule": "TS2322",
           "id": "d973822c4f53fe6f0fbef240a0926993885ccae292726e488db4ad02e81de092"
+        },
+        {
+          "column": 19,
+          "file": "src/utils/url-utils.ts",
+          "line": 4,
+          "message": "Parameter 'url' implicitly has an 'any' type.",
+          "rule": "TS7006",
+          "id": "4dbbd76d328811b6ccc1253a014b9b78ddc5ea721308958fb08d4d3e089dc93c"
+        },
+        {
+          "column": 42,
+          "file": "src/utils/url-utils.ts",
+          "line": 25,
+          "message": "Function lacks ending return statement and return type does not include 'undefined'.",
+          "rule": "TS2366",
+          "id": "22e5e53937770327cd9195ea92f20f4bbb50183ff83207a830e4611c5e256db3"
+        },
+        {
+          "column": 5,
+          "file": "src/utils/url-utils.ts",
+          "line": 59,
+          "message": "Type 'string' is not assignable to type 'number'.",
+          "rule": "TS2322",
+          "id": "fed76fda8529eb641b67932682188cecb826afc180ac8fb09930fe501f151160"
         },
         {
           "column": 18,
