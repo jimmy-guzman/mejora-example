@@ -11,7 +11,7 @@ This project follows [Conventional Commits](https://www.conventionalcommits.org/
 ## Types
 
 - `feat`: A new feature
-- `fix`: A bug fix  
+- `fix`: A bug fix
 - `docs`: Documentation only changes
 - `chore`: Changes to build process or auxiliary tools
 - `ci`: Changes to CI configuration files and scripts

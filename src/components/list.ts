@@ -15,21 +15,21 @@ export class List<T> {
 
   // TypeScript error: implicit any
   render(container) {
-    const list = document.createElement('ul');
-    list.className = this.props.className || 'list';
-    
+    const list = document.createElement("ul");
+    list.className = this.props.className || "list";
+
     if (this.props.items.length === 0) {
-      const empty = document.createElement('li');
-      empty.textContent = this.props.emptyMessage || 'No items';
+      const empty = document.createElement("li");
+      empty.textContent = this.props.emptyMessage || "No items";
       list.appendChild(empty);
     } else {
-      this.props.items.forEach(item => {
-        const li = document.createElement('li');
+      this.props.items.forEach((item) => {
+        const li = document.createElement("li");
         li.textContent = this.props.renderItem(item);
         list.appendChild(li);
       });
     }
-    
+
     container.appendChild(list);
   }
 
@@ -81,4 +81,4 @@ export function createList<T>(props: ListProps<T>): List<T> {
 }
 
 // Template literal type
-export type ListEvent = `list${Capitalize<'add' | 'remove' | 'update'>}`;
+export type ListEvent = `list${Capitalize<"add" | "remove" | "update">}`;

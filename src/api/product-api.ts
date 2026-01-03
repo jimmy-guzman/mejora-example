@@ -1,7 +1,7 @@
 // Product API endpoints
-import type { Product, ProductVariant } from '../models/product';
-import type { ApiResponse, PaginatedResult } from './types';
-import { apiClient } from './client';
+import type { Product, ProductVariant } from "../models/product";
+import type { ApiResponse, PaginatedResult } from "./types";
+import { apiClient } from "./client";
 
 export class ProductApi {
   // TypeScript error: implicit any
@@ -11,21 +11,21 @@ export class ProductApi {
 
   async fetchProducts(
     page: number = 1,
-    pageSize: number = 20
+    pageSize: number = 20,
   ): Promise<ApiResponse<PaginatedResult<Product>>> {
     return apiClient.get<PaginatedResult<Product>>(
-      `/products?page=${page}&pageSize=${pageSize}`
+      `/products?page=${page}&pageSize=${pageSize}`,
     );
   }
 
   // TypeScript error: implicit any
   async createProduct(productData): Promise<ApiResponse<Product>> {
-    return apiClient.post<Product>('/products', productData);
+    return apiClient.post<Product>("/products", productData);
   }
 
   async updateProduct(
     productId: number,
-    productData: Partial<Product>
+    productData: Partial<Product>,
   ): Promise<ApiResponse<Product>> {
     return apiClient.put<Product>(`/products/${productId}`, productData);
   }
@@ -59,20 +59,20 @@ export class ProductApi {
 
   async fetchVariants(productId: number): Promise<ProductVariant[]> {
     const response = await apiClient.get<ProductVariant[]>(
-      `/products/${productId}/variants`
+      `/products/${productId}/variants`,
     );
     return response.data;
   }
 
   // TypeScript error: type mismatch
   async getProductPrice(productId: number): Promise<string> {
-    const price: number = '99.99'; // Wrong type
+    const price: number = "99.99"; // Wrong type
     return price;
   }
 
   // Generic constraint
   async filterProducts<T extends Product>(
-    filter: (p: Product) => boolean
+    filter: (p: Product) => boolean,
   ): Promise<T[]> {
     const response = await this.fetchProducts();
     return response.data.items.filter(filter) as T[];

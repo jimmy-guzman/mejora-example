@@ -1,8 +1,8 @@
 // Auth API endpoints
-import type { User } from '../models/user';
-import type { Session } from '../models/session';
-import type { ApiResponse } from './types';
-import { apiClient } from './client';
+import type { User } from "../models/user";
+import type { Session } from "../models/session";
+import type { ApiResponse } from "./types";
+import { apiClient } from "./client";
 
 export interface LoginCredentials {
   email: string;
@@ -18,20 +18,20 @@ export interface AuthResponse {
 export class AuthApi {
   // TypeScript error: implicit any
   async login(credentials): Promise<ApiResponse<AuthResponse>> {
-    return apiClient.post<AuthResponse>('/auth/login', credentials);
+    return apiClient.post<AuthResponse>("/auth/login", credentials);
   }
 
   async logout(): Promise<ApiResponse<void>> {
-    return apiClient.post<void>('/auth/logout', {});
+    return apiClient.post<void>("/auth/logout", {});
   }
 
   // TypeScript error: implicit any
   async register(userData): Promise<ApiResponse<AuthResponse>> {
-    return apiClient.post<AuthResponse>('/auth/register', userData);
+    return apiClient.post<AuthResponse>("/auth/register", userData);
   }
 
   async refreshToken(token: string): Promise<ApiResponse<AuthResponse>> {
-    return apiClient.post<AuthResponse>('/auth/refresh', { token });
+    return apiClient.post<AuthResponse>("/auth/refresh", { token });
   }
 
   // TypeScript error: missing return statement
@@ -44,9 +44,9 @@ export class AuthApi {
 
   // ESLint error: unused variable
   async getCurrentUser(): Promise<User | null> {
-    const response = await apiClient.get<User>('/auth/me');
+    const response = await apiClient.get<User>("/auth/me");
     const status = response.status;
-    
+
     if (response.status === 200) {
       return response.data;
     }
@@ -55,25 +55,25 @@ export class AuthApi {
 
   // ESLint error: prefer-const
   async resetPassword(email: string): Promise<ApiResponse<void>> {
-    let endpoint = '/auth/reset-password';
+    let endpoint = "/auth/reset-password";
     return apiClient.post<void>(endpoint, { email });
   }
 
   async verifyEmail(token: string): Promise<ApiResponse<void>> {
-    return apiClient.post<void>('/auth/verify-email', { token });
+    return apiClient.post<void>("/auth/verify-email", { token });
   }
 
   // TypeScript error: type mismatch
   async checkAuthentication(): Promise<string> {
-    const isAuthenticated: boolean = 'true'; // Wrong type
+    const isAuthenticated: boolean = "true"; // Wrong type
     return isAuthenticated;
   }
 
   async changePassword(
     oldPassword: string,
-    newPassword: string
+    newPassword: string,
   ): Promise<ApiResponse<void>> {
-    return apiClient.post<void>('/auth/change-password', {
+    return apiClient.post<void>("/auth/change-password", {
       oldPassword,
       newPassword,
     });

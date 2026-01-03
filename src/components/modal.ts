@@ -1,5 +1,5 @@
 // Modal component
-import { Button, ButtonProps } from './button';
+import { Button, ButtonProps } from "./button";
 
 export interface ModalProps {
   title: string;
@@ -23,22 +23,22 @@ export class Modal {
       return;
     }
 
-    this.element = document.createElement('div');
-    this.element.className = 'modal';
-    
-    const content = document.createElement('div');
-    content.className = 'modal__content';
-    
-    const title = document.createElement('h2');
+    this.element = document.createElement("div");
+    this.element.className = "modal";
+
+    const content = document.createElement("div");
+    content.className = "modal__content";
+
+    const title = document.createElement("h2");
     title.textContent = this.props.title;
-    
-    const body = document.createElement('div');
+
+    const body = document.createElement("div");
     body.textContent = this.props.content;
-    
+
     content.appendChild(title);
     content.appendChild(body);
     this.element.appendChild(content);
-    
+
     container.appendChild(this.element);
   }
 
@@ -62,7 +62,7 @@ export class Modal {
     let newProps = { ...this.props, isOpen: false };
     this.props = newProps;
     this.props.onClose();
-    
+
     if (this.element) {
       this.element.remove();
       this.element = null;
@@ -109,4 +109,4 @@ export function createModal(props: ModalProps): Modal {
 }
 
 // Template literal type
-export type ModalEvent = `modal${Capitalize<'open' | 'close' | 'action'>}`;
+export type ModalEvent = `modal${Capitalize<"open" | "close" | "action">}`;

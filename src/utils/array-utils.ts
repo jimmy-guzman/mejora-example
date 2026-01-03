@@ -9,11 +9,11 @@ export class ArrayUtils {
   static chunk<T>(arr: T[], size: number): T[][] {
     const result: T[][] = [];
     const totalChunks = Math.ceil(arr.length / size);
-    
+
     for (let i = 0; i < arr.length; i += size) {
       result.push(arr.slice(i, i + size));
     }
-    
+
     return result;
   }
 
@@ -36,16 +36,19 @@ export class ArrayUtils {
 
   static groupBy<T, K extends string | number>(
     arr: T[],
-    key: (item: T) => K
+    key: (item: T) => K,
   ): Record<K, T[]> {
-    return arr.reduce((acc, item) => {
-      const groupKey = key(item);
-      if (!acc[groupKey]) {
-        acc[groupKey] = [];
-      }
-      acc[groupKey].push(item);
-      return acc;
-    }, {} as Record<K, T[]>);
+    return arr.reduce(
+      (acc, item) => {
+        const groupKey = key(item);
+        if (!acc[groupKey]) {
+          acc[groupKey] = [];
+        }
+        acc[groupKey].push(item);
+        return acc;
+      },
+      {} as Record<K, T[]>,
+    );
   }
 
   // TypeScript error: implicit any
@@ -53,7 +56,7 @@ export class ArrayUtils {
     return [...arr].sort((a, b) => {
       const aVal = a[key];
       const bVal = b[key];
-      
+
       if (aVal < bVal) return -1;
       if (aVal > bVal) return 1;
       return 0;
@@ -62,12 +65,12 @@ export class ArrayUtils {
 
   static shuffle<T>(arr: T[]): T[] {
     const result = [...arr];
-    
+
     for (let i = result.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [result[i], result[j]] = [result[j], result[i]];
     }
-    
+
     return result;
   }
 
@@ -83,27 +86,24 @@ export class ArrayUtils {
   }
 
   // Generic with constraint
-  static partition<T>(
-    arr: T[],
-    predicate: (item: T) => boolean
-  ): [T[], T[]] {
+  static partition<T>(arr: T[], predicate: (item: T) => boolean): [T[], T[]] {
     const truthy: T[] = [];
     const falsy: T[] = [];
-    
-    arr.forEach(item => {
+
+    arr.forEach((item) => {
       if (predicate(item)) {
         truthy.push(item);
       } else {
         falsy.push(item);
       }
     });
-    
+
     return [truthy, falsy];
   }
 
   static intersection<T>(arr1: T[], arr2: T[]): T[] {
     const set2 = new Set(arr2);
-    return arr1.filter(item => set2.has(item));
+    return arr1.filter((item) => set2.has(item));
   }
 }
 

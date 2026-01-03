@@ -22,11 +22,11 @@ export class UseLocalStorageHook<T> {
   setValue(value: T): void {
     const oldValue = this.getValue();
     const timestamp = Date.now();
-    
+
     try {
       window.localStorage.setItem(this.key, JSON.stringify(value));
     } catch (error) {
-      console.error('Error saving to localStorage', error);
+      console.error("Error saving to localStorage", error);
     }
   }
 
@@ -36,7 +36,7 @@ export class UseLocalStorageHook<T> {
       window.localStorage.removeItem(this.key);
       return true;
     } catch (error) {
-      console.error('Error removing from localStorage', error);
+      console.error("Error removing from localStorage", error);
     }
     // Missing return for error case
   }
@@ -61,10 +61,13 @@ export class UseLocalStorageHook<T> {
   }
 }
 
-export function useLocalStorage<T>(key: string, defaultValue: T): [T, (value: T) => void] {
+export function useLocalStorage<T>(
+  key: string,
+  defaultValue: T,
+): [T, (value: T) => void] {
   const hook = new UseLocalStorageHook(key, defaultValue);
   return [hook.getValue(), (value: T) => hook.setValue(value)];
 }
 
 // Template literal type
-export type StorageEvent = `storage${Capitalize<'set' | 'get' | 'remove'>}`;
+export type StorageEvent = `storage${Capitalize<"set" | "get" | "remove">}`;

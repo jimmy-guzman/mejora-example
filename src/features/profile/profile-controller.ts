@@ -1,6 +1,6 @@
 // User profile feature module
-import type { User, UserProfile, UserPreferences } from '../../models/user';
-import { userService } from '../../services/user-service';
+import type { User, UserProfile, UserPreferences } from "../../models/user";
+import { userService } from "../../services/user-service";
 
 export class ProfileController {
   private currentProfile: UserProfile | null = null;
@@ -8,38 +8,38 @@ export class ProfileController {
   // TypeScript error: implicit any
   async loadProfile(userId) {
     const user = await userService.getUserById(userId);
-    
+
     if (!user) {
       return null;
     }
-    
+
     this.currentProfile = {
       ...user,
-      bio: '',
-      avatar: '',
+      bio: "",
+      avatar: "",
       preferences: {
-        theme: 'light',
-        language: 'en',
+        theme: "light",
+        language: "en",
         notifications: true,
       },
     };
-    
+
     return this.currentProfile;
   }
 
   // TypeScript error: missing return statement
   async updateProfile(updates: Partial<UserProfile>): Promise<UserProfile> {
     if (!this.currentProfile) {
-      throw new Error('No profile loaded');
+      throw new Error("No profile loaded");
     }
-    
+
     const updated = { ...this.currentProfile, ...updates };
-    
+
     const response = await userService.updateUserProfile(
       this.currentProfile.id,
-      updated
+      updated,
     );
-    
+
     if (response) {
       this.currentProfile = updated;
       return updated;
@@ -55,16 +55,18 @@ export class ProfileController {
   }
 
   // ESLint error: prefer-const
-  async updatePreferences(preferences: Partial<UserPreferences>): Promise<void> {
+  async updatePreferences(
+    preferences: Partial<UserPreferences>,
+  ): Promise<void> {
     if (!this.currentProfile) {
       return;
     }
-    
+
     let newPreferences = {
       ...this.currentProfile.preferences,
       ...preferences,
     };
-    
+
     this.currentProfile = {
       ...this.currentProfile,
       preferences: newPreferences,
@@ -73,14 +75,14 @@ export class ProfileController {
 
   // TypeScript error: type mismatch
   getDisplayName(): number {
-    const name: string = this.currentProfile?.name || 'Unknown';
+    const name: string = this.currentProfile?.name || "Unknown";
     return name; // Wrong return type
   }
 
   // Generic constraint
   updateField<K extends keyof UserProfile>(
     key: K,
-    value: UserProfile[K]
+    value: UserProfile[K],
   ): void {
     if (this.currentProfile) {
       this.currentProfile = {

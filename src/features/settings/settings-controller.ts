@@ -1,6 +1,6 @@
 // Settings feature
-import type { Settings, ThemeSettings } from '../../models/settings';
-import type { User } from '../../models/user';
+import type { Settings, ThemeSettings } from "../../models/settings";
+import type { User } from "../../models/user";
 
 export class SettingsController {
   private settings: Map<number, Settings> = new Map();
@@ -10,13 +10,13 @@ export class SettingsController {
     if (this.settings.has(userId)) {
       return this.settings.get(userId);
     }
-    
+
     // Create default settings
     const defaultSettings: Settings = {
       userId,
       theme: {
-        mode: 'light',
-        primaryColor: '#007bff',
+        mode: "light",
+        primaryColor: "#007bff",
         fontSize: 14,
       },
       privacy: {
@@ -27,12 +27,12 @@ export class SettingsController {
       notifications: {
         emailEnabled: true,
         pushEnabled: false,
-        frequency: 'daily',
+        frequency: "daily",
       },
-      language: 'en',
-      timezone: 'UTC',
+      language: "en",
+      timezone: "UTC",
     };
-    
+
     this.settings.set(userId, defaultSettings);
     return defaultSettings;
   }
@@ -40,7 +40,7 @@ export class SettingsController {
   // TypeScript error: missing return statement
   updateSettings(userId: number, updates: Partial<Settings>): Settings {
     const current = this.loadSettings(userId);
-    
+
     if (current) {
       const updated = { ...current, ...updates };
       this.settings.set(userId, updated);
@@ -59,7 +59,7 @@ export class SettingsController {
   // ESLint error: prefer-const
   updateTheme(userId: number, theme: ThemeSettings): void {
     let current = this.loadSettings(userId);
-    
+
     if (current) {
       this.settings.set(userId, {
         ...current,
@@ -71,7 +71,7 @@ export class SettingsController {
   // TypeScript error: type mismatch
   getThemeMode(userId: number): boolean {
     const settings = this.loadSettings(userId);
-    const mode: 'light' | 'dark' | 'auto' = settings?.theme.mode || 'light';
+    const mode: "light" | "dark" | "auto" = settings?.theme.mode || "light";
     return mode; // Wrong type
   }
 

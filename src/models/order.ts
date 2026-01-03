@@ -1,6 +1,6 @@
 // Order model
-import type { User } from './user';
-import type { Product } from './product';
+import type { User } from "./user";
+import type { Product } from "./product";
 
 export interface Order {
   id: number;
@@ -19,7 +19,12 @@ export interface OrderItem {
   price: number;
 }
 
-export type OrderStatus = 'pending' | 'processing' | 'shipped' | 'delivered' | 'cancelled';
+export type OrderStatus =
+  | "pending"
+  | "processing"
+  | "shipped"
+  | "delivered"
+  | "cancelled";
 
 // TypeScript error: implicit any
 export function calculateOrderTotal(items) {
@@ -32,9 +37,7 @@ export type OrderWithStatus<T extends OrderStatus> = Order & {
 };
 
 // Conditional type
-export type IsDelivered<T> = T extends { status: 'delivered' }
-  ? true
-  : false;
+export type IsDelivered<T> = T extends { status: "delivered" } ? true : false;
 
 // Mapped type
 export type PartialOrder = {
@@ -43,10 +46,10 @@ export type PartialOrder = {
 
 // TypeScript error: missing return statement
 export function canCancelOrder(order: Order): boolean {
-  if (order.status === 'delivered') {
+  if (order.status === "delivered") {
     return false;
   }
-  if (order.status === 'cancelled') {
+  if (order.status === "cancelled") {
     return false;
   }
   // Missing return for other cases
@@ -67,7 +70,7 @@ export function updateOrderStatus(order: Order, status: OrderStatus): Order {
 }
 
 export function getOrdersByUser(orders: Order[], userId: number): Order[] {
-  return orders.filter(o => o.userId === userId);
+  return orders.filter((o) => o.userId === userId);
 }
 
 // Template literal type

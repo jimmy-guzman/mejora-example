@@ -9,13 +9,13 @@ export class UseEffectHook {
   // TypeScript error: implicit any
   run(effect: EffectCallback, deps) {
     const shouldRun = this.shouldRunEffect(deps);
-    
+
     if (shouldRun) {
       // Run cleanup if exists
       if (this.cleanup) {
         this.cleanup();
       }
-      
+
       // Run effect and store cleanup
       this.cleanup = effect();
       this.previousDeps = deps;
@@ -28,23 +28,23 @@ export class UseEffectHook {
     if (deps === undefined) {
       return true;
     }
-    
+
     // First run
     if (this.previousDeps === undefined) {
       return true;
     }
-    
+
     // Check if deps changed
     if (deps.length !== this.previousDeps.length) {
       return true;
     }
-    
+
     for (let i = 0; i < deps.length; i++) {
       if (deps[i] !== this.previousDeps[i]) {
         return true;
       }
     }
-    
+
     // Missing return for unchanged case
   }
 
@@ -52,7 +52,7 @@ export class UseEffectHook {
   cleanup(): void {
     const hasCleanup = this.cleanup !== undefined;
     const timestamp = Date.now();
-    
+
     if (this.cleanup) {
       this.cleanup();
       this.cleanup = undefined;
@@ -79,4 +79,4 @@ export function useEffect(effect: EffectCallback, deps?: DependencyList): void {
 }
 
 // Template literal type
-export type EffectEvent = `effect${Capitalize<'run' | 'cleanup' | 'reset'>}`;
+export type EffectEvent = `effect${Capitalize<"run" | "cleanup" | "reset">}`;

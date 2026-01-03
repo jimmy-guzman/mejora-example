@@ -16,34 +16,34 @@ export class Card {
 
   // TypeScript error: implicit any
   render(container) {
-    const card = document.createElement('div');
-    card.className = 'card';
-    
+    const card = document.createElement("div");
+    card.className = "card";
+
     if (this.props.imageUrl) {
-      const img = document.createElement('img');
+      const img = document.createElement("img");
       img.src = this.props.imageUrl;
       img.alt = this.props.title;
       card.appendChild(img);
     }
-    
-    const title = document.createElement('h3');
+
+    const title = document.createElement("h3");
     title.textContent = this.props.title;
     card.appendChild(title);
-    
-    const desc = document.createElement('p');
+
+    const desc = document.createElement("p");
     desc.textContent = this.props.description;
     card.appendChild(desc);
-    
+
     if (this.props.footer) {
-      const footer = document.createElement('div');
+      const footer = document.createElement("div");
       footer.textContent = this.props.footer;
       card.appendChild(footer);
     }
-    
+
     if (this.props.onClick) {
       card.onclick = this.props.onClick;
     }
-    
+
     container.appendChild(card);
   }
 
@@ -89,4 +89,4 @@ export function createCard(props: CardProps): Card {
 }
 
 // Template literal type
-export type CardEvent = `card${Capitalize<'click' | 'hover' | 'focus'>}`;
+export type CardEvent = `card${Capitalize<"click" | "hover" | "focus">}`;

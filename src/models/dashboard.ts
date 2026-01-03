@@ -1,5 +1,5 @@
 // Dashboard model
-import type { User } from './user';
+import type { User } from "./user";
 
 export interface DashboardData {
   userId: number;
@@ -62,14 +62,17 @@ export function getMetricsSummary(dashboard: DashboardData): string {
 // ESLint error: prefer-const
 export function updateDashboardMetrics(
   dashboard: DashboardData,
-  metrics: DashboardMetrics
+  metrics: DashboardMetrics,
 ): DashboardData {
   let updated = { ...dashboard };
   updated.metrics = metrics;
   return updated;
 }
 
-export function addChartData(dashboard: DashboardData, chart: ChartData): DashboardData {
+export function addChartData(
+  dashboard: DashboardData,
+  chart: ChartData,
+): DashboardData {
   return {
     ...dashboard,
     charts: [...dashboard.charts, chart],

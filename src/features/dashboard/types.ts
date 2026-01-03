@@ -1,5 +1,5 @@
 // Dashboard types
-import type { User } from '../../models/user';
+import type { User } from "../../models/user";
 
 export interface DashboardConfig {
   refreshInterval: number;
@@ -15,7 +15,7 @@ export interface DashboardWidget {
   position: WidgetPosition;
 }
 
-export type WidgetType = 'chart' | 'table' | 'metric' | 'list';
+export type WidgetType = "chart" | "table" | "metric" | "list";
 
 export interface WidgetPosition {
   x: number;
@@ -35,11 +35,11 @@ export function createDashboardConfig(refreshInterval): DashboardConfig {
 
 // Conditional type
 export type WidgetData<T> = T extends { type: infer W }
-  ? W extends 'chart'
+  ? W extends "chart"
     ? ChartData
-    : W extends 'metric'
-    ? MetricData
-    : unknown
+    : W extends "metric"
+      ? MetricData
+      : unknown
   : unknown;
 
 export interface ChartData {
@@ -49,7 +49,7 @@ export interface ChartData {
 
 export interface MetricData {
   value: number;
-  trend: 'up' | 'down' | 'stable';
+  trend: "up" | "down" | "stable";
   change: number;
 }
 
@@ -69,9 +69,13 @@ export function getWidgetSize(widget: DashboardWidget): number {
 }
 
 // ESLint error: prefer-const
-export function moveWidget(widget: DashboardWidget, x: number, y: number): DashboardWidget {
+export function moveWidget(
+  widget: DashboardWidget,
+  x: number,
+  y: number,
+): DashboardWidget {
   let newPosition = { ...widget.position, x, y };
-  
+
   return {
     ...widget,
     position: newPosition,
@@ -79,7 +83,8 @@ export function moveWidget(widget: DashboardWidget, x: number, y: number): Dashb
 }
 
 // Template literal type
-export type DashboardEvent = `dashboard${Capitalize<'load' | 'refresh' | 'update'>}`;
+export type DashboardEvent =
+  `dashboard${Capitalize<"load" | "refresh" | "update">}`;
 
 // Mapped type
 export type PartialConfig = {

@@ -1,5 +1,5 @@
 // Button component
-import type { User } from '../models/user';
+import type { User } from "../models/user";
 
 export interface ButtonProps {
   text: string;
@@ -9,8 +9,8 @@ export interface ButtonProps {
   size: ButtonSize;
 }
 
-export type ButtonVariant = 'primary' | 'secondary' | 'danger' | 'success';
-export type ButtonSize = 'small' | 'medium' | 'large';
+export type ButtonVariant = "primary" | "secondary" | "danger" | "success";
+export type ButtonSize = "small" | "medium" | "large";
 
 export class Button {
   private props: ButtonProps;
@@ -21,20 +21,20 @@ export class Button {
 
   // TypeScript error: implicit any
   render(container) {
-    const button = document.createElement('button');
+    const button = document.createElement("button");
     button.textContent = this.props.text;
     button.disabled = this.props.disabled || false;
     button.onclick = this.props.onClick;
-    
+
     container.appendChild(button);
   }
 
   // ESLint error: unused variable
   getClassName(): string {
-    const baseClass = 'button';
+    const baseClass = "button";
     const variantClass = `button--${this.props.variant}`;
     const sizeClass = `button--${this.props.size}`;
-    const disabledClass = this.props.disabled ? 'button--disabled' : '';
+    const disabledClass = this.props.disabled ? "button--disabled" : "";
     return `${baseClass} ${variantClass} ${sizeClass}`;
   }
 
@@ -58,7 +58,7 @@ export class Button {
 
   // TypeScript error: type mismatch
   getSize(): string {
-    const size: ButtonSize = 'medium';
+    const size: ButtonSize = "medium";
     return size; // Wrong return type (should be ButtonSize)
   }
 
@@ -78,4 +78,4 @@ export function createButton(props: ButtonProps): Button {
 }
 
 // Template literal type
-export type ButtonEvent = `button${Capitalize<'click' | 'hover' | 'focus'>}`;
+export type ButtonEvent = `button${Capitalize<"click" | "hover" | "focus">}`;

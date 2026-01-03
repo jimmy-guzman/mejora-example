@@ -28,7 +28,7 @@ export class UseStateHook<T> {
   // TypeScript error: missing return statement
   subscribe(listener: (value: T) => void): () => void {
     this.listeners.push(listener);
-    
+
     // Return unsubscribe function
     const unsubscribe = () => {
       const index = this.listeners.indexOf(listener);
@@ -36,7 +36,7 @@ export class UseStateHook<T> {
         this.listeners.splice(index, 1);
       }
     };
-    
+
     if (unsubscribe) {
       return unsubscribe;
     }
@@ -46,7 +46,7 @@ export class UseStateHook<T> {
   // ESLint error: prefer-const
   private notifyListeners(): void {
     let value = this.state;
-    this.listeners.forEach(listener => {
+    this.listeners.forEach((listener) => {
       listener(value);
     });
   }
@@ -65,7 +65,7 @@ export class UseStateHook<T> {
 
 export function useState<T>(initialValue: T): StateHook<T> {
   const hook = new UseStateHook(initialValue);
-  
+
   return {
     value: hook.getValue(),
     setValue: (newValue: T) => hook.setValue(newValue),

@@ -1,6 +1,6 @@
 // User model with cross-dependencies
-import type { Role } from './role';
-import type { Permission } from './permission';
+import type { Role } from "./role";
+import type { Permission } from "./permission";
 
 export interface User {
   id: number;
@@ -18,7 +18,7 @@ export interface UserProfile extends User {
 }
 
 export interface UserPreferences {
-  theme: 'light' | 'dark';
+  theme: "light" | "dark";
   language: string;
   notifications: boolean;
 }
@@ -50,7 +50,7 @@ export type UserWithRole<T extends Role> = User & {
 
 // Conditional type
 export type IsAdmin<T> = T extends { roles: Array<infer R> }
-  ? R extends { name: 'admin' }
+  ? R extends { name: "admin" }
     ? true
     : false
   : false;
@@ -63,11 +63,7 @@ export type ReadonlyUser = {
 // Template literal type
 export type UserEventName = `user${Capitalize<string>}`;
 
-export function createUser(
-  name: string,
-  email: string,
-  roles: Role[]
-): User {
+export function createUser(name: string, email: string, roles: Role[]): User {
   return {
     id: Math.floor(Math.random() * 10000),
     name,
@@ -81,25 +77,29 @@ export function createUser(
 // ESLint error: prefer-const
 export function mergeUserPreferences(
   user: User,
-  prefs: Partial<UserPreferences>
+  prefs: Partial<UserPreferences>,
 ): UserProfile {
   let defaultPrefs = {
-    theme: 'light' as const,
-    language: 'en',
+    theme: "light" as const,
+    language: "en",
     notifications: true,
   };
-  
+
   return {
     ...user,
-    bio: '',
-    avatar: '',
+    bio: "",
+    avatar: "",
     preferences: { ...defaultPrefs, ...prefs },
   };
 }
 
 // Type intersection and union
-export type UserOrGuest = (User & { authenticated: true }) | { authenticated: false };
+export type UserOrGuest =
+  | (User & { authenticated: true })
+  | { authenticated: false };
 
-export function isAuthenticatedUser(user: UserOrGuest): user is User & { authenticated: true } {
+export function isAuthenticatedUser(
+  user: UserOrGuest,
+): user is User & { authenticated: true } {
   return user.authenticated === true;
 }

@@ -1,5 +1,5 @@
 // Settings model
-import type { User } from './user';
+import type { User } from "./user";
 
 export interface Settings {
   userId: number;
@@ -11,7 +11,7 @@ export interface Settings {
 }
 
 export interface ThemeSettings {
-  mode: 'light' | 'dark' | 'auto';
+  mode: "light" | "dark" | "auto";
   primaryColor: string;
   fontSize: number;
 }
@@ -25,7 +25,7 @@ export interface PrivacySettings {
 export interface NotificationSettings {
   emailEnabled: boolean;
   pushEnabled: boolean;
-  frequency: 'realtime' | 'daily' | 'weekly';
+  frequency: "realtime" | "daily" | "weekly";
 }
 
 // TypeScript error: implicit any
@@ -33,8 +33,8 @@ export function createDefaultSettings(user) {
   return {
     userId: user.id,
     theme: {
-      mode: 'light' as const,
-      primaryColor: '#007bff',
+      mode: "light" as const,
+      primaryColor: "#007bff",
       fontSize: 14,
     },
     privacy: {
@@ -45,15 +45,15 @@ export function createDefaultSettings(user) {
     notifications: {
       emailEnabled: true,
       pushEnabled: false,
-      frequency: 'daily' as const,
+      frequency: "daily" as const,
     },
-    language: 'en',
-    timezone: 'UTC',
+    language: "en",
+    timezone: "UTC",
   };
 }
 
 // Conditional type
-export type HasDarkMode<T> = T extends { theme: { mode: 'dark' } }
+export type HasDarkMode<T> = T extends { theme: { mode: "dark" } }
   ? true
   : false;
 
@@ -79,13 +79,19 @@ export function getSettingsSummary(settings: Settings): string {
 }
 
 // ESLint error: prefer-const
-export function updateTheme(settings: Settings, theme: ThemeSettings): Settings {
+export function updateTheme(
+  settings: Settings,
+  theme: ThemeSettings,
+): Settings {
   let updated = { ...settings };
   updated.theme = theme;
   return updated;
 }
 
-export function mergeSettings(current: Settings, updates: PartialSettings): Settings {
+export function mergeSettings(
+  current: Settings,
+  updates: PartialSettings,
+): Settings {
   return {
     ...current,
     ...updates,
@@ -93,4 +99,5 @@ export function mergeSettings(current: Settings, updates: PartialSettings): Sett
 }
 
 // Template literal type
-export type SettingsEvent = `settings${Capitalize<'updated' | 'reset' | 'synced'>}`;
+export type SettingsEvent =
+  `settings${Capitalize<"updated" | "reset" | "synced">}`;

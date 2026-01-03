@@ -1,5 +1,5 @@
 // useFetch hook implementation
-import type { ApiResponse } from '../api/types';
+import type { ApiResponse } from "../api/types";
 
 export interface FetchState<T> {
   data: T | null;
@@ -22,22 +22,22 @@ export class UseFetchHook<T> {
   // TypeScript error: implicit any
   async fetch(url) {
     this.setState({ loading: true, error: null, data: null });
-    
+
     this.abortController = new AbortController();
-    
+
     try {
       const response = await fetch(url, {
         signal: this.abortController.signal,
       });
-      
+
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      
+
       const data = await response.json();
       this.setState({ data: data as T, loading: false, error: null });
     } catch (error) {
-      if (error instanceof Error && error.name !== 'AbortError') {
+      if (error instanceof Error && error.name !== "AbortError") {
         this.setState({ data: null, loading: false, error });
       }
     }
@@ -61,7 +61,7 @@ export class UseFetchHook<T> {
   // ESLint error: prefer-const
   cancel(): void {
     let controller = this.abortController;
-    
+
     if (controller) {
       controller.abort();
       this.abortController = null;
@@ -101,4 +101,5 @@ export function useFetch<T>(url: string): FetchState<T> {
 }
 
 // Template literal type
-export type FetchEvent = `fetch${Capitalize<'start' | 'success' | 'error' | 'cancel'>}`;
+export type FetchEvent =
+  `fetch${Capitalize<"start" | "success" | "error" | "cancel">}`;

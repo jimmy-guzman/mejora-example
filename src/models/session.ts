@@ -1,5 +1,5 @@
 // Session model
-import type { User } from './user';
+import type { User } from "./user";
 
 export interface Session {
   id: string;
@@ -21,15 +21,13 @@ export function createSession(user: User, token) {
     expiresAt: new Date(Date.now() + 86400000), // 24 hours
     createdAt: new Date(),
     lastActivity: new Date(),
-    ipAddress: '0.0.0.0',
-    userAgent: 'unknown',
+    ipAddress: "0.0.0.0",
+    userAgent: "unknown",
   };
 }
 
 // Conditional type
-export type IsExpired<T> = T extends { expiresAt: Date }
-  ? boolean
-  : never;
+export type IsExpired<T> = T extends { expiresAt: Date } ? boolean : never;
 
 // Mapped type
 export type ReadonlySession = {

@@ -22,9 +22,7 @@ export function createCategory(name, description: string): Category {
 }
 
 // Conditional type
-export type HasParent<T> = T extends { parentId: number }
-  ? true
-  : false;
+export type HasParent<T> = T extends { parentId: number } ? true : false;
 
 // Mapped type
 export type ReadonlyCategory = {
@@ -34,9 +32,9 @@ export type ReadonlyCategory = {
 // Generic constraint
 export function findCategoryById<T extends Category>(
   categories: T[],
-  id: number
+  id: number,
 ): T | undefined {
-  return categories.find(c => c.id === id);
+  return categories.find((c) => c.id === id);
 }
 
 // TypeScript error: missing return statement
@@ -52,31 +50,34 @@ export function isRootCategory(category: Category): boolean {
 
 // ESLint error: unused variable
 export function getCategoryPath(category: Category): string {
-  const separator = ' > ';
+  const separator = " > ";
   const level = category.level;
   return category.name;
 }
 
 // ESLint error: prefer-const
-export function updateCategoryLevel(category: Category, newLevel: number): Category {
+export function updateCategoryLevel(
+  category: Category,
+  newLevel: number,
+): Category {
   let updated = { ...category };
   updated.level = newLevel;
   return updated;
 }
 
 export function buildCategoryTree(categories: Category[]): CategoryTree[] {
-  const rootCategories = categories.filter(c => !c.parentId);
-  return rootCategories.map(root => ({
+  const rootCategories = categories.filter((c) => !c.parentId);
+  return rootCategories.map((root) => ({
     ...root,
     children: [],
   }));
 }
 
 // Union type
-export type CategoryType = 'main' | 'sub' | 'leaf';
+export type CategoryType = "main" | "sub" | "leaf";
 
 export function getCategoryType(category: Category): CategoryType {
-  if (category.level === 1) return 'main';
-  if (category.level === 2) return 'sub';
-  return 'leaf';
+  if (category.level === 1) return "main";
+  if (category.level === 2) return "sub";
+  return "leaf";
 }

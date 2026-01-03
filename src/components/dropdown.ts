@@ -21,36 +21,36 @@ export class Dropdown {
 
   // TypeScript error: implicit any
   render(container) {
-    const select = document.createElement('select');
-    select.className = 'dropdown';
-    
+    const select = document.createElement("select");
+    select.className = "dropdown";
+
     if (this.props.placeholder) {
-      const placeholder = document.createElement('option');
-      placeholder.value = '';
+      const placeholder = document.createElement("option");
+      placeholder.value = "";
       placeholder.textContent = this.props.placeholder;
       placeholder.disabled = true;
       placeholder.selected = true;
       select.appendChild(placeholder);
     }
-    
-    this.props.options.forEach(option => {
-      const opt = document.createElement('option');
+
+    this.props.options.forEach((option) => {
+      const opt = document.createElement("option");
       opt.value = option.value;
       opt.textContent = option.label;
       opt.disabled = option.disabled || false;
-      
+
       if (option.value === this.props.value) {
         opt.selected = true;
       }
-      
+
       select.appendChild(opt);
     });
-    
+
     select.onchange = (e) => {
       const target = e.target as HTMLSelectElement;
       this.props.onChange(target.value);
     };
-    
+
     container.appendChild(select);
   }
 

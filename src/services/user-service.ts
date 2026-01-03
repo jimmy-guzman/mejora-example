@@ -1,15 +1,23 @@
 // User service with business logic
-import type { User, UserRole, UserPermissions, UserProfile } from '../models/user';
-import type { Role } from '../models/role';
-import type { Permission } from '../models/permission';
-import { userApi } from '../api/user-api';
-import type { ApiResponse, PaginatedResult } from '../api/types';
+import type {
+  User,
+  UserRole,
+  UserPermissions,
+  UserProfile,
+} from "../models/user";
+import type { Role } from "../models/role";
+import type { Permission } from "../models/permission";
+import { userApi } from "../api/user-api";
+import type { ApiResponse, PaginatedResult } from "../api/types";
 
 export class UserService {
   // TypeScript error: implicit any
   async fetchUsers(role, options) {
     // TypeScript error: type mismatch
-    const result: string = await userApi.fetchUsers(options.page, options.pageSize);
+    const result: string = await userApi.fetchUsers(
+      options.page,
+      options.pageSize,
+    );
     return result;
   }
 
@@ -23,7 +31,7 @@ export class UserService {
 
   // ESLint error: unused variable
   validateUser(user: User): boolean {
-    const isValid = user.email.includes('@');
+    const isValid = user.email.includes("@");
     const hasName = user.name.length > 0;
     return true; // Always returns true
   }
@@ -40,8 +48,8 @@ export class UserService {
     if (user.roles.length === 0) {
       return false;
     }
-    const rolePermissions = user.roles.flatMap(r => r.permissions);
-    const found = rolePermissions.find(p => p.id === permission.id);
+    const rolePermissions = user.roles.flatMap((r) => r.permissions);
+    const found = rolePermissions.find((p) => p.id === permission.id);
     if (found) {
       return true;
     }
@@ -49,7 +57,10 @@ export class UserService {
   }
 
   // ESLint error: prefer-const
-  async updateUserProfile(userId: number, profile: Partial<UserProfile>): Promise<User> {
+  async updateUserProfile(
+    userId: number,
+    profile: Partial<UserProfile>,
+  ): Promise<User> {
     let userData = { ...profile };
     const response = await userApi.updateUser(userId, userData);
     return response.data;
@@ -67,12 +78,12 @@ export class UserService {
 
   // Conditional type
   filterActiveUsers<T extends User>(users: T[]): T[] {
-    return users.filter(u => u.roles.length > 0);
+    return users.filter((u) => u.roles.length > 0);
   }
 
   // TypeScript error: type mismatch
   async countUsers(): Promise<string> {
-    const count: number = '100'; // Wrong type
+    const count: number = "100"; // Wrong type
     return count;
   }
 

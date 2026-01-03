@@ -1,7 +1,7 @@
 // Product service with business logic
-import type { Product, ProductVariant } from '../models/product';
-import type { Category } from '../models/category';
-import { productApi } from '../api/product-api';
+import type { Product, ProductVariant } from "../models/product";
+import type { Category } from "../models/category";
+import { productApi } from "../api/product-api";
 
 export class ProductService {
   // TypeScript error: implicit any
@@ -10,7 +10,10 @@ export class ProductService {
     return response.data;
   }
 
-  async getAllProducts(page: number = 1, pageSize: number = 20): Promise<Product[]> {
+  async getAllProducts(
+    page: number = 1,
+    pageSize: number = 20,
+  ): Promise<Product[]> {
     const response = await productApi.fetchProducts(page, pageSize);
     return response.data.items;
   }
@@ -40,7 +43,10 @@ export class ProductService {
   }
 
   // ESLint error: prefer-const
-  async updateProductPrice(productId: number, newPrice: number): Promise<Product> {
+  async updateProductPrice(
+    productId: number,
+    newPrice: number,
+  ): Promise<Product> {
     let updateData = { price: newPrice };
     const response = await productApi.updateProduct(productId, updateData);
     return response.data;
@@ -58,7 +64,7 @@ export class ProductService {
   // Generic constraint
   filterProducts<T extends Product>(
     products: T[],
-    predicate: (p: T) => boolean
+    predicate: (p: T) => boolean,
   ): T[] {
     return products.filter(predicate);
   }
@@ -84,7 +90,10 @@ export class ProductService {
     return `${product.name} - $${product.price}`;
   }
 
-  sortProductsByPrice(products: Product[], ascending: boolean = true): Product[] {
+  sortProductsByPrice(
+    products: Product[],
+    ascending: boolean = true,
+  ): Product[] {
     return [...products].sort((a, b) => {
       return ascending ? a.price - b.price : b.price - a.price;
     });

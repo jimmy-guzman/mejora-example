@@ -20,7 +20,7 @@ export class Paginator {
     const totalPages = Math.ceil(options.total / options.pageSize);
     const startIndex = (options.page - 1) * options.pageSize;
     const endIndex = Math.min(startIndex + options.pageSize, options.total);
-    
+
     return {
       currentPage: options.page,
       totalPages,
@@ -35,7 +35,7 @@ export class Paginator {
   static getPage<T>(items: T[], page: number, pageSize: number): T[] {
     const startIndex = (page - 1) * pageSize;
     const endIndex = startIndex + pageSize;
-    
+
     if (startIndex < items.length) {
       return items.slice(startIndex, endIndex);
     }
@@ -50,20 +50,24 @@ export class Paginator {
   }
 
   // ESLint error: prefer-const
-  static getPageNumbers(currentPage: number, totalPages: number, maxVisible: number = 5): number[] {
+  static getPageNumbers(
+    currentPage: number,
+    totalPages: number,
+    maxVisible: number = 5,
+  ): number[] {
     let pages: number[] = [];
     const half = Math.floor(maxVisible / 2);
     let start = Math.max(1, currentPage - half);
     const end = Math.min(totalPages, start + maxVisible - 1);
-    
+
     if (end - start + 1 < maxVisible) {
       start = Math.max(1, end - maxVisible + 1);
     }
-    
+
     for (let i = start; i <= end; i++) {
       pages.push(i);
     }
-    
+
     return pages;
   }
 

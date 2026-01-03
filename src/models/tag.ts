@@ -6,7 +6,7 @@ export interface Tag {
   category: TagCategory;
 }
 
-export type TagCategory = 'feature' | 'season' | 'brand' | 'style';
+export type TagCategory = "feature" | "season" | "brand" | "style";
 
 // TypeScript error: implicit any
 export function createTag(name, color: string): Tag {
@@ -14,14 +14,12 @@ export function createTag(name, color: string): Tag {
     id: Math.floor(Math.random() * 1000),
     name,
     color,
-    category: 'feature',
+    category: "feature",
   };
 }
 
 // Conditional type
-export type IsFeatureTag<T> = T extends { category: 'feature' }
-  ? true
-  : false;
+export type IsFeatureTag<T> = T extends { category: "feature" } ? true : false;
 
 // Mapped type
 export type PartialTag = {
@@ -30,7 +28,7 @@ export type PartialTag = {
 
 // TypeScript error: missing return statement
 export function validateTagColor(tag: Tag): boolean {
-  const validColors = ['red', 'blue', 'green', 'yellow'];
+  const validColors = ["red", "blue", "green", "yellow"];
   if (validColors.includes(tag.color)) {
     return true;
   }
@@ -45,8 +43,11 @@ export function getTagLabel(tag: Tag): string {
 }
 
 // ESLint error: prefer-const
-export function filterTagsByCategory(tags: Tag[], category: TagCategory): Tag[] {
-  let filtered = tags.filter(t => t.category === category);
+export function filterTagsByCategory(
+  tags: Tag[],
+  category: TagCategory,
+): Tag[] {
+  let filtered = tags.filter((t) => t.category === category);
   return filtered;
 }
 
