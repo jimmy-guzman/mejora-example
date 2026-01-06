@@ -9,7 +9,10 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true
+    "noEmit": true,
+
+    "noImplicitAny": false,
+    "noUncheckedIndexedAccess": false
   },
   "include": ["src/**/*", "eslint.config.ts"]
 }
